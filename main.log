@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  28 MAY 2017 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  28 MAY 2017 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2374,71 +2374,71 @@ ivi-dad. Además,
 
 ]
 Cap\IeC {\'\i }tulo 6.
-
-Overfull \hbox (11.40604pt too wide) in paragraph at lines 16--17
+(./Capitulos/cap6/Secciones/analisis.tex)
+Overfull \hbox (11.40604pt too wide) in paragraph at lines 15--16
 []\T1/ppl/m/n/10.95 Como cada reg-istro de cualquier tabla ahora tiene un pe-ri
 -odo de validez,
  []
 
 
-Overfull \hbox (63.38515pt too wide) in paragraph at lines 16--17
+Overfull \hbox (63.38515pt too wide) in paragraph at lines 15--16
 \T1/ppl/m/n/10.95 ^^Pcal-en-dar^^Q. Por ejem-plo; slo_term_rel para las com-pe-
 ten-cias, new_course_term_rel
  []
 
 1: section
 [33]
-Overfull \hbox (5.03888pt too wide) in paragraph at lines 39--40
+Overfull \hbox (5.03888pt too wide) in paragraph at lines 38--39
 []\T1/ppl/m/n/10.95 Cada paso tiene que ser aprobado por un rol del sis-tema, d
 onde cualquier
  []
 
 [34] [35]
-Overfull \hbox (3.47183pt too wide) in paragraph at lines 69--69
+Overfull \hbox (3.47183pt too wide) in paragraph at lines 68--68
 |[]\T1/ppl/b/n/14.4 Buzón de en-trada para eval-u-adores y co-lab-o-radores
  []
 
 
-Overfull \hbox (6.48967pt too wide) in paragraph at lines 73--74
+Overfull \hbox (6.48967pt too wide) in paragraph at lines 72--73
 \T1/ppl/m/n/10.95 gus-taría una vista unifi-cada de los work-flows que tengo qu
 e re-visar ^^U además
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 80.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 79.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [36]
-Overfull \hbox (14.27473pt too wide) in paragraph at lines 109--110
+Overfull \hbox (14.27473pt too wide) in paragraph at lines 108--109
 []\T1/ppl/m/n/10.95 Implementar cam-bios en la base de datos me-di-ante scripts
  en el proyecto. 
  []
 
 [37]
-Overfull \hbox (4.93451pt too wide) in paragraph at lines 133--134
+Overfull \hbox (4.93451pt too wide) in paragraph at lines 132--133
 \T1/ppl/m/n/10.95 flow, en la cual el que ini-ció el mismo va a poder de-tal-la
 r las ho-ras y unidades
  []
 
 [38]
-Overfull \hbox (3.63208pt too wide) in paragraph at lines 179--180
+Overfull \hbox (3.63208pt too wide) in paragraph at lines 178--179
 []\T1/ppl/b/n/10.95 Recomendación: \T1/ppl/m/n/10.95 es una re-comen-dación de 
 parte del sis-tema que curso
  []
 
 [39] [40] [41]
-Overfull \hbox (2.41037pt too wide) in paragraph at lines 249--250
+Overfull \hbox (2.41037pt too wide) in paragraph at lines 248--249
 []\T1/ppl/m/n/10.95 La de-scrip-ción de la his-to-ria fue la sigu-iente: ^^PCom
 o miem-bro del comité
  []
 
 
-Overfull \hbox (2.58076pt too wide) in paragraph at lines 253--254
+Overfull \hbox (2.58076pt too wide) in paragraph at lines 252--253
 []\T1/ppl/m/n/10.95 Diseño del nuevo mod-elo y creación de scripts de base de d
 atos, donde
  []
 
 [42]
-Overfull \hbox (5.85992pt too wide) in paragraph at lines 298--298
+Overfull \hbox (5.85992pt too wide) in paragraph at lines 297--297
 |[]\T1/ppl/b/n/12 Rename/Reorganize Tabs for bet-ter Cur-ricu-lum Mod-ule Ap-
  []
 
@@ -2515,10 +2515,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36062 strings out of 493013
- 716480 string characters out of 6133342
+ 36069 strings out of 493013
+ 716710 string characters out of 6133342
  1099197 words of memory out of 5000000
- 38818 multiletter control sequences out of 15000+600000
+ 38821 multiletter control sequences out of 15000+600000
  54381 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,83p,10377b,2314s stack positions out of 5000i,500n,10000p,200000b,80000s

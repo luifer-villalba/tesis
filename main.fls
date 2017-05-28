@@ -499,6 +499,8 @@ INPUT ./Figuras/flujo_scrum.png
 OUTPUT Capitulos/Cap6/DesarrollodelaAplicacion.aux
 INPUT Capitulos/Cap6/DesarrollodelaAplicacion.tex
 INPUT Capitulos/Cap6/DesarrollodelaAplicacion.tex
+INPUT Capitulos/cap6/Secciones/analisis.tex
+INPUT Capitulos/cap6/Secciones/analisis.tex
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
