@@ -1,0 +1,315 @@
+\chapter{Desarrollo de la aplicación} % Main chapter title
+\label{capitulo6} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo6}
+
+\section{Análisis de herramientas utilizadas y posibles potenciales para el desarrollo del módulo}
+La primera etapa del proyecto fue realizar una encuesta de las capacidades del equipo de desarrolladores donde se completan los conocimientos de los miembros de cada equipo con su líder correspondiente, en la cual se podían apreciar los conocimientos de dominio de la aplicación y cuáles eran las tecnologías o herramientas que estaban familiarizados utilizar para resolver problemáticas. Por lo tanto, luego de hacer dicha cuadrícula en todos los equipos, se seleccionaron las tecnologías y miembros de los equipos que podrían facilitar el desarrollo, siguiendo un enfoque ágil.
+
+\section{Diseño de modelo de datos para versionamiento de competencias, cursos y programas}
+\subsection{Course, SLO and Assessment versioning design spike}
+Antes de empezar con las historias de versionamiento, hubo un periodo estimado como curva de diseño para adaptar las tablas existentes de los cursos, competencias y evaluaciones de los profesores para que soporten versionamiento. El ticket fue realizado en el sprint 47 con un estimado de puntos de historia de 5.
+
+Al finalizar la historia se llegó con el siguiente esquema de datos:
+\begin{itemize}
+	\item Cada tabla de eLumen posee un identificador único. Se agregó un nuevo campo <tabla>_atid que tenía como propósito apuntar al origen de la versión. Por ejemplo; si el usuario crea un nuevo curso para el año lectivo, este curso tiene su identificador y su curso_atid apunta a su mismo identificador por ser el origen de las versiones posteriores. Luego, se crea una nueva versión para el año posterior, esta nueva versión tiene su propio identificador pero su campo curso_atid apunta al primer curso creado u origen. Y así sucesivamente.
+	\item Para hacer más sencilla la búsqueda de competencias, cursos o evaluaciones actuales se agregó un campo a cada tabla identificando los actuales. Este campo denominado is_current o “es actual” es una bandera que indicaba la validez del registro.
+	\item Además de registrar el origen, se registra la versión previa o de donde parte el registro con el campo previous_<tabla>_id.
+	\item Como cada registro de cualquier tabla ahora tiene un periodo de validez, se diseñaron tablas de relación entre cada tabla y la tabla calendario “calendar”. Por ejemplo; slo_term_rel para las competencias, new_course_term_rel para los cursos y asmt_term_rel para las evaluaciones.
+\end{itemize}
+
+\section{Flujo de trabajo para el versionamiento de competencias}
+
+\subsection{SLO Versioning}
+Esta historia de usuario se inició en el sprint 47, se estimó terminar en un sprint, pero debido a la cantidad de partes que suponía cambios se utilizaron tres sprints para terminar la historia. Se estimó que la historia era de unos 13 puntos, se finalizó en el sprint 49 con un total de 170hs cargadas en el JIRA.
+
+Esta historia de usuario tenía como descripción los siguiente “Como coordinador de eLumen, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas”.
+
+Algunas tareas que se definieron en la historia de usuario son las siguientes:
+\begin{itemize}
+	\item Investigar y diseñar el versionamiento de las competencias. Se desarrolló de la manera en que toda competencia versionada apunta al origen y el origen se apunta a sí mismo, de esta manera se puede saber la familia de versiones de una competencia.
+	\item Actualizar todos esos lugares de la aplicación que listan las competencias, donde solamente deberían traer las competencias actuales.
+	\item Manejar la distribución de competencias a periodos futuros, de manera que una competencia no pueda ser distribuida a periodos en las que no tiene validez.
+	\item Diseñar y mantener pruebas automatizadas con Selenium.
+\end{itemize}
+
+\subsection{Simple Workflow with Serializer}
+En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo. Las plantillas de los Workflow pueden ser creados, editados y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del Workflow si así lo decide.
+
+Además de que el usuario sea capaz de agregar pasos para la plantilla de Workflow, también puede agregar “named steps”. Los named steps son pasos que puede diseñar el usuario, donde puede colocar una pregunta como título y por cada título tiene un campo que puede llenar el usuario. Por lo general, un named step puede tener una o más preguntas definida por el usuario.
+
+Cada paso tiene que ser aprobado por un rol del sistema, donde cualquier usuario con dicho rol puede aprobar o rechazar el Workflow con solo rechazar uno de los pasos. Dando inicio al personalizador de plantillas de Workflow se comenzó con las competencias, donde se podía asignar un tipo de Workflow para cada plantilla ya sea de creación o versionamiento de los diferentes niveles de competencias.
+
+El que inició el Workflow es el único que puede llenar los campos del formulario.
+
+La historia tiene la siguiente descripción: “Como coordinador de eLumen, me gustaría ser capaz de crear workflows simples para administrar la aprobación de revisiones de competencias, para que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus”.
+
+Como las plantillas eran algo ya conocida en otra parte de la aplicación, se imitó el comportamiento de la misma utilizando las mismas tablas para el almacenamiento de los datos en la base de datos relacional. Se diseñaron las nuevas pantallas con la definición de las plantillas de Workflow y también la pantalla de listado de los workflows donde el usuario administrador puede crear, editar si aún no ha sido usada, eliminar y clonar plantillas.
+
+La historia fue estimada con 8 puntos de historia y fue cerrada en el sprint 48.
+
+\subsection{Approval Workflow Execution for SLOs}
+Luego de la historia de diseño de las plantillas para creación o versionamiento de competencias, el siguiente paso es que un usuario designado desde la plantilla pueda iniciar y completar un flujo de trabajo para crear o revisar una competencia de cualquier nivel.
+
+Cada paso que debe completar el usuario debe estar completa antes de pasar a la etapa de revisión por parte de los encargados. Luego de enviar el formulario, cada rol debe hacer su revisión para que el sistema pueda agregar la nueva competencia.
+
+La historia tiene la siguiente descripción: “Como aprobador de una revisión o creación de competencias, me gustaría un simple paso-a-paso para que pueda de manera fácil revisar y/o aprobar competencias”.
+
+Como en las reuniones de demostración de cada sprint se notaban ciertos aspectos de las historias de usuario que no llenaban las expectativas de los clientes, los desarrolladores decidieron diseñar maquetas de pantallas que mostraban el posible diseño de la página. Luego de recibir feedback de parte de los clientes, se empezaba a desarrollar las nuevas pantallas. Finalizando la historia de usuario con pruebas automatizadas.
+
+La historia se finalizó en el sprint 48 con una cantidad de 5 puntos de historia estimados por el equipo de desarrolladores, en un periodo de tiempo de 44hs.
+
+\subsection{Reject Workflow Steps}
+Esta historia de usuario tiene como propósito permitir a la persona que hace la revisión de los pasos rechazar y dejar feedback para que se puedan hacer los cambios correspondientes. Cuando se rechaza un paso, se rechaza un Workflow, y por lo tanto vuelven a estar activos los campos para que se hagan los cambios correspondientes.
+
+La historia tiene como descripción: “Como aprobador de Curriculum de eLumen, me gustaría ser capaz de rechazar ítems de workflows y poder dar feedback a partes que no cumplen con nuestros estándares”.
+
+El trabajo se inició la actualización del modelo de base de datos actual, luego de crear las clases correspondientes en el código para su utilización. Luego, se actualizaron las páginas donde el usuario puede aprobar los steps para que soporte rechazar pasos y poder así dejar algunos comentarios. 
+
+Se estimó con 5 puntos de historia y tuvo una duración de 1 sprint con un total de 53hs de desarrollo.
+
+\section{Buzón de entrada para evaluadores y colaboradores del flujo de trabajo}
+\subsection{Workflow Queue Visibility or Inbox}
+La siguiente historia tiene como propósito mostrar a cada usuario la lista de workflows pendientes que requiere de su aporte. Además de adaptar el nuevo buzón de entrada para otros rasgos de la aplicación como son las evaluaciones, los planes de acción y preguntas de parte del usuario a profesores.
+
+La historia tiene como descripción: “Como aprobador de eLumen, me gustaría una vista unificada de los workflows que tengo que revisar – además de mis evaluaciones, planes de acción y mis preguntas a profesores – para que no vaya cazando workflows por la aplicación”
+
+Las tareas de la historia de usuario eran las de crear la página que listen los workflows inicialmente, luego de ese hacer las pruebas correspondientes. Luego de que funcione la lista de workflows, agregar los planes de acción y RFI en la lista a la misma lista y volver a hacer las pruebas de funcionamiento. 
+
+Se estimó con 5 puntos de historia y tuvo una duración de 2 sprints debido a inconvenientes en el camino con un total de 56hs de desarrollo.
+
+\subsection{Cycle Time Notifications for Workflow Steps}
+\url{https://elumen.atlassian.net/browse/EL-3986}
+
+\section{Versionamiento encadenado de evaluaciones debido al versionamiento de competencias}
+\subsection{Versioning for Assessments}
+La historia de versionamiento de evaluaciones tiene como propósito permitir el versionamiento automático de evaluaciones existentes que utilizar competencias del sistema. Por ejemplo, en caso de que una evaluación hecha por un profesor tenga una nueva versión en el nuevo periodo de su sección, el sistema versiona la evaluación para ese periodo obteniendo las competencias actuales.
+
+Esta historia de usuario se inició en el sprint 48 con un total de 13 puntos de historia, se finalizó en el sprint con un total de 87hs cargadas en el JIRA.
+
+Esta historia de usuario tenía como descripción los siguiente “Como usuario de eLumen, me gustaría ser capaz de versionar mis evaluaciones, para que se observen los cambios a través del tiempo (y que la interfaz y los reportes sigan presentando datos para los diseños históricos)”.
+
+Algunas de las tareas de la historia fueron las siguientes:
+\begin{itemize}
+	\item Adaptar versionamiento para el modelo de datos de las evaluaciones.
+	\item Actualizar la biblioteca de evaluaciones de los usuarios para que soporte versionamiento de las mismas.
+	\item Actualizar el selector de evaluaciones de los profesores, que puedan seleccionar evaluaciones actuales.
+	\item Actualizar el widget de profesores que utilizan las evaluaciones como datos.
+\end{itemize}
+
+\section{Flujo de trabajo para el versionamiento de cursos}
+\subsection{Course Versioning}
+Esta historia de usuario se inició en el sprint 47, se estimó terminar en un sprint, pero debido a la cantidad de partes que suponía cambios se utilizaron dos sprints para terminar la historia. Se estimó que la historia era de unos 13 puntos, se finalizó en el sprint 49 con un total de 96hs cargadas en el JIRA.
+
+Esta historia de usuario tenía como descripción los siguiente “Como coordinador de eLumen, me gustaría poder hacer una versión de mi plan de curso para que pueda realizar un seguimiento de los cambios para cosas como la revisión de programas y los acuerdos de articulación y transferencia en eLumen.”.
+
+Algunas de las tareas realizadas en la historia fueron las siguientes:
+
+\begin{itemize}
+	\item Buscar técnicas y herramientas de versionamiento para verificar posibles implementaciones parecidas para implementar.
+	\item Luego de buscar algunas técnicas de versionamiento, diseñar una posible solución a la problemática.
+	\item Implementar cambios en la base de datos mediante scripts en el proyecto.
+	\item Actualizar clases de Java existentes en el proyecto de cursos.
+	\item Implementar la solución para el flujo de creación de cursos de Curriculum, conocida como Workflow en inglés. Además, incluir nuevas clases de Java para las mismas.
+	\item Actualizar la creación de curso con los cambios aplicados mediante scripts de base de datos.
+	\item Adaptar la relación de cursos y competencias para que soporte el versionamiento de los mismos.
+	\item Actualizar la lista de competencias por cursos.
+\end{itemize}
+
+\subsection{Course Detail: Course Cover Info}
+Esta historia de usuario tiene como propósito de diseñar páginas que permitan al usuario completar la información básica de curso que buscan diseñar.
+
+Tiene la siguiente descripción: “Como miembro del comité de Curriculum, me gustaría ser capaz de administrar la página de información básica de cursos, para que no tenga que buscar por documentos a la hora de crear o versionar cursos”.
+
+\begin{itemize}
+	\item Diseñar un modelo de datos que soporte el nuevo paso de información de curso.
+	\item Adaptar tablas existentes y crear clases nuevas para las nuevas entidades de base de datos.
+	\item Actualizar la plantilla de creación de Workflow para que soporte el nuevo paso.
+	\item Actualizar el visualizador de Workflow.
+	\item Diseño de pruebas automatizadas.
+\end{itemize}
+
+La historia fue estimada con 5 puntos de historia y se terminó en un sprint con un total de 53hs de desarrollo.
+
+\subsection{Course Details: Units and Hours}
+En esta historia se desarrolló un nuevo paso para el desarrollo de Workflow, en la cual el que inició el mismo va a poder detallar las horas y unidades que requiere el curso o cree que se va a requerir.
+
+La organización proveyó de algunas muestras de cómo debería ser la página y era un criterio de aceptación de parte del ticket que siga el modelo de la misma.
+
+La historia tenía la siguiente descripción: “Como aprobador de Curriculum de eLumen, me gustaría tener una página de horas y métricas para que pueda conseguir información básica sobre mi curso en eLumen”.
+
+La historia a desarrollar se dividió entre miembros del equipo de desarrollo en las siguientes tareas:
+\begin{itemize}
+	\item Crear scripts en la base de datos para adaptar el modelo de datos para que soporte los nuevos campos de curso.
+	\item Crear y/o editar las clases de las entidades de Java que utiliza o utilizará la aplicación.
+	\item Actualizar la plantilla de workflows.
+	\item Actualizar el visualizador de workflows.
+	\item Pruebas de funcionalidad.
+\end{itemize}
+
+La historia fue estimada con 3 puntos de historia y se terminó en un sprint con un total de 66hs de desarrollo.
+
+\subsection{Curriculum: Course Specifications}
+En esta historia de usuario se desarrolló un nuevo paso para el Workflow, el cual era un paso de tipo formulario en la cual el que inició el Workflow puede agregar objetivos, información acerca de los métodos de evaluación de la materia, algunos equipos requeridos y libros que se necesitará en el curso.
+
+La organización proporcionó de modelos de pantallas para el nuevo paso y era un criterio de aceptación de parte del ticket que siga el mismo formato.
+
+La historia de usuario proporciona la siguiente descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de agregar o editar especificaciones de curso como parte del Workflow de creación y/o versionamiento de mi curso, con el objetivo de no hacerlo en papel.”
+
+Las tareas fueron separadas y desarrolladas por los desarrolladores y eran las siguientes:
+\begin{itemize}
+	\item Crear scripts de base de datos para que soporte el nuevo formato de cursos.
+	\item Crear y/o editar clases de Java para las nuevas entidades de la base de datos.
+	\item Actualizar la página de creación y/o edición de plantillas de Workflow para que soporte el nuevo paso.
+	\item Actualizar el visualizador de Workflow.
+	\item Actualizar los servicios de guardado para creación y versionamiento de cursos y workflows.
+	\item Actualizar el servicio de aprobación de Workflow.
+	\item Test de la historia.
+\end{itemize}
+
+La historia fue terminada en el sprint 50 con 5 puntos de historia de usuario y 40hs de desarrollo cargadas en el sistema
+
+\subsection{Prereq \& Entrance Skills}
+Esta historia tiene como objetivo que el usuario pueda colocar una lista de cursos como pre-requisitos, co-requisitos, anti-requisitos y recomendaciones para su nuevo curso. Además de ciertas capacidades que el alumno debe tener como requisito para tomar el curso.
+
+Para entrar un poco en contexto de la historia vamos a definir cuáles son los tipos de requisitos que puede tener un curso:
+
+\begin{itemize}
+	\item \textbf{Pre-requisito:} es un tipo de requisito que impide al usuario tomar o cursar un curso sin haber pasado antes del curso que está como pre-requisito.
+	\item \textbf{Co-requisito:} es un tipo de requisito impide al usuario tomar o cursar un curso si no toma también el curso que tiene como co-requisito.
+	\item \textbf{Anti-requisito:} es un requisito impide al usuario tomar o cursar un curso si ya curso o va a cursar un curso que tiene como anti-requisito.
+	\item \textbf{Recomendación:} es una recomendación de parte del sistema que curso tomar para aprovechar mejor la materia o curso. Es opcional.
+\end{itemize}
+
+La historia de usuario tiene como descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de introducir requisitos para cursos y capacidades de entrada en la creación o revisión de Workflow, para que podamos seguir durante su desarrollo y aprobación”.
+
+La historia fue dividida en partes para que los desarrolladores puedan trabajar en partes independientes durante el proceso de la misma, y eran las siguientes:
+\begin{itemize}
+	\item Crear scripts para el nuevo modelo de datos.
+	\item Generar o editar clases de entidades para el nuevo modelo de datos.
+	\item Actualizar la plantilla de Workflow para que soporte un nuevo paso.
+	\item Actualizar el visualizador de Workflow.
+	\item Actualizar los servicios de guardado y aprobación.
+	\item Pruebas de funcionalidad.
+\end{itemize}
+
+La historia de usuario fue cerrada en el sprint 50 con 3 puntos de historia y 44hs de desarrollo cargadas.
+
+\subsection{Course Creation/Approval Review}
+La historia de usuario tenía como criterio de aceptación los siguientes puntos:
+\begin{itemize}
+	\item Las páginas para revisar los Workflows tienen una región de retroalimentación o feedback debajo de cada paso, con la opción de ocultar y mostrar, para que el usuario que está revisando el Workflow en desarrollo pueda dejar comentarios al encargado de la creación o versionamiento del curso.
+	\item La UI tiene elementos de status que indican que cierta parte es “new” o nueva, “approved” o aprobada y “rejected” o rechazada.
+	\item Los pasos tienen regiones que permiten aceptar o rechazar los campos propuestos por los desarrolladores del curso. Por lo tanto, deben tener elementos de UI que indiquen al usuario que puede aprobar o rechazar cada parte.
+\end{itemize}
+Además de los criterios de aceptación, había que volver a actualizar el buzón de entrada para que acepten los cambios que tiene la historia de usuario. Debido a que más de una persona puede revisar el Workflow y podría trancar el proceso si es que no se le notifica debidamente que hay nuevos cambios que revisar.
+
+Algunas de las tareas descompuestas de la historia de usuario son las siguientes:
+\begin{itemize}
+	\item Actualizar el visualizador de Workflow para que pueda soportar la nueva característica de aprobación o rechazo de cada parte.
+	\item Actualizar el buzón de entrada de Cursos.
+	\item Pruebas de funcionamiento.
+\end{itemize}
+
+La historia se cerró en el sprint 50 con 3 puntos de historia y 68hs cargadas de desarrollo
+
+\subsection{Learning Outcomes}
+Esta historia tiene como propósito de crear o versionar competencias para el curso a ser creado o versionado. 
+
+La organización proporcionó de modelos de pantallas para el nuevo paso y era un criterio de aceptación de parte del ticket que siga el mismo formato.
+
+La historia de usuario tiene como descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de articular las competencias de mi nuevo curso”.
+
+Como criterio de aceptación de la historia fue la de agregar el Workflow de competencias en el Workflow de cursos. Algunas de las tareas de la historia fueron:
+\begin{itemize}
+	\item Modificar la base de datos para que soporte el nuevo modelo de datos de las competencias dentro de Workflow de curso.
+	\item Modificar o agregar clases de las entidades que van a ser usadas durante la historia.
+	\item Actualizar la plantilla de Workflow para que soporte el nuevo paso para la creación o versionamiento de competencias.
+	\item Actualizar el visualizador de Workflow para que soporte el nuevo paso de competencias.
+	\item Actualizar los servicios de guardado y de versionamiento de cursos y competencias.
+	\item Pruebas de nuevas funcionalidades.
+\end{itemize}
+
+La historia fue cerrada en el sprint 51 e iniciada en el sprint 50 con un total de 76hs cargadas en el sistema.
+
+\subsection{Curriculum: Assign Classification Codes}
+La siguiente historia tiene como propósito la de asignar Classification Codes a los cursos.
+
+Para entrar en contexto, habría que definir primero que son los Taxonomy of Programs (TOP) o taxonomía de programas en español.
+
+La taxonomía de programas o TOP es un sistema numérico de códigos usados a nivel de Estado para recolectar y reportar información en cursos y programas, en diferentes instituciones educativas [sacado de TOP manual] por todo el Estado. 
+
+TOP ha sido diseñado para agregar información acerca de los programas. Sin embargo, un código TOP debe ser asignado a cada curso del sistema. Aunque el TOP no contiene tantas opciones específicas como lo haría un sistema diseñado para cursos, a cada curso se le debe dar el código TOP que se aproxima a describir el contenido del curso.
+
+Algunos usos a los códigos TOP:
+\begin{itemize}
+	\item En el inventario de programas aprobados y rechazados, para tener información que tipos de cursos y programas son ofrecidas por el Estado.
+	\item En bases de datos de administración de información, para recolectar y reportar información en logros estudiantiles (licenciaturas y certificados) en ciertos programas.
+	\item En contabilidad vocacional estudiantil, para reportes de compleción de programas y cursos de ciertos programas vocacionales.
+\end{itemize}
+
+La descripción de la historia fue la siguiente: “Como miembro del comité curricular, me gustaría ser capaz de asignar a mis cursos de códigos de clasificación como parte de la aprobación de mis workflows para asegurar que estén correctos, como esto es motivo de rechazo en la oficina del canciller del Estado”.
+
+Algunas de las tareas fueron las siguientes:
+\begin{itemize}
+	\item Diseño del nuevo modelo y creación de scripts de base de datos, donde se debían generar tablas para cada nueva entidad del modelo de datos ajustado para las taxonomías de programas. Además, cargar todos los datos de códigos de cursos existentes para el estado de California.
+	\item Creación de clases Java de las nuevas entidades de la base de datos.
+	\item Crear páginas CRUD de las nuevas tablas (disciplina, sub-disciplina, campo).
+	\item Diseño e implementación de la nueva página de asignación de códigos de clasificación para los cursos en proceso de diseño.
+	\item Hacer servicios para cada una de las nuevas páginas.
+	\item Pruebas de funcionalidad.
+\end{itemize}
+
+La historia de usuario, con 5 puntos de historia, fue terminada con un total de 80 horas en el sprint 51.
+
+
+\section{Flujo de trabajo para el versionamiento de programas de estudio}
+\subsection{Program workflow \& Cover Info}
+\url{https://elumen.atlassian.net/browse/EL-3820}
+
+\subsection{Program Learning Outcomes Workflow Step}
+\url{https://elumen.atlassian.net/browse/EL-3821}
+
+\subsection{Course Blocks for Program}
+\url{https://elumen.atlassian.net/browse/EL-3822}
+
+\subsection{Visualize Changes in ALL fields in Curriculum [UX]}
+\url{https://elumen.atlassian.net/browse/EL-4585}
+
+\section{Soporte de etapas en los flujos de trabajo}
+\subsection{Improved Workflow Steps behaviours for Roles}
+\url{https://elumen.atlassian.net/browse/EL-3938}
+
+\subsection{Editor and Creator Roles for Curriculum Steps}
+\url{https://elumen.atlassian.net/browse/EL-3937}
+
+\subsection{Curriculum Workflow Behavior: Composable Steps/Stages}
+\url{https://elumen.atlassian.net/browse/EL-4084}
+
+\subsection{Optional steps/parts per stage in workflow review}
+\url{https://elumen.atlassian.net/browse/EL-4257}
+
+\section{Reportes de versiones de cursos}
+\subsection{Course Outline of Record (COR) Report}
+\url{https://elumen.atlassian.net/browse/EL-3941}
+
+\section{Soporte de versionamiento en el AMS}
+\subsection{TOP-CIP Crosswalk UI}
+\url{https://elumen.atlassian.net/browse/EL-3943}
+
+\subsection{Rename/Reorganize Tabs for better Curriculum Module Appearance}
+\url{https://elumen.atlassian.net/browse/EL-3987}
+
+\subsection{Improved Filter/View for Course/Program Listings}
+\url{https://elumen.atlassian.net/browse/EL-4035}
+
+\subsection{Program CRUD should work without Curriculum}
+\url{https://elumen.atlassian.net/browse/EL-4038}
+
+\subsection{Curriculum Listing (Course/Program) Improved View}
+\url{https://elumen.atlassian.net/browse/EL-4086}
+
+\subsection{Report Support for SLO, Course and Program version}
+\url{https://elumen.atlassian.net/browse/EL-4040}
+
+\section{Retoques finales}
+\subsection{Update Course Workflow}
+\url{https://elumen.atlassian.net/browse/EL-4524}

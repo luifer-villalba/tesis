@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Capitulos/Cap1/Introduccion.aux
+A level-1 auxiliary file: Capitulos/Cap2/MarcoTeorico.aux
+A level-1 auxiliary file: Capitulos/Cap3/EstadodelArte.aux
+A level-1 auxiliary file: Capitulos/Cap4/CasodeEstudio.aux
+A level-1 auxiliary file: Capitulos/Cap5/PropuestadeSolucion.aux
+A level-1 auxiliary file: Capitulos/Cap6/DesarrollodelaAplicacion.aux
+A level-1 auxiliary file: Capitulos/Cap7/Validacion.aux
+A level-1 auxiliary file: Capitulos/Cap8/Conclusion.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: references.bib
+Warning--I'm ignoring kuh_using_2015's extra "annote" field
+--line 4601 of file references.bib
+Warning--I'm ignoring davis_agile_2015's extra "annote" field
+--line 4669 of file references.bib
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 27 entries,
+            6256 wiz_defined-function locations,
+            1403 strings with 26999 characters,
+and the built_in function-call counts, 136487 in all, are:
+= -- 9579
+> -- 2605
+< -- 951
++ -- 2909
+- -- 697
+* -- 8784
+:= -- 11895
+add.period$ -- 0
+call.type$ -- 27
+change.case$ -- 732
+chr.to.int$ -- 60
+cite$ -- 52
+duplicate$ -- 14587
+empty$ -- 13277
+format.name$ -- 1372
+if$ -- 29219
+int.to.chr$ -- 0
+int.to.str$ -- 92
+missing$ -- 0
+newline$ -- 862
+num.names$ -- 1586
+pop$ -- 8696
+preamble$ -- 1
+purify$ -- 849
+quote$ -- 0
+skip$ -- 5117
+stack$ -- 0
+substring$ -- 14955
+swap$ -- 3959
+text.length$ -- 487
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 905
+warning$ -- 0
+while$ -- 1395
+width$ -- 0
+write$ -- 836
+(There were 2 warnings)

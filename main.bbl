@@ -1,0 +1,1010 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{net_app_architecture}{book}{}
+    \list{publisher}{1}{%
+      {Microsoft}%
+    }
+    \keyw{Application software, development, Microsoft .NET Framework, Software
+  architecture}
+    \field{labeltitlesource}{title}
+    \field{edition}{2nd ed}
+    \field{isbn}{978-0-7356-2710-9}
+    \field{note}{OCLC: ocn320803280}
+    \field{series}{Patterns \& practices}
+    \field{title}{{NET} application architecture guide}
+    \list{location}{1}{%
+      {Redmond, Wash.}%
+    }
+    \field{year}{2009}
+  \endentry
+
+  \entry{kuh_knowing_2014}{report}{}
+    \name{author}{4}{}{%
+      {{hash=KGD}{%
+         family={Kuh},
+         familyi={K\bibinitperiod},
+         given={George\bibnamedelima D.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=JN}{%
+         family={Jankowski},
+         familyi={J\bibinitperiod},
+         given={Natasha},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ISO}{%
+         family={Ikenberry},
+         familyi={I\bibinitperiod},
+         given={Stanley\bibnamedelima O.},
+         giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kinzie},
+         familyi={K\bibinitperiod},
+         given={Jillian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \keyw{Assessment, SLO}
+    \strng{namehash}{KGD+1}
+    \strng{fullhash}{KGDJNISOKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{shorttitle}{The {Current} {State} of {Student} {Learning} {Outcomes}
+  {Assessment} in {U}.{S}. {Colleges} and {Universities}}
+    \field{title}{Knowing {What} {Students} {Know} and {Can} {Do}: {The}
+  {Current} {State} of {Student} {Learning} {Outcomes} {Assessment} in {U}.{S}.
+  {Colleges} and {Universities}}
+    \list{institution}{1}{%
+      {National Institute for Learning Outcomes Assessment}%
+    }
+    \field{type}{techreport}
+    \field{month}{01}
+    \field{year}{2014}
+  \endentry
+
+  \entry{kuh_using_2015}{book}{}
+    \name{editor}{1}{}{%
+      {{hash=KGD}{%
+         family={Kuh},
+         familyi={K\bibinitperiod},
+         given={George\bibnamedelima D.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Jossey-Bass}%
+    }
+    \keyw{Academic achievement, Administration, Aims and objectives,
+  Educational evaluation, Educational tests and measurements, Education,
+  Higher, EDUCATION / Higher, Evaluation, United States, Universities and
+  colleges}
+    \strng{namehash}{KGD1}
+    \strng{fullhash}{KGD1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{edition}{First edition}
+    \field{isbn}{978-1-118-90339-1}
+    \field{title}{Using evidence of student learning to improve higher
+  education}
+    \list{location}{1}{%
+      {San Francisco, CA}%
+    }
+    \field{annotation}{%
+    "American higher education needs a major reframing of student learning
+  outcomes assessment. Dynamic changes are underway in American higher
+  education. New providers, emerging technologies, cost concerns, student debt,
+  and nagging doubts about quality all call out the need for institutions to
+  show evidence of student learning. From scholars at the National Institute
+  for Learning Outcomes Assessment (NILOA), Using Evidence of Student Learning
+  to Improve Higher Education presents a reframed conception and approach to
+  student learning outcomes assessment. The authors explain why it is
+  counterproductive to view collecting and using evidence of student
+  accomplishment as primarily a compliance activity.Today's circumstances
+  demand a fresh and more strategic approach to the processes by which evidence
+  about student learning is obtained and used to inform efforts to improve
+  teaching, learning, and decision-making. Whether you're in the classroom, an
+  administrative office, or on an assessment committee, data about what
+  students know and are able to do are critical for guiding changes that are
+  needed in institutional policies and practices to improve student learning
+  and success.Use this book to: Understand how and why student learning
+  outcomes assessment can enhance student accomplishment and increase
+  institutional effectiveness Shift the view of assessment from being
+  externally driven to internally motivated Learn how assessment results can
+  help inform decision-making Use assessment data to manage change and improve
+  student success Gauging student learning is necessary if institutions are to
+  prepare students to meet the 21st century needs of employers and live an
+  economically independent, civically responsible life. For assessment
+  professionals and educational leaders, Using Evidence of Student Learning to
+  Improve Higher Education offers both a compelling rationale and practical
+  advice for making student learning outcomes assessment more effective and
+  efficient"-- "Offers a fresh and strategic approach to the processes by which
+  evidence about student learning is obtained and used to inform efforts to
+  improve teaching, learning, and decision-making"--%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{boyle_curriculum_2016}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BB}{%
+         family={Boyle},
+         familyi={B\bibinitperiod},
+         given={Bill},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Charles},
+         familyi={C\bibinitperiod},
+         given={Marie},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE}%
+    }
+    \keyw{Curriculum planning}
+    \strng{namehash}{BB+1}
+    \strng{fullhash}{BBCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    "Curriculum and curriculum issues are at the heart of current debates about
+  schooling, pedagogy and learning. This book will enable practitioners,
+  scholars and academics to understand how to re-design or to suggest changes
+  to curriculum structure, shape and content. Grounded in theory and
+  philosophy, the book also offers practical help in grasping this
+  controversial area."--Page 4 of cover%
+    }
+    \field{isbn}{978-1-4462-7330-2 978-1-4462-7329-6}
+    \field{note}{OCLC: ocn919483148}
+    \field{shorttitle}{Curriculum development}
+    \field{title}{Curriculum development: a guide for educators}
+    \list{location}{1}{%
+      {Los Angeles}%
+    }
+    \field{annotation}{%
+    Introduction -- 1. Curriculum Evolution -- 2. Developing a National
+  Curriculum: Consultation -- 3. Curriculum Development: Case Specific -- 4.
+  Curriculum Reviewing Criteria: Case Specific -- 5. Science Curriculum: Case
+  Specific -- 6. Early Years Foundation Curriculum: Case Specific -- 7.
+  Balancing Raising Standards with a Well-designed and Broad Curriculum -- 8.
+  Integrating Subjects and Themes -- 9. Curriculum Construction -- 10.
+  Curriculum and Assessment -- 11. Assessment and Testing -- 12. National
+  Curriculum and Summative Testing%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{stober_overview_2010}{incollection}{}
+    \name{author}{4}{}{%
+      {{hash=ST}{%
+         family={Stober},
+         familyi={S\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HU}{%
+         family={Hansmann},
+         familyi={H\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Stober},
+         familyi={S\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HU}{%
+         family={Hansmann},
+         familyi={H\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STHUSTHU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Agile thinking is an attempt to simplify things by reducing complexity of
+  planning, by focusing on customer value, and by shaping a fruitful climate of
+  participation and collaboration. There are a vast number of methods,
+  techniques, best practices, that claim to be agile. In this chap. we want to
+  give an overview of the most common ones. The five principles of a fractal
+  team, which we introduced in Chap. 1, apply to most of them: self-similarity,
+  goal orientation, self organization, self improvement, and vitality are
+  cornerstones when implementing an organization capable of executing software
+  projects in an agile way. The desire to establish flexible and efficient
+  development processes which produce high quality results is not new and has
+  not only been applied to software development: More than two decades ago, the
+  manufacturing industry underwent dramatic changes, when the traditional
+  production concepts of Taylor and Ford were challenged by extremely
+  successful Japanese enterprises such as Toyota. The Western hemisphere was
+  puzzled at how the competition from Far East seemed to be able to produce
+  better quality at lower cost and quickly began to outperform the rest of the
+  world. What happened? What was the secret of the amazing efficiency and
+  innovation?%
+    }
+    \field{booktitle}{Agile {Software} {Development}}
+    \field{isbn}{978-3-540-70830-8}
+    \field{pages}{35\bibrangedash 59}
+    \field{title}{Overview of {Agile} {Software} {Development}}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/978-3-540-70832-2_3
+    \endverb
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{erlandson_doing_1993}{book}{}
+    \name{editor}{1}{}{%
+      {{hash=EDA}{%
+         family={Erlandson},
+         familyi={E\bibinitperiod},
+         given={David\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage}%
+    }
+    \keyw{Methodology, Paradigms (Social sciences), Social sciences}
+    \strng{namehash}{EDA1}
+    \strng{fullhash}{EDA1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{shorttitle}
+    \field{isbn}{978-0-8039-4937-9 978-0-8039-4938-6}
+    \field{shorttitle}{Doing naturalistic inquiry}
+    \field{title}{Doing naturalistic inquiry: a guide to methods}
+    \list{location}{1}{%
+      {Newbury Park, Calif}%
+    }
+    \field{year}{1993}
+  \endentry
+
+  \entry{robson_real_2011}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RC}{%
+         family={Robson},
+         familyi={R\bibinitperiod},
+         given={Colin},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \keyw{Forschung, Methodologie, Psychologie, Psychology, Psychology Research
+  Methodology, Research Methodology, Social sciences, Social sciences Research
+  Methodology, Sozialwissenschaften}
+    \strng{namehash}{RC1}
+    \strng{fullhash}{RC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    "This bestselling text on carrying out research in 'real world' situations
+  has been thoroughly revised and updated but continues to have the same
+  authoritative voice and definitive content that has made it such an essential
+  book for teachers and students conducting research within the social
+  sciences"--%
+    }
+    \field{edition}{3. ed}
+    \field{isbn}{978-1-4051-8240-9 978-1-4051-8241-6}
+    \field{note}{OCLC: 729956086}
+    \field{shorttitle}{Real world research}
+    \field{title}{Real world research: a resource for users of social research
+  methods in applied settings}
+    \list{location}{1}{%
+      {Chichester}%
+    }
+    \verb{file}
+    \verb Table of Contents PDF:/Users/owner/Library/Application Support/Zotero
+    \verb /Profiles/hdcbvw2g.default/zotero/storage/J985IQB7/Robson - 2011 - Re
+    \verb al world research a resource for users of socia.pdf:application/pdf
+    \endverb
+    \field{annotation}{%
+    Literaturverz. S. [535] - 572%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{lazar_research_2010}{book}{}
+    \name{author}{3}{}{%
+      {{hash=LJ}{%
+         family={Lazar},
+         familyi={L\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FJH}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Jinjuan\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Hochheiser},
+         familyi={H\bibinitperiod},
+         given={Harry},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{LJ+1}
+    \strng{fullhash}{LJFJHHH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{1}
+    \field{isbn}{0-470-72337-8}
+    \field{note}{Published: Paperback}
+    \field{title}{Research {Methods} in {Human}-{Computer} {Interaction}}
+    \verb{url}
+    \verb http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20&path=AS
+    \verb IN/0470723378
+    \endverb
+    \field{month}{02}
+    \field{year}{2010}
+  \endentry
+
+  \entry{carriveau_connecting_2016}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CRS}{%
+         family={Carriveau},
+         familyi={C\bibinitperiod},
+         given={Ronald\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Stylus Publishing, LLC}%
+    }
+    \keyw{Academic achievement, Educational evaluation, Educational tests and
+  measurements, Education, Higher, Evaluation}
+    \strng{namehash}{CRS1}
+    \strng{fullhash}{CRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{edition}{Second edition}
+    \field{isbn}{978-1-62036-479-6 978-1-62036-480-2}
+    \field{shorttitle}{Connecting the dots}
+    \field{title}{Connecting the dots: developing student learning outcomes and
+  outcomes-based assessments}
+    \list{location}{1}{%
+      {Sterling, Virginia}%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{barrio_minton_evaluating_2016}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BMCA}{%
+         family={Barrio\bibnamedelima Minton},
+         familyi={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Casey\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GDM}{%
+         family={Gibson},
+         familyi={G\bibinitperiod},
+         given={Donna\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WMCA}{%
+         family={Wachter\bibnamedelima Morris},
+         familyi={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Carrie\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Counseling Association}%
+    }
+    \keyw{Student counselors, Training of Evaluation}
+    \strng{namehash}{BMCA+1}
+    \strng{fullhash}{BMCAGDMWMCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-55620-337-4}
+    \field{title}{Evaluating student learning outcomes in counselor education}
+    \list{location}{1}{%
+      {Alexandria, VA}%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{aalst_workflow_2004}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AWvd}{%
+         family={Aalst},
+         familyi={A\bibinitperiod},
+         given={Wil van\bibnamedelima der},
+         giveni={W\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim
+  d\bibinitperiod},
+      }}%
+      {{hash=HKv}{%
+         family={Hee},
+         familyi={H\bibinitperiod},
+         given={Kees\bibnamedelima van},
+         giveni={K\bibinitperiod\bibinitdelim v\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \keyw{Managementinformationssystem, Management information systems,
+  Production management, Prozessmanagement, Workflow}
+    \strng{namehash}{AWvd+1}
+    \strng{fullhash}{AWvdHKv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{edition}{1. MIT Press paperback ed}
+    \field{isbn}{978-0-262-72046-5 978-0-262-01189-1}
+    \field{note}{OCLC: 255171394}
+    \field{series}{Cooperative information systems}
+    \field{shorttitle}{Workflow management}
+    \field{title}{Workflow management: models, methods and systems}
+    \list{location}{1}{%
+      {Cambridge, Mass.}%
+    }
+    \verb{file}
+    \verb Table of Contents PDF:/Users/owner/Library/Application Support/Zotero
+    \verb /Profiles/hdcbvw2g.default/zotero/storage/6Z98HCPK/Aalst and Hee - 20
+    \verb 04 - Workflow management models, methods and systems.pdf:application/
+    \verb pdf
+    \endverb
+    \field{annotation}{%
+    Literaturverz. S. [359] - 363 Hier auch später erschienene, unveränderte
+  Nachdrucke%
+    }
+    \field{year}{2004}
+  \endentry
+
+  \entry{cartwright2009student}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CR}{%
+         family={Cartwright},
+         familyi={C\bibinitperiod},
+         given={Rebecca},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Weiner},
+         familyi={W\bibinitperiod},
+         given={Ken},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SVS}{%
+         family={Streamer-Veneruso},
+         familyi={S\bibinitperiod-V\bibinitperiod},
+         given={Samantha},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CR+1}
+    \strng{fullhash}{CRWKSVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Student learning outcomes assessment handbook}
+    \field{journaltitle}{Montgomery County, MD: Montgomery College}
+    \field{year}{2009}
+  \endentry
+
+  \entry{oakleaf_choosing_2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=OM}{%
+         family={Oakleaf},
+         familyi={O\bibinitperiod},
+         given={Megan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Belanger},
+         familyi={B\bibinitperiod},
+         given={Jackie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Graham},
+         familyi={G\bibinitperiod},
+         given={Carlie},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OM+1}
+    \strng{fullhash}{OMBJGC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Choosing and {Using} {Assessment} {Management} {Systems}:
+  {What} {Librarians} {Need} to {Know}}
+    \verb{url}
+    \verb http://www.ala.org/acrl/sites/ala.org.acrl/files/content/conferences/
+    \verb confsandpreconfs/2013/papers/OakleafBelangerGraham_Choosing.pdf
+    \endverb
+    \field{journaltitle}{ACRL}
+    \field{month}{04}
+    \field{year}{2013}
+  \endentry
+
+  \entry{lalor_ensuring_2017}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LADM}{%
+         family={Lalor},
+         familyi={L\bibinitperiod},
+         given={Angela Di\bibnamedelima Michele},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ASCD}%
+    }
+    \keyw{Curriculum planning}
+    \strng{namehash}{LADM1}
+    \strng{fullhash}{LADM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{isbn}{978-1-4166-2279-6}
+    \field{shorttitle}{Ensuring high-quality curriculum}
+    \field{title}{Ensuring high-quality curriculum: how to design, revise, or
+  adopt curriculum aligned to student success}
+    \list{location}{1}{%
+      {Alexandria, VA}%
+    }
+    \field{year}{2017}
+  \endentry
+
+  \entry{harden2001amee}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HR}{%
+         family={Harden},
+         familyi={H\bibinitperiod},
+         given={RM},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{HR1}
+    \strng{fullhash}{HR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{123\bibrangedash 137}
+    \field{title}{AMEE Guide No. 21: Curriculum mapping: a tool for transparent
+  and authentic teaching and learning}
+    \field{volume}{23}
+    \field{journaltitle}{Medical teacher}
+    \field{year}{2001}
+  \endentry
+
+  \entry{west2000technology}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WG}{%
+         family={West},
+         familyi={W\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {1105 Media, Inc.}%
+    }
+    \strng{namehash}{WG1}
+    \strng{fullhash}{WG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{60}
+    \field{title}{Technology tools to make educational accountability work}
+    \field{volume}{28}
+    \field{journaltitle}{THE Journal (Technological Horizons In Education)}
+    \field{year}{2000}
+  \endentry
+
+  \entry{myers_past_2009}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MBA}{%
+         family={Myers},
+         familyi={M\bibinitperiod},
+         given={Brad\bibnamedelima A.},
+         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KAJ}{%
+         family={Ko},
+         familyi={K\bibinitperiod},
+         given={Andrew\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{in\_res\_library, sw\_natura}
+    \strng{namehash}{MBA+1}
+    \strng{fullhash}{MBAKAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The first computer users were all programmers, and the field of
+  Human-Computer Interaction started, in part, with a focus on improving how
+  programming was done. There was a significant amount of work in the 1980's on
+  this topic, but it mostly died out in the 1990s. Now, there is a resurgence
+  of work on what used to be called the Psychology of Programming, Software
+  Psychology, and the Empirical Studies of Programming. Now, research that
+  combines HCI and software engineering concerns regularly wins awards at both
+  the software engineering and HCI conferences, and although there is no longer
+  a conference devoted solely to this topic, it is a major focus of the popular
+  VL/HCC conference series. In this paper, we argue that new HCI and software
+  engineering methods and tools, along with a new acceptance of the programming
+  community, makes it a propitious time for a renewed focus on this topic.%
+    }
+    \field{title}{The {Past}, {Present} and {Future} of {Programming} in {HCI}}
+    \verb{url}
+    \verb http://www.academia.edu/2669908/The_past_present_and_future_of_progra
+    \verb mming_in_HCI
+    \endverb
+    \field{month}{02}
+    \field{year}{2009}
+  \endentry
+
+  \entry{wittig_amazon_2016}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WM}{%
+         family={Wittig},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Wittig},
+         familyi={W\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning}%
+    }
+    \keyw{Amazon.com (Firm), Amazon Web Services (Firm), Cloud computing, Web
+  services}
+    \strng{namehash}{WM+1}
+    \strng{fullhash}{WMWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-61729-288-0}
+    \field{note}{OCLC: ocn934475856}
+    \field{title}{Amazon {Web} {Services} in action}
+    \list{location}{1}{%
+      {Shelter Island, NY}%
+    }
+    \field{annotation}{%
+    Includes index%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{gupta_software_2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GN}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Nitu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JV}{%
+         family={JN},
+         familyi={J\bibinitperiod},
+         given={Varshapriya},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{GN+1}
+    \strng{fullhash}{GNJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Many small and medium scale industries could not afford the expensive
+  enterprise software either on premise or through Application Service
+  Providers as it incurred heavy installations cost, maintenance cost. Mean
+  while the development of social, economic, increasing Internet technology
+  lead to the evolvement of Cloud computing Technology which allowed the users
+  to share the resources across the Internet. This development brought about a
+  radical change in the computing technology posing new challenges as the
+  requirements of the users kept on c hanging frequently and such an installed
+  Application Service Providers on the premise of the user made it difficult to
+  meet these changed user requirement. Thus the vendors developed a new
+  architectural style based upon the constructional forms and changing the way
+  the functionalities are delivered to the user. This shift in the way of
+  delivery of software created a new business market. In this the user is freed
+  from the need of installation of the software thus shifting the maintenance
+  cost to the vendor. This type of business model is termed as Software as a
+  service which is one-to-many model based on “on use pay” (subscription)
+  basis. SaaS not much different from traditional ASP has some SaaS specific
+  functions added to it like registry, billing etc. This paper reviews th is
+  business model comparing it with the traditional ASP application and the
+  Service Oriented Architecture. It describe the life cycle of SaaS by covering
+  its maturity model and its architecture. It also highlights the advantages of
+  SaaS along with some of the characteristics required / desired in any SaaS
+  application.%
+    }
+    \field{issn}{2349-2163}
+    \field{number}{6}
+    \field{title}{Software as a {Service}}
+    \field{volume}{1}
+    \field{journaltitle}{International Journal of Innovative Research in
+  Advanced Engineering (IJIRAE)}
+    \field{year}{2014}
+  \endentry
+
+  \entry{kumar_cloud_2012}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KS}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Santosh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GRH}{%
+         family={Goudar},
+         familyi={G\bibinitperiod},
+         given={R.\bibnamedelima H.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSGRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Cloud computing is the development of parallel computing, distributed
+  computing, grid computing and virtualization technologies which define the
+  shape of a new era. Cloud computing is an emerging model of business
+  computing. In this paper, we explore the concept of cloud architecture and
+  compares cloud computing with grid computing. We also address the
+  characteristics and applications of several popular cloud computing
+  platforms. In this paper, we aim to pinpoint the challenges and issues of
+  cloud computing. We identified several challenges from the cloud computing
+  adoption perspective and we also highlighted the cloud interoperability issue
+  that deserves substantial further research and development. However, security
+  and privacy issues present a strong barrier for users to adapt into cloud
+  computing systems. In this paper, we investigate several cloud computing
+  system providers about their concerns on security and privacy issues.%
+    }
+    \field{number}{4}
+    \field{pages}{356}
+    \field{shorttitle}{Cloud {Computing} - {Concepts}, {Architecture} and
+  {Challenges}}
+    \field{title}{Cloud {Computing} – {Research} {Issues}, {Challenges},
+  {Architecture}, {Platforms} and {Applications}: {A} {Survey}}
+    \field{volume}{1}
+    \field{journaltitle}{International Journal of Future Computer and
+  Communication}
+    \field{month}{12}
+    \field{year}{2012}
+  \endentry
+
+  \entry{kang_web_2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJ}{%
+         family={Kang},
+         familyi={K\bibinitperiod},
+         given={Jihyun},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Web based development {Framework} for {Customizing}
+  {Java}-based {Business} {Logic} of {SaaS} {Application}}
+    \field{journaltitle}{ICACT}
+    \field{year}{2012}
+  \endentry
+
+  \entry{davis_agile_2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DCWH}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Christopher W.\bibnamedelima H.},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning}%
+    }
+    \keyw{Agile software development, Project management}
+    \strng{namehash}{DCWH1}
+    \strng{fullhash}{DCWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    "The iterative nature of agile development is perfect for experience-based,
+  continuous improvement. Tracking systems, test and build tools, source
+  control, continuous integration, and other built-in parts of a project
+  lifecycle throw off a wealth of data you can use to improve your products,
+  processes, and teams. The question is, how to do it? Agile Metrics in Action
+  teaches you how. This practical book is a rich resource for an agile team
+  that aims to use metrics to objectively measure performance. You'll learn how
+  to gather the data that really count, along with how to effectively analyze
+  and act upon the results. Along the way, you'll discover techniques all team
+  members can use for better individual accountability and team
+  performance"--Publisher's description%
+    }
+    \field{isbn}{978-1-61729-248-4}
+    \field{note}{OCLC: ocn907160912}
+    \field{shorttitle}{Agile metrics in action}
+    \field{title}{Agile metrics in action: how to measure and improve team
+  performance}
+    \list{location}{1}{%
+      {Shelter Island, NY}%
+    }
+    \field{annotation}{%
+    Includes index%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{cobb2015project}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CCG}{%
+         family={Cobb},
+         familyi={C\bibinitperiod},
+         given={Charles\bibnamedelima G},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{CCG1}
+    \strng{fullhash}{CCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The project manager's guide to mastering Agile: Principles
+  and practices for an adaptive approach}
+    \field{year}{2015}
+  \endentry
+
+  \entry{shneiderman_designing_2010}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SB}{%
+         family={Shneiderman},
+         familyi={S\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Plaisant},
+         familyi={P\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \keyw{Human-computer interaction, User interfaces (Computer systems)}
+    \strng{namehash}{SB+1}
+    \strng{fullhash}{SBPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{edition}{5th ed}
+    \field{isbn}{978-0-321-53735-5}
+    \field{note}{OCLC: ocn244066651}
+    \field{shorttitle}{Designing the user interface}
+    \field{title}{Designing the user interface: strategies for effective
+  human-computer interaction}
+    \list{location}{1}{%
+      {Boston}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{nielsen_usability_2010}{book}{}
+    \name{author}{1}{}{%
+      {{hash=NJ}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Kaufmann}%
+    }
+    \keyw{Dialogsystem}
+    \strng{namehash}{NJ1}
+    \strng{fullhash}{NJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{Nachdr.}
+    \field{isbn}{978-0-12-518406-9}
+    \field{note}{OCLC: 760142137}
+    \field{title}{Usability engineering}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \verb{file}
+    \verb Table of Contents PDF:/Users/owner/Library/Application Support/Zotero
+    \verb /Profiles/hdcbvw2g.default/zotero/storage/TAA9DGGN/Nielsen - 2010 - U
+    \verb sability engineering.pdf:application/pdf
+    \endverb
+    \field{annotation}{%
+    Literaturangaben%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{levy_ux_2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LJ}{%
+         family={Levy},
+         familyi={L\bibinitperiod},
+         given={Jaime},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O'Reilly Media}%
+    }
+    \strng{namehash}{LJ1}
+    \strng{fullhash}{LJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{edition}{First edition}
+    \field{isbn}{978-1-4493-7286-6}
+    \field{shorttitle}{{UX} strategy}
+    \field{title}{{UX} strategy: how to devise innovative {Digital} products
+  that people want}
+    \list{location}{1}{%
+      {Beijing ; Sebastopol}%
+    }
+    \field{year}{2015}
+  \endentry
+\endsortlist
+\endinput

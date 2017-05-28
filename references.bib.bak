@@ -1,0 +1,471 @@
+ib% Encoding: UTF-8
+@book{mledefinition,
+	author    = "Haslwanter, T.",
+	title     = "An Introduction to Statistics with Python: With Applications in the Life Sciences",
+	year      = "2016",
+	edition   = "ilustrada",
+	publisher = "Springer",
+  	isbn="9783319283166",
+	pages = "269",
+	series="Statistics and Computing",
+ 	url="https://books.google.com.py/books?id=ZBi1DAAAQBAJ"
+}
+
+@book{crmdefinition,
+	author    = "Rigby, D. K.",
+ 	title     = "Management Tools 2015: An executive's guide",
+ 	year      = "2015",
+ 	edition   = "1",
+	publisher = "Bain \& Company, Inc.",
+ 	pages = "26",
+ 	address = "131, Dartmouth Street"
+}
+
+@misc{tprfpr,
+	title = "Detector Performance Analysis Using ROC Curves - MATLAB \& Simulink Example",
+ 	url = "http://www.mathworks.com",
+	month = "08",
+	year = "2016"
+}
+
+@book{rocdefinition,
+ 	title = "Multi-disciplinary Trends in Artificial Intelligence: 9th International Workshop",
+ 	author = "Bikakis, A. and Zheng, X.",
+  	isbn = "9783319261812",
+	series = "Lecture Notes in Computer Science",
+  	url = "https://books.google.com.py/books?id=49sLCwAAQBAJ",
+	year = "2015",
+	publisher = "Springer International Publishing"
+}
+
+@book{emdefinition,
+	title = "Statistical Algorithms: Algorithms for Calculating Variance, Banburismus, Baum-Welch Algorithm, Buzen's Algorithm, Canopy Clustering Algorithm, Chaid",
+	isbn = "9781230634241",
+	url = "https://books.google.com.py/books?id=0orUnQEACAAJ",
+	year = "2013",
+	publisher = "University-Press Org"
+}
+
+@book{pca2,
+	title = "Understanding Principal Component Analysis",
+	month = "11",
+	year = "2012",
+	publisher = "KDnuggets",
+	note = "\url{http://www.kdnuggets.com/2012/11/qlucore-understanding-principal-component-analysis.html}"
+}
+
+@book{eddefinition,
+	title = "Encyclopedia of Distances.",
+	author = "Deza, E. and Deza, M. M.",
+	year = "2009",
+	publisher = "Springer",
+}
+
+@book{eigendef,
+	title = "Linear Algebra",
+	author = "Hefferon, J.",
+	url = "http://joshua.smcvt.edu/linearalgebra/",
+	month = "12",
+	year = "2015",
+	publisher = "Mathematics, Saint Michael College"
+}
+
+@book{spectrum,
+	title = "Matrix Computations",
+	author = "Golub and Gene, H. and Van Loan, C.",
+	edition = "3rd",
+	year = "1996",
+	isbn = " 0-8018-5414-8",
+	publisher = "Baltimore: Johns Hopkins University Press"
+}
+
+@article{specclus,
+	author = "Menaka, V. and Dallfin Bruxella, J. M.",
+	title = "Feature Extraction For Agglomerative Clustering",
+	journal = "International Journal of Engineering Research \& Technology",
+	year = "2013",
+	month = "08",
+	isbn = "2278-0181",
+	volume = "2"
+}
+
+@book{hmm1,
+	title = "Oxford Dictionary of Statistical Terms",
+	author = "Dodge, Y.",
+	year = "2003",
+	isbn = " 0-19-850994-4",
+	publisher = "OUP"
+}
+
+@article{hmm2,
+	author = "Komini, S. and Siredon, M.",
+	title = "Proposing a Criterion for Clusters Validation by Combined Hidden Markov Model and Clustering Method",
+	journal = "American Journal of Mobile Systems, Applications and Services",
+	year = "2015",
+	note = "\url{http://www.aiscience.org/journal/ajmsas}",
+	volume = "1"
+}
+
+@book{hmm3,
+	title = "Encyclopedia Britannica, Inc.",
+	year = "2016",
+	note = "\url{https://www.britannica.com/topic/Markov-process}"
+}
+
+@article{svmdef,
+	author = "Turrado Garcia, F.",
+	title = "GESTIÃO INTELIGENTE DE LA DEMANDA EN LA CADENA DE SUMINISTRO",
+	year = "2011",
+	note = "\url{http://eprints.ucm.es/13494/1/Fernando_Turrado_-_Trabajo_de_fin_de_master.pdf}",
+	publisher = "Departamento de IngenierÃ­a del Software e Inteligencia Artificial	"
+}
+
+@book{kdd1,
+	title = "Data Mining, Conceps and Tecniques",
+	author = "Han, J. and Kamber, M.",
+	edition = "2nd",
+	year = "2006",
+	publisher = "Diane Cerra",
+	isbn = "978-1-55860-901-3"
+}
+
+@article{dmobjec,
+	author = "Das, D. and Sshorif Uddin, M.",
+	title = "DATA MINING AND NEURAL NETWORK TECHNIQUES IN STOCK MARKET PREDICTION: A METHODOLOGICAL REVIEW",
+	journal = "International Journal of Artificial Intelligence \& Applications",
+	year = "2013",
+	month = "01",
+	note = "Department of Computer Science and Engineering, Jahangirnagar University, Dhaka, Bangladesh"
+}
+
+@article{tscprob,
+	author = "Rani, S. and Sikka, G.",
+	title = "Recent Techniques of Clustering of Time Series Data: A Survey",
+	journal = "International Journal of Computer Applications (0975-8887)",
+	volume = "52",
+	year = "2012",
+	month = "08",
+	note = "Department of Computer Science and Engineering, Dr. B R Ambedkar National Institute of Technology, Jalandhar Punjab, India"
+}
+
+@article{pdf3,
+	title = "Data Mining Techniques for Optimizing Inventories for Electronic Commerce",
+	author = "Dhond, A. and Gupta, A. and Vadhavkar, S.",
+	year = "2000",
+	note = "Massachusetts Institute of Technology"
+}
+
+@book{dtw1,
+	title = "Information Retrieval fir Music and Motion",
+	author = "Muller, M.",
+	year = "2007",
+	pages = "318",
+	edition = "illus",
+	publisher = "Springer",
+	isbn = "978-3-540-74047-6"
+}
+
+@article{pdf1,
+	author = "Ware, V. and Bharathi, H. N",
+	title = "Decision Support System for Inventory Management using Data Mining Techniques",
+	journal = "International Journal of Engineering and Advanced Technology (IJEAT)",
+	year = "2014",
+	month = "08",
+	volume = "3",
+	isbn = "2249-8958"
+}
+
+@article{pdf2,
+	author = "Senthamarai Kannan, K. and Sailapathi Sekar, P. and Sathik, M. M. and Arumugam, P.",
+	title = "Financial Stock Market Forecast using Data Mining Techniques",
+	journal = "Proceedings of the International MultiConference of Engineers and Computer Scientists",
+	year = "2010",
+	month = "03",
+	volume = "1",
+	note = "Hong Kong"
+}
+
+@article{crmpap,
+	author = "Yang, Y. and Yang, Q. and Lu, W. and Pan, J. and Pan, R. and Lu, C. and Li, L. and Qin, Z.",
+	title = "Preprocessing Time Series Data for Classification with Application to CRM",
+	year = "2007",
+	address = "Guangzhou, China; Clearwater Bay, China \& Broadway NSW Australia",
+	note = "Software Institute, Zhongshan University, Department of Computer Science, Hong Kong University of Science and Technology \& Faculty of Information Technology"
+}
+
+@article{dtwwarenv,
+	author = "Ratanamahatana, C. A. and Keogh, E.",
+	title = "Making Time-series Classification More Accurate Using Learned Constraints",
+	publisher = "University of California - Riverside",
+	address = "Riverside, CA 92521, USA",
+	note = "Computer Science \& Engineering Department"
+}
+
+@article{pcapsp,
+	author = "Lenser, S. and Veloso, M.",
+	title = "Non-Parametric Time Series Classification",
+	publisher = "Carnegie Mellon University",
+	address = "5000 Forbes Ave, Pittsburgh, PA"
+}
+
+@Article{shapelet,
+  author    = {Lines, J. and Davis, L. M. and Hills, J. and Bagnall, A.},
+  title     = {A Shapelet Transform for Time Series Classification},
+  note      = {Norwich, Norfolk, United Kingdom},
+  publisher = {University of East Anglia},
+}
+
+@article{dtwvar,
+	author = "Zhou, J. and Zhu, S.-F. and Huang, X. and Zhang, Y.",
+	title = "Enhancing Time Series Clustering by Incorporating Multiple Distance Measures with Semi-Supervised Learning",
+	journal = "JOURNAL OF COMPUTER SCIENCE AND TECHNOLOGY",
+	year = "2015",
+	month = "06",
+	publisher = "Fudan University, Charles Sturt University \& Victoria University",
+	note = "Shanghai, China; Albury, NSW 2640, Australia \& Melbourne, Victoria 8001, Australia"
+}
+
+@article{patetr,
+	author = "Geurts, P.",
+	title = "Pattern Extraction for Time Series Classification",
+	publisher = "University of Liege, Department of Electrical and Computer Engineering",
+	note = "Institute Montefiore, Sart-Tileman B28, B4000 Liege, Belgium"
+}
+
+@article{numred,
+	author = "Xiaopeng and Keogh, E. and Shelton, C. and Wei, L. and Ratanamahatana, C. A.",
+	title = "Fast Time Series Classification Using Numerosity Reduction",
+	publisher = "Computer Science & Engineering Department, University of California \& Department of Computer Engineering, Chulalongkorn University",
+	note = "Riverside, CA 92521 USA \& Bangkok 10330, Thailand"
+}
+
+@article{marussy,
+	author = "Marussy, K. and Buza, K.",
+	title = "SUCCESS: A New Approach for Semi-Supervised Classification of Time Series",
+	series = "Department of Computer Science and Information Theory, Budapest University of Technology and Economics",
+	note = "1117 Budapest, Magyar Tudosok Korutja 2"
+}
+
+@article{arima,
+	title = "Time series analysis: Forecasting and control",
+	author = "G.E.P. and JENKINS, G.M.",
+	year = "1970",
+	note = "BOX, San	Francisco: Holden-Day"
+}
+
+@book{arima2,
+  title = "Data Mining in Finance: Advances in Relational and Hybrid Methods",
+  author = "Kovalerchuk, B. and Vityaev, E.",
+  isbn = "9780306470189",
+  lccn = "00022043",
+  series = "The Springer International Series in Engineering and Computer Science",
+  url = "https://books.google.com.py/books?id=quDlBwAAQBAJ",
+  year = "2006",
+  publisher = "Springer US"
+}
+
+@article{constraints,
+	author = "Pourrajab, M. and Moulavi, D. and Campello, R. J. G. B. and Zimek, A. and Sander, J. and Goebel, A.",
+	year = "2014",
+	title = "Model Selection for Semi-Supervised Clustering",
+	publisher = "Proceedings of the 17th International Conference on Extending Database Technology (EDBT)",
+	pages = " 331-342"
+}
+
+@book{knn1,
+  title = "An introduction to kernel and nearest-neighbor nonparametric regression",
+  author = "Altman, N. S.",
+  series = "The American Statistician.",
+  url = "10.1080/00031305.1992.10475879.",
+  year = "1992",
+	pages = "175-185"
+}
+
+
+@article{OOS1,
+	author = "FMI/GMA Trading Partner Alliance",
+	title = "Solving the Out-Of-Stock Porblem",
+	month = "05",
+	year = "2013",
+	note = "GMA/FMI Supply Chain Ideation Conference"
+}
+
+@article{OOS2,
+    author = "Gruen, T. W. and Corsten, D. S. and Bharadwaj, S.",
+    title = "Retail Out-of-Stocks: A Worldwide Examination of Extent, Causes and Consumer Responses",
+    year = "2002",
+	note = "University of Colorado{,} Institute of Technology Management, University of St. Gallen \& Goizueta Business School, Emory University",
+    publisher = "Industry Affairs Group"
+}
+
+@article{OOS3,
+    author = "Gruen, T. W. and Corsten, D. S.",
+    title = "A Comprehensive Guide To Retail Out-of-Stock Reduction In the Fast-Moving Consumer Goods Industry",
+    year = "2006",
+		note = "University of Colorado \& IE Business School Madrid",
+		isbn = "978-3-905613-04-9"
+}
+
+@article{pdf2p,
+  author  = "Senthamarai Kannan, K. and Sailapathi Sekar, P. and Sathik, M.M. and Arumugam, P.",
+  title   = "Financial Stock Market Forecast using Data MiningTechniques",
+  year    = "2010",
+	month="03",
+	journal =  "Proceedings of the International MultiConference of Engineers and Computer Scientists 1",
+	notes = "Hong Kong"
+}
+
+@article{pdf3p,
+  author  = "Dhond, A. and Gupta, A. and Vadhavkar, S.",
+  title   = "Data Mining Techniques for Optimizing Inventories for Electronic Commerce",
+  year    = "2000",
+	notes = "Massachusetts Institute of Technology"
+}
+
+@article{shap,
+	author  = "Zalewski, W. and Silva, F. and Maletzke, A.G. and Ferrero, C.A.",
+	title   = "Exploring shapelet transformation for time series classification in decision trees",
+  year    = "2016",
+	month = "08",
+	journal = "Knowledge-Based Systems",
+	notes = "Federal University for Latin American Integration - Brazil{,} Federal University of Parana - Brazil{,} State University of West Parana - Brazil{,} Federal Institute of Santa Catarina - Brazil"
+}
+
+@article{nnclas,
+	author  = "Kotsifakosa, A. and Athitsosa, V. and Papapetroub, P.",
+	title   = "Query-sensitive distance measure selection for time series nearest neighbor classification",
+  year    = "2016",
+	journal = "Intelligent Data Analysis",
+	notes = "Department of Computer Science and Engineering, University of Texas at Arlington, Arlington, USA \& Department of Computer and Systems Sciences, Stockholm University, Stockholms, Sweden"
+}
+
+@article{forec,
+	author  = "Rey, T. D. and Kauhl, J.",
+	title   = "Using Data Mining in Forecasting Problems",
+  year    = "2013",
+	journal = "Data Mining and Text Analytics",
+	notes = "The Dow Chemical Company, Chip Wells, SAS Institute Inc \& Tata Consultancy Services"
+}
+
+@article{times,
+	author  = "Klose, C. and Pircher, M. and Sharma, S.",
+	title   = "Univariate Time Series Forecasting",
+  year    = "2004",
+	month = "05",
+	notes = "University of Vienna, Department of Economics"
+}
+
+@article{wareh,
+	author = "Dedić, N. and Stanier C.",
+	title = "An Evaluation of the Challenges of Multilingualism in Data Warehouse Development" ,
+	year = "2016",
+	journal = "in 18th International Conference on Enterprise Information Systems - ICEIS ",
+	pages = "196"
+}
+
+@book{dm1,
+	author = "Larose, D. T.",
+	title = "Discovering Knowledge in Data, An introduction to Data Mining" ,
+	year = "2005",
+	publisher = "John Wley \& Sons, Inc.",
+	isbn  = "0-471-66657-2"
+}
+
+@article{chapman,
+	author = "Chapman, P. and Clinton, J. and Kerber, R. and Khabaza, T. and Reinartz, T. and Shearer, C. and Wirth, R.",
+	title = "Crisp-dm 1.0 step-by-step data mining guide" ,
+	year = "2000",
+	journal = "CRISP-DM Consortium",
+	pages  = "1-79"
+}
+
+@article{semma,
+	author = "SAS, E.",
+	title = "Semma - logical organization." ,
+	year = "2006",
+}
+
+@book{kdd2,
+	author = "Chakrabarti, S. and Cox, E. and Frank, E. and Güting, R. H. and Han, J. and Jiang, X. and Kamber, M. and Lightstone, S. S. and Nadeau, T. P. and Neapolitan, R. E. and Pyle, D. and Refaat, M. and Schneider, M. and Teorey, T. J. and Witten, I. H.",
+	title = "Data Mining, know it all" ,
+	year = "2009",
+	publisher = "Morgan Kaufmann Publishers",
+	isbn  = "978-0-12-374629-0",
+	address = "30 Corporate Drive, Suite 400"
+}
+
+@article{tnorm,
+	author = "Tulyakov, S. and Zhang, Z. and Govindaraju, V.",
+	title = "Comparison of Combination Methods Utilizing T-normalization and Second Best Score Model" ,
+	year = "2008",
+	journal = "IEEE",
+	notes = "Center for Unified Biometrics and Sensors, University at Buffalo, NY, USA"
+}
+
+@article{znorm,
+	author = "Auckenthaler, R. and Carey, M. and Lloyd-Thomas, H.",
+	title = "Score Normalization for Text-Independent Speaker Verification Systems" ,
+	year = "2014",
+	notes = "Ensigma Ltd., Turing House, Station Road, Chepstow, NP16 5PB, United Kingdom; and Department of Electrical & Electronic Engineering,University of Wales, Swansea, SA2 8PP, United Kingdom"
+}
+
+@book{manhattan,
+	author = "Krause, E. F.",
+	title = "Taxicab Geometry" ,
+	year = "1987",
+	publisher = "Dover",
+	isbn = "0-486-25202-7."
+}
+
+@book{datared,
+	author = "Pudil, P. and Novovičová, J.",
+	chapter = "Novel Methods for Feature Subset Selection with Respect to Problem Knowledge",
+	title = "Feature Extraction, Construction and Selection",
+	pages = "101",
+	year = "1998",
+	isbn = "978-1-4613-7622-4"
+}
+
+@book{featselection,
+	author = "James, G. and Witten, D. and Hastie, T. and Tibshirani, R.",
+	title = "An Introduction to Statistical Learning",
+	pages = "204",
+	year = "2013",
+	publisher = "Springer"
+}
+
+@article{featextraction,
+	author = "Haiping, G Lu and Plataniotis, K.N. and Venetsanopoulos, A.N.",
+	title = "A Survey of Multilinear Subspace Learning for Tensor Data",
+	journal = "Pattern Recognition 34",
+	pages = "1540–1551",
+	year = "2005",
+	month = "01"
+}
+
+@article{clustts,
+	author = "Liao, T. W.",
+	title = "Clustering of time series data—a survey",
+	journal = "Pattern Recognition 38",
+	year = "2011",
+	month = "06",
+	notes = "Industrial & Manufacturing Systems Engineering Department, Louisiana State University"
+}
+
+@article{clusttypes,
+	author = "Han and Kamber, J. M.",
+	title = " Data Mining: Concepts and Techniques",
+	year = "2005",
+	pages = "346–389",
+	notes = "Morgan Kaufmann, San Francisco"
+}
+
+@online{dataredtec,
+  author = "KDnuggets",
+  title = "Seven Techniques for Data Dimensionality Reduction",
+  year = "2015",
+  month = "05",
+  url = "http://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html",
+  urldate = "2017-02-23"
+}
+@Comment{jabref-meta: databaseType:biblatex;}

@@ -1,0 +1,44 @@
+% Chapter 8
+
+\chapter{Conclusión} % Main chapter title
+
+\label{capitulo8} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo8}
+
+% Las conclusiones obtenidas y también se proponen posibles temas de investigación y trabajos futuros o complementarios, que puedan continuar a partir del presente trabajo.
+% (Aportes y trabajos futuros)
+
+% Que encontraste?
+% Que fallaste?
+% Que acertaste?
+
+% \section{Trabajos futuros}
+
+% se podria ofrecer variaciones de los resultados mediante otros métodos de normalización como la T-norm y Z-norm
+
+% \section*{\normalsize Z-Normalization\footnote{Así en adelante, del inglés zero normalization. Normalización cero en español.}}
+% Técnica que emplea estimaciones de media y varianza para la escala de distribución. La ventaja que presenta es que la estimación de parámetros de normalización puede ser ejecutada durante el entramiento off-line (en español, desconectado). Se separan los datos en objetivos e impostor porque esto mejora el modelo, con una madia incremental para alcanzar la distribución objetivo. Un modelo es probado contra el ejemplo impostor\footnote{la distribución del impostor se supone que tiene cero como media, y uno como varianza (se pueden variar estos valores).}, y las puntuaciones de probabilidad logarítmica se utilizan para estimar una media y una varianza específicas para la distribución del impostor. Tiene la siguiente forma:
+% \begin{equation}
+%   S = \frac{log(P(m|O))-\mu_I}{\sigma_I}
+% \end{equation}
+% donde $\mu_I$ y $\sigma_I$ son los parámetros impostores estimados para el modelo m, y S es el puntaje normalizado de distribución \citep{znorm}.
+
+% \section*{\normalsize T-Normalization\footnote{Así en adelante, viene de test normalización, normalización de pruebas en español.}}
+% Utlizada para identificación simple de modelos. Cada puntaje coincidente es normalizado utilizando la media $\mu$ y la desviación estándar $\sigma$ de todo el conjunto de puntuaciones que coinciden, producidas durante la prueba de identificación:
+% \begin{equation}
+%   s \rightarrow \frac{s-\mu}{\sigma}
+% \end{equation}
+
+% se podrian tambien ofrecer otras alternativas al metodo de reduccion de dimensiones como
+
+% se podrian tambien ofrecer otras alternativas a las metricas de distancia seleccionadas como la distancia de mahalanobis Distancia de Mahalanobis: https://en.wikipedia.org/wiki/Mahalanobis_distance
+
+
+% se podrian tambien ofrecer otras alternativas al metodo de clustering como 
+
+% se podrian tambien ofrecer otras alternativas al metodo de reduccion de forecasting como
+
+
+% la distancia de Mahalanobis
+
+% diferentes a la métrica WSSSE, como el coeficiente Silhouette, que tiende
+% no solo a evaluar la cercanía de los puntos a un clúster, sino la cercanía de los puntos a otros clústers.
