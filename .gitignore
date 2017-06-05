@@ -1,0 +1,15 @@
+*.aux
+*.bbl
+*.blg
+*.latexmk
+*.fls
+*.lof
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bak
+*.lot
+*.xml
+*_latexmk
+*gz
