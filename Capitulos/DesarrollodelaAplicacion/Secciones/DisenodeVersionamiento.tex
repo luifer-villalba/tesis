@@ -1,0 +1,11 @@
+\section{Diseño de modelo de datos para versionamiento de competencias, cursos y programas}
+\subsection{Course, SLO and Assessment versioning design spike}
+Antes de empezar con las historias de versionamiento, hubo un periodo estimado como curva de diseño para adaptar las tablas existentes de los cursos, competencias y evaluaciones de los profesores para que soporten versionamiento. El ticket fue realizado en el sprint 47 con un estimado de puntos de historia de 5.
+
+Al finalizar la historia se llegó con el siguiente esquema de datos:
+\begin{itemize}
+	\item Cada tabla de eLumen posee un identificador único. Se agregó un nuevo campo <tabla>_atid que tenía como propósito apuntar al origen de la versión. Por ejemplo; si el usuario crea un nuevo curso para el año lectivo, este curso tiene su identificador y su curso_atid apunta a su mismo identificador por ser el origen de las versiones posteriores. Luego, se crea una nueva versión para el año posterior, esta nueva versión tiene su propio identificador pero su campo curso_atid apunta al primer curso creado u origen. Y así sucesivamente.
+	\item Para hacer más sencilla la búsqueda de competencias, cursos o evaluaciones actuales se agregó un campo a cada tabla identificando los actuales. Este campo denominado is_current o “es actual” es una bandera que indicaba la validez del registro.
+	\item Además de registrar el origen, se registra la versión previa o de donde parte el registro con el campo previous_<tabla>_id.
+	\item Como cada registro de cualquier tabla ahora tiene un periodo de validez, se diseñaron tablas de relación entre cada tabla y la tabla calendario “calendar”. Por ejemplo; slo_term_rel para las competencias, new_course_term_rel para los cursos y asmt_term_rel para las evaluaciones.
+\end{itemize}
