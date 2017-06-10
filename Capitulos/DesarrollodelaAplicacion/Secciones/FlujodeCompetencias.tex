@@ -1,48 +1,68 @@
 \section{Flujo de trabajo para el versionamiento de competencias}
-\subsection{SLO Versioning}
-Esta historia de usuario se inició en el sprint 47, se estimó terminar en un sprint, pero debido a la cantidad de partes que suponía cambios se utilizaron tres sprints para terminar la historia. Se estimó que la historia era de unos 13 puntos, se finalizó en el sprint 49 con un total de 170hs cargadas en el JIRA.
-
-Esta historia de usuario tenía como descripción los siguiente “Como coordinador de eLumen, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas”.
+\subsection{Versionamiento de competencias}
+Esta historia de usuario tenía como descripción los siguiente \enquote{Como encargado del sistema de gestión de competencias, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas}.
 
 Algunas tareas que se definieron en la historia de usuario son las siguientes:
 \begin{itemize}
-	\item Investigar y diseñar el versionamiento de las competencias. Se desarrolló de la manera en que toda competencia versionada apunta al origen y el origen se apunta a sí mismo, de esta manera se puede saber la familia de versiones de una competencia.
+	\item Investigar y diseñar el versionamiento de las competencias. La misma fue desarrollada de manera en que toda competencia versionada apunta al origen y el origen se apunta a sí mismo, de esta manera se puede saber la familia de versiones de una competencia.
 	\item Actualizar todos esos lugares de la aplicación que listan las competencias, donde solamente deberían traer las competencias actuales.
 	\item Manejar la distribución de competencias a periodos futuros, de manera que una competencia no pueda ser distribuida a periodos en las que no tiene validez.
 	\item Diseñar y mantener pruebas automatizadas con Selenium.
 \end{itemize}
 
-\subsection{Simple Workflow with Serializer}
-En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo. Las plantillas de los Workflow pueden ser creados, editados y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del Workflow si así lo decide.
+Fue desarrollado durante tres iteraciones con un total de 170 horas cargadas en el sistema, debido a la complejidad a la hora de migrar los datos ya existentes de todas las universidades y por la cantidad de servicios que debían ser modificados.
 
-Además de que el usuario sea capaz de agregar pasos para la plantilla de Workflow, también puede agregar “named steps”. Los named steps son pasos que puede diseñar el usuario, donde puede colocar una pregunta como título y por cada título tiene un campo que puede llenar el usuario. Por lo general, un named step puede tener una o más preguntas definida por el usuario.
+\subsection{Flujo de trabajo simple}
+En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo donde las plantillas de los flujos de trabajo pueden ser creados, editados y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del flujo de trabajo si así lo decide en el futuro. Inicialmente se considera un solo paso para la iteración inicial de desarrollo.
 
-Cada paso tiene que ser aprobado por un rol del sistema, donde cualquier usuario con dicho rol puede aprobar o rechazar el Workflow con solo rechazar uno de los pasos. Dando inicio al personalizador de plantillas de Workflow se comenzó con las competencias, donde se podía asignar un tipo de Workflow para cada plantilla ya sea de creación o versionamiento de los diferentes niveles de competencias.
+Esta historia de usuario tenía como descripción los siguiente \enquote{Como coordinador del AMS, me gustaría ser capaz de crear flujos de trabajo simples para administrar la aprobación de revisiones de competencias y que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus}.
 
-El que inició el Workflow es el único que puede llenar los campos del formulario.
+La historia tiene los siguientes criterios de aceptación:
+\begin{itemize}
+	\item Diseñar e implementar plantillas de flujo de trabajos simples para creación y revisión de todos los niveles de competencias.
+	\item Diseñar e implementar un flujo de trabajo simple sin aprobación por parte de evaluadores, donde el iniciador del flujo puede revisar y aprobar su propio formulario.
+	\item La plantilla de flujo de trabajo simple debe soportar el uso de pasos personalizados.
+	\item El que inició el flujo es el único que puede llenar los campos del formulario.
+\end{itemize}
 
-La historia tiene la siguiente descripción: “Como coordinador de eLumen, me gustaría ser capaz de crear workflows simples para administrar la aprobación de revisiones de competencias, para que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus”.
+El usuario debe ser capaz de agregar pasos personalizados para la plantilla de flujo de trabajo de la institución. Estos pasos personalizados son pasos que puede diseñar el usuario, donde puede colocar una pregunta como título y por cada título tiene un campo que puede llenar el usuario. Por lo general, un paso personalizado puede tener una o más preguntas definida por el usuario.
 
-Como las plantillas eran algo ya conocida en otra parte de la aplicación, se imitó el comportamiento de la misma utilizando las mismas tablas para el almacenamiento de los datos en la base de datos relacional. Se diseñaron las nuevas pantallas con la definición de las plantillas de Workflow y también la pantalla de listado de los workflows donde el usuario administrador puede crear, editar si aún no ha sido usada, eliminar y clonar plantillas.
+En los mockups entregados para el desarrollo se contemplan trabajos futuros donde cada paso tiene que ser aprobado por un rol del AMS, donde cualquier usuario con dicho rol puede aprobar o rechazar el flujo de trabajo con solo rechazar uno de los pasos. 
 
-La historia fue estimada con 8 puntos de historia y fue cerrada en el sprint 48.
+Además, se da inicio al desarrollo de plantillas de flujos de trabajo con las competencias, donde se podía asignar un tipo de flujo para cada plantilla ya sea de creación o versionamiento de los diferentes niveles de competencias.
 
-\subsection{Approval Workflow Execution for SLOs}
-Luego de la historia de diseño de las plantillas para creación o versionamiento de competencias, el siguiente paso es que un usuario designado desde la plantilla pueda iniciar y completar un flujo de trabajo para crear o revisar una competencia de cualquier nivel.
+Como las plantillas era una funcionalidad conocida y utilizada en otra parte de la aplicación, se imitó el comportamiento de la misma utilizando las mismas tablas para el almacenamiento de los datos en la base de datos relacional como requisito no funcional de la organización. Se diseñaron las nuevas pantallas con la definición de las plantillas de flujo de trabajo y también la pantalla para listar las mismas. En la misma el usuario administrador puede crear, editar si aún no ha sido usada, eliminar y clonar plantillas.
 
-Cada paso que debe completar el usuario debe estar completa antes de pasar a la etapa de revisión por parte de los encargados. Luego de enviar el formulario, cada rol debe hacer su revisión para que el sistema pueda agregar la nueva competencia.
+La historia de usuario fue desarrollada durante una iteración con un total de 90 horas cargadas en el sistema.
 
-La historia tiene la siguiente descripción: “Como aprobador de una revisión o creación de competencias, me gustaría un simple paso-a-paso para que pueda de manera fácil revisar y/o aprobar competencias”.
+\subsection{Aprobación de pasos completados del flujo de trabajo para competencias}
+
+Luego de la historia de diseño de las plantillas y un flujo de trabajo simple para creación o versionamiento de competencias, el siguiente paso es que un usuario designado desde la plantilla pueda iniciar y otro pueda aprobar el proceso de creación o revisión de competencias de cualquier nivel.
+
+Esta historia de usuario tenía como descripción los siguiente \enquote{Como evaluador de un flujo de trabajo, me gustaría un simple proceso paso por paso para que pueda revisar y/o aprobar competencias de manera sencilla e intuitiva}.
+
+La historia de usuario tiene los siguientes criterios de aceptación:
+\begin{itemize}
+	\item Soporte de asignaciones de tareas de creación y revisión por roles del AMS en las plantillas de flujos de trabajo.
+	\item Diseño e implementación de vista de revisión para el flujo de trabajo.
+\end{itemize}
+
+Cada paso del flujo de trabajo debe estar terminado para que pase a la etapa de revisión por parte de los encargados. Luego de enviar el formulario, cada rol debe hacer su revisión para que el sistema pueda agregar la nueva competencia.
 
 Como en las reuniones de demostración de cada sprint se notaban ciertos aspectos de las historias de usuario que no llenaban las expectativas de los clientes, los desarrolladores decidieron diseñar maquetas de pantallas que mostraban el posible diseño de la página. Luego de recibir feedback de parte de los clientes, se empezaba a desarrollar las nuevas pantallas. Finalizando la historia de usuario con pruebas automatizadas.
 
-La historia se finalizó en el sprint 48 con una cantidad de 5 puntos de historia estimados por el equipo de desarrolladores, en un periodo de tiempo de 44hs.
+La historia de usuario fue desarrollada durante una iteración en un periodo de tiempo de 44 horas cargadas en el sistema.
 
-\subsection{Reject Workflow Steps}
-Esta historia de usuario tiene como propósito permitir a la persona que hace la revisión de los pasos rechazar y dejar feedback para que se puedan hacer los cambios correspondientes. Cuando se rechaza un paso, se rechaza un Workflow, y por lo tanto vuelven a estar activos los campos para que se hagan los cambios correspondientes.
+\subsection{Rechazar pasos completados del flujo de trabajo}
+Esta historia de usuario tenía como descripción los siguiente \enquote{Como evaluador de flujos de trabajo, me gustaría ser capaz de rechazar partes de los mismos y poder dar feedback a partes que no cumplen con nuestros estándares}.
 
-La historia tiene como descripción: “Como aprobador de Curriculum de eLumen, me gustaría ser capaz de rechazar ítems de workflows y poder dar feedback a partes que no cumplen con nuestros estándares”.
+\begin{itemize}
+	\item Diseño e implementación de funcionalidad de rechazo de pasos en los flujos de trabajo.
+	\item Diseño e implementación de funcionalidad de retroalimentación de parte de los evaluadores y encargados.
+\end{itemize}
+
+Esta funcionalidad tiene como propósito permitir a la persona que hace la revisión de los pasos rechazar y dejar feedback para que se puedan hacer los cambios correspondientes. Cuando se rechaza un paso, se rechaza el flujo de trabajo, y por lo tanto vuelven a estar activos los campos para que se hagan los cambios correspondientes.
 
 El trabajo se inició la actualización del modelo de base de datos actual, luego de crear las clases correspondientes en el código para su utilización. Luego, se actualizaron las páginas donde el usuario puede aprobar los steps para que soporte rechazar pasos y poder así dejar algunos comentarios. 
 
-Se estimó con 5 puntos de historia y tuvo una duración de 1 sprint con un total de 53hs de desarrollo.
+La historia de usuario fue desarrollada durante una iteración en un periodo de tiempo de 53 horas cargadas en el sistema.

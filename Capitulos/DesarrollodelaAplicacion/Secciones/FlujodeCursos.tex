@@ -1,5 +1,5 @@
 \section{Flujo de trabajo para el versionamiento de cursos}
-\subsection{Course Versioning}
+\subsection{Versionamiento de cursos}
 Esta historia de usuario se inició en el sprint 47, se estimó terminar en un sprint, pero debido a la cantidad de partes que suponía cambios se utilizaron dos sprints para terminar la historia. Se estimó que la historia era de unos 13 puntos, se finalizó en el sprint 49 con un total de 96hs cargadas en el JIRA.
 
 Esta historia de usuario tenía como descripción los siguiente “Como coordinador de eLumen, me gustaría poder hacer una versión de mi plan de curso para que pueda realizar un seguimiento de los cambios para cosas como la revisión de programas y los acuerdos de articulación y transferencia en eLumen.”.
@@ -17,7 +17,7 @@ Algunas de las tareas realizadas en la historia fueron las siguientes:
 	\item Actualizar la lista de competencias por cursos.
 \end{itemize}
 
-\subsection{Course Detail: Course Cover Info}
+\subsection{Información básica de curso}
 Esta historia de usuario tiene como propósito de diseñar páginas que permitan al usuario completar la información básica de curso que buscan diseñar.
 
 Tiene la siguiente descripción: “Como miembro del comité de Curriculum, me gustaría ser capaz de administrar la página de información básica de cursos, para que no tenga que buscar por documentos a la hora de crear o versionar cursos”.
@@ -32,8 +32,8 @@ Tiene la siguiente descripción: “Como miembro del comité de Curriculum, me g
 
 La historia fue estimada con 5 puntos de historia y se terminó en un sprint con un total de 53hs de desarrollo.
 
-\subsection{Course Details: Units and Hours}
-En esta historia se desarrolló un nuevo paso para el desarrollo de Workflow, en la cual el que inició el mismo va a poder detallar las horas y unidades que requiere el curso o cree que se va a requerir.
+\subsection{Horas y unidades de evaluación}
+En esta historia se desarrolló un nuevo paso para el desarrollo de flujo de trabajo, en la cual el que inició el mismo va a poder detallar las horas y unidades que requiere el curso o cree que se va a requerir.
 
 La organización proveyó de algunas muestras de cómo debería ser la página y era un criterio de aceptación de parte del ticket que siga el modelo de la misma.
 
@@ -43,34 +43,34 @@ La historia a desarrollar se dividió entre miembros del equipo de desarrollo en
 \begin{itemize}
 	\item Crear scripts en la base de datos para adaptar el modelo de datos para que soporte los nuevos campos de curso.
 	\item Crear y/o editar las clases de las entidades de Java que utiliza o utilizará la aplicación.
-	\item Actualizar la plantilla de workflows.
-	\item Actualizar el visualizador de workflows.
+	\item Actualizar la plantilla de flujo de trabajos.
+	\item Actualizar el visualizador de flujo de trabajos.
 	\item Pruebas de funcionalidad.
 \end{itemize}
 
 La historia fue estimada con 3 puntos de historia y se terminó en un sprint con un total de 66hs de desarrollo.
 
-\subsection{Curriculum: Course Specifications}
-En esta historia de usuario se desarrolló un nuevo paso para el Workflow, el cual era un paso de tipo formulario en la cual el que inició el Workflow puede agregar objetivos, información acerca de los métodos de evaluación de la materia, algunos equipos requeridos y libros que se necesitará en el curso.
+\subsection{Especificaciones de curso}
+En esta historia de usuario se desarrolló un nuevo paso para el flujo de trabajo, el cual era un paso de tipo formulario en la cual el que inició el flujo de trabajo puede agregar objetivos, información acerca de los métodos de evaluación de la materia, algunos equipos requeridos y libros que se necesitará en el curso.
 
 La organización proporcionó de modelos de pantallas para el nuevo paso y era un criterio de aceptación de parte del ticket que siga el mismo formato.
 
-La historia de usuario proporciona la siguiente descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de agregar o editar especificaciones de curso como parte del Workflow de creación y/o versionamiento de mi curso, con el objetivo de no hacerlo en papel.”
+La historia de usuario proporciona la siguiente descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de agregar o editar especificaciones de curso como parte del flujo de trabajo de creación y/o versionamiento de mi curso, con el objetivo de no hacerlo en papel.”
 
 Las tareas fueron separadas y desarrolladas por los desarrolladores y eran las siguientes:
 \begin{itemize}
 	\item Crear scripts de base de datos para que soporte el nuevo formato de cursos.
 	\item Crear y/o editar clases de Java para las nuevas entidades de la base de datos.
-	\item Actualizar la página de creación y/o edición de plantillas de Workflow para que soporte el nuevo paso.
-	\item Actualizar el visualizador de Workflow.
-	\item Actualizar los servicios de guardado para creación y versionamiento de cursos y workflows.
-	\item Actualizar el servicio de aprobación de Workflow.
+	\item Actualizar la página de creación y/o edición de plantillas de flujo de trabajo para que soporte el nuevo paso.
+	\item Actualizar el visualizador de flujo de trabajo.
+	\item Actualizar los servicios de guardado para creación y versionamiento de cursos y flujo de trabajos.
+	\item Actualizar el servicio de aprobación de flujo de trabajo.
 	\item Test de la historia.
 \end{itemize}
 
 La historia fue terminada en el sprint 50 con 5 puntos de historia de usuario y 40hs de desarrollo cargadas en el sistema
 
-\subsection{Prereq \& Entrance Skills}
+\subsection{Requisitos de curso}
 Esta historia tiene como objetivo que el usuario pueda colocar una lista de cursos como pre-requisitos, co-requisitos, anti-requisitos y recomendaciones para su nuevo curso. Además de ciertas capacidades que el alumno debe tener como requisito para tomar el curso.
 
 Para entrar un poco en contexto de la historia vamos a definir cuáles son los tipos de requisitos que puede tener un curso:
@@ -82,58 +82,58 @@ Para entrar un poco en contexto de la historia vamos a definir cuáles son los t
 	\item \textbf{Recomendación:} es una recomendación de parte del sistema que curso tomar para aprovechar mejor la materia o curso. Es opcional.
 \end{itemize}
 
-La historia de usuario tiene como descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de introducir requisitos para cursos y capacidades de entrada en la creación o revisión de Workflow, para que podamos seguir durante su desarrollo y aprobación”.
+La historia de usuario tiene como descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de introducir requisitos para cursos y capacidades de entrada en la creación o revisión de flujo de trabajo, para que podamos seguir durante su desarrollo y aprobación”.
 
 La historia fue dividida en partes para que los desarrolladores puedan trabajar en partes independientes durante el proceso de la misma, y eran las siguientes:
 \begin{itemize}
 	\item Crear scripts para el nuevo modelo de datos.
 	\item Generar o editar clases de entidades para el nuevo modelo de datos.
-	\item Actualizar la plantilla de Workflow para que soporte un nuevo paso.
-	\item Actualizar el visualizador de Workflow.
+	\item Actualizar la plantilla de flujo de trabajo para que soporte un nuevo paso.
+	\item Actualizar el visualizador de flujo de trabajo.
 	\item Actualizar los servicios de guardado y aprobación.
 	\item Pruebas de funcionalidad.
 \end{itemize}
 
 La historia de usuario fue cerrada en el sprint 50 con 3 puntos de historia y 44hs de desarrollo cargadas.
 
-\subsection{Course Creation/Approval Review}
+\subsection{Revisar y aprobar curso}
 La historia de usuario tenía como criterio de aceptación los siguientes puntos:
 \begin{itemize}
-	\item Las páginas para revisar los Workflows tienen una región de retroalimentación o feedback debajo de cada paso, con la opción de ocultar y mostrar, para que el usuario que está revisando el Workflow en desarrollo pueda dejar comentarios al encargado de la creación o versionamiento del curso.
+	\item Las páginas para revisar los flujo de trabajos tienen una región de retroalimentación o feedback debajo de cada paso, con la opción de ocultar y mostrar, para que el usuario que está revisando el flujo de trabajo en desarrollo pueda dejar comentarios al encargado de la creación o versionamiento del curso.
 	\item La UI tiene elementos de status que indican que cierta parte es “new” o nueva, “approved” o aprobada y “rejected” o rechazada.
 	\item Los pasos tienen regiones que permiten aceptar o rechazar los campos propuestos por los desarrolladores del curso. Por lo tanto, deben tener elementos de UI que indiquen al usuario que puede aprobar o rechazar cada parte.
 \end{itemize}
-Además de los criterios de aceptación, había que volver a actualizar el buzón de entrada para que acepten los cambios que tiene la historia de usuario. Debido a que más de una persona puede revisar el Workflow y podría trancar el proceso si es que no se le notifica debidamente que hay nuevos cambios que revisar.
+Además de los criterios de aceptación, había que volver a actualizar el buzón de entrada para que acepten los cambios que tiene la historia de usuario. Debido a que más de una persona puede revisar el flujo de trabajo y podría trancar el proceso si es que no se le notifica debidamente que hay nuevos cambios que revisar.
 
 Algunas de las tareas descompuestas de la historia de usuario son las siguientes:
 \begin{itemize}
-	\item Actualizar el visualizador de Workflow para que pueda soportar la nueva característica de aprobación o rechazo de cada parte.
+	\item Actualizar el visualizador de flujo de trabajo para que pueda soportar la nueva característica de aprobación o rechazo de cada parte.
 	\item Actualizar el buzón de entrada de Cursos.
 	\item Pruebas de funcionamiento.
 \end{itemize}
 
 La historia se cerró en el sprint 50 con 3 puntos de historia y 68hs cargadas de desarrollo
 
-\subsection{Learning Outcomes}
+\subsection{Competencias de curso}
 Esta historia tiene como propósito de crear o versionar competencias para el curso a ser creado o versionado. 
 
 La organización proporcionó de modelos de pantallas para el nuevo paso y era un criterio de aceptación de parte del ticket que siga el mismo formato.
 
 La historia de usuario tiene como descripción: “Como especialista de Curriculum de eLumen, me gustaría ser capaz de articular las competencias de mi nuevo curso”.
 
-Como criterio de aceptación de la historia fue la de agregar el Workflow de competencias en el Workflow de cursos. Algunas de las tareas de la historia fueron:
+Como criterio de aceptación de la historia fue la de agregar el flujo de trabajo de competencias en el flujo de trabajo de cursos. Algunas de las tareas de la historia fueron:
 \begin{itemize}
-	\item Modificar la base de datos para que soporte el nuevo modelo de datos de las competencias dentro de Workflow de curso.
+	\item Modificar la base de datos para que soporte el nuevo modelo de datos de las competencias dentro de flujo de trabajo de curso.
 	\item Modificar o agregar clases de las entidades que van a ser usadas durante la historia.
-	\item Actualizar la plantilla de Workflow para que soporte el nuevo paso para la creación o versionamiento de competencias.
-	\item Actualizar el visualizador de Workflow para que soporte el nuevo paso de competencias.
+	\item Actualizar la plantilla de flujo de trabajo para que soporte el nuevo paso para la creación o versionamiento de competencias.
+	\item Actualizar el visualizador de flujo de trabajo para que soporte el nuevo paso de competencias.
 	\item Actualizar los servicios de guardado y de versionamiento de cursos y competencias.
 	\item Pruebas de nuevas funcionalidades.
 \end{itemize}
 
 La historia fue cerrada en el sprint 51 e iniciada en el sprint 50 con un total de 76hs cargadas en el sistema.
 
-\subsection{Curriculum: Assign Classification Codes}
+\subsection{Codigos de clasificación de curso}
 La siguiente historia tiene como propósito la de asignar Classification Codes a los cursos.
 
 Para entrar en contexto, habría que definir primero que son los Taxonomy of Programs (TOP) o taxonomía de programas en español.
@@ -149,7 +149,7 @@ Algunos usos a los códigos TOP:
 	\item En contabilidad vocacional estudiantil, para reportes de compleción de programas y cursos de ciertos programas vocacionales.
 \end{itemize}
 
-La descripción de la historia fue la siguiente: “Como miembro del comité curricular, me gustaría ser capaz de asignar a mis cursos de códigos de clasificación como parte de la aprobación de mis workflows para asegurar que estén correctos, como esto es motivo de rechazo en la oficina del canciller del Estado”.
+La descripción de la historia fue la siguiente: “Como miembro del comité curricular, me gustaría ser capaz de asignar a mis cursos de códigos de clasificación como parte de la aprobación de mis flujo de trabajos para asegurar que estén correctos, como esto es motivo de rechazo en la oficina del canciller del Estado”.
 
 Algunas de las tareas fueron las siguientes:
 \begin{itemize}
