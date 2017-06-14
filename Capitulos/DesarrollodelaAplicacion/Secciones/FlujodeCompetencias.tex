@@ -1,21 +1,21 @@
 \section{Flujo de trabajo para el versionamiento de competencias}
 \subsection{Versionamiento de competencias}
-Esta historia de usuario tenía como descripción los siguiente \enquote{Como encargado del sistema de gestión de competencias, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas}.
+Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como encargado del sistema de gestión de competencias, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas}}.
 
 Algunas tareas que se definieron en la historia de usuario son las siguientes:
 \begin{itemize}
 	\item Investigar y diseñar el versionamiento de las competencias. La misma fue desarrollada de manera en que toda competencia versionada apunta al origen y el origen se apunta a sí mismo, de esta manera se puede saber la familia de versiones de una competencia.
 	\item Actualizar todos esos lugares de la aplicación que listan las competencias, donde solamente deberían traer las competencias actuales.
 	\item Manejar la distribución de competencias a periodos futuros, de manera que una competencia no pueda ser distribuida a periodos en las que no tiene validez.
-	\item Diseñar y mantener pruebas automatizadas con Selenium.
+	\item Diseñar y mantener pruebas automatizadas.
 \end{itemize}
 
 Fue desarrollado durante tres iteraciones con un total de 170 horas cargadas en el sistema, debido a la complejidad a la hora de migrar los datos ya existentes de todas las universidades y por la cantidad de servicios que debían ser modificados.
 
 \subsection{Flujo de trabajo simple}
-En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo donde las plantillas de los flujos de trabajo pueden ser creados, editados y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del flujo de trabajo si así lo decide en el futuro. Inicialmente se considera un solo paso para la iteración inicial de desarrollo.
+En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo donde las plantillas de los flujos de trabajo pueden ser creados, editados, y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del flujo de trabajo si así lo decide en el futuro. Inicialmente se considera un solo paso para la iteración inicial de desarrollo.
 
-Esta historia de usuario tenía como descripción los siguiente \enquote{Como coordinador del AMS, me gustaría ser capaz de crear flujos de trabajo simples para administrar la aprobación de revisiones de competencias y que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus}.
+Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como coordinador del AMS, me gustaría ser capaz de crear flujos de trabajo simples para administrar la aprobación de revisiones de competencias y que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus}}.
 
 La historia tiene los siguientes criterios de aceptación:
 \begin{itemize}
@@ -31,15 +31,15 @@ En los mockups entregados para el desarrollo se contemplan trabajos futuros dond
 
 Además, se da inicio al desarrollo de plantillas de flujos de trabajo con las competencias, donde se podía asignar un tipo de flujo para cada plantilla ya sea de creación o versionamiento de los diferentes niveles de competencias.
 
-Como las plantillas era una funcionalidad conocida y utilizada en otra parte de la aplicación, se imitó el comportamiento de la misma utilizando las mismas tablas para el almacenamiento de los datos en la base de datos relacional como requisito no funcional de la organización. Se diseñaron las nuevas pantallas con la definición de las plantillas de flujo de trabajo y también la pantalla para listar las mismas. En la misma el usuario administrador puede crear, editar si aún no ha sido usada, eliminar y clonar plantillas.
+Como las plantillas era una funcionalidad conocida y utilizada en otra parte de la aplicación, se imitó el comportamiento de la misma utilizando las mismas tablas para el almacenamiento de los datos en la base de datos relacional como requerimiento no funcional de la organización. Se diseñaron las nuevas pantallas con la definición de las plantillas de flujo de trabajo y también la pantalla para listar las mismas. En la misma el usuario administrador puede crear, editar si aún no ha sido usada, eliminar, y clonar plantillas.
 
 La historia de usuario fue desarrollada durante una iteración con un total de 90 horas cargadas en el sistema.
 
-\subsection{Aprobación de pasos completados del flujo de trabajo para competencias}
+\subsection{Aprobación de pasos completados de flujos de trabajo}
 
-Luego de la historia de diseño de las plantillas y un flujo de trabajo simple para creación o versionamiento de competencias, el siguiente paso es que un usuario designado desde la plantilla pueda iniciar y otro pueda aprobar el proceso de creación o revisión de competencias de cualquier nivel.
+Luego de la historia en la que se diseñaron las plantillas y fue desarrollado un flujo de trabajo simple inicial para creación o versionamiento de competencias, el siguiente paso es que un usuario designado desde la plantilla pueda iniciar y otro pueda aprobar el proceso de creación o revisión de competencias de cualquier nivel.
 
-Esta historia de usuario tenía como descripción los siguiente \enquote{Como evaluador de un flujo de trabajo, me gustaría un simple proceso paso por paso para que pueda revisar y/o aprobar competencias de manera sencilla e intuitiva}.
+Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como evaluador de un flujo de trabajo, me gustaría un simple proceso paso por paso en el que pueda revisar y/o aprobar competencias de manera sencilla e intuitiva}}.
 
 La historia de usuario tiene los siguientes criterios de aceptación:
 \begin{itemize}
@@ -54,7 +54,7 @@ Como en las reuniones de demostración de cada sprint se notaban ciertos aspecto
 La historia de usuario fue desarrollada durante una iteración en un periodo de tiempo de 44 horas cargadas en el sistema.
 
 \subsection{Rechazar pasos completados del flujo de trabajo}
-Esta historia de usuario tenía como descripción los siguiente \enquote{Como evaluador de flujos de trabajo, me gustaría ser capaz de rechazar partes de los mismos y poder dar feedback a partes que no cumplen con nuestros estándares}.
+Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como evaluador de flujos de trabajo, me gustaría ser capaz de rechazar partes de los mismos y poder dar feedback a partes que no cumplen con nuestros estándares}}.
 
 \begin{itemize}
 	\item Diseño e implementación de funcionalidad de rechazo de pasos en los flujos de trabajo.
