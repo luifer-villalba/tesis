@@ -1,6 +1,62 @@
 \chapter{Desarrollo de la aplicación} % Main chapter title
 \label{capitulo6} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo6}
 
+\paragraph*{Épicas terminadas}
+\begin{enumerate}
+	\item Análisis de herramientas utilizadas y posibles potenciales para el desarrollo del módulo.
+	\item Diseño de modelo de datos para versionamiento de competencias, cursos y programas.
+	\item Desarrollo de flujo de trabajo para el versionamiento de competencias.
+	\item Desarrollo de buzón de entrada para evaluadores y colaboradores del flujo de trabajo.
+	\item Versionamiento encadenado de evaluaciones debido al versionamiento de competencias.
+	\item Desarrollo de flujo de trabajo para el versionamiento de cursos.
+	\item Desarrollo de flujo de trabajo para el versionamiento de programas de estudio.
+ 	\item Soporte de etapas en los flujos de trabajo.
+	\item Desarrollo de reportes de versiones de cursos
+\end{enumerate}
+
+\paragraph*{Épicas pendientes}
+\begin{enumerate}
+ 	\setcounter{enumi}{9}
+	\item Actualizar el AMS para que tome las versiones de competencias cursos y programas correspondientes en los periodos
+	\item Test en profundidad de la aplicación
+	\item Validación por parte de los usuarios del módulo de gestión curricular.
+\end{enumerate}
+
+\resizebox{\columnwidth}{!}{%
+\begin{ganttchart}[vgrid, hgrid, bar height=0.7, y unit chart=0.5cm, progress=today, today=24, bar label text={#1$\rightarrow$}, progress label text={#1$\%$}, today label=HOY]{1}{28}
+\gantttitle{2016}{12}
+\gantttitle{2017}{16} \ganttnewline
+\gantttitle{Jul}{2}
+\gantttitle{Ago}{2}
+\gantttitle{Set}{2}
+\gantttitle{Oct}{2}
+\gantttitle{Nov}{2}
+\gantttitle{Dic}{2}
+\gantttitle{Ene}{2}
+\gantttitle{Feb}{2}
+\gantttitle{Mar}{2}
+\gantttitle{Abr}{2}
+\gantttitle{May}{2}
+\gantttitle{Jun}{2} 
+\gantttitle{Jul}{2}
+\gantttitle{Ago}{2} \\
+\ganttbar[progress=100]{1}{1}{1} \\
+\ganttbar[progress=100]{2}{2}{2} \\
+\ganttbar[progress=100]{3}{3}{6} \\
+\ganttbar[progress=100]{4}{5}{10} \\
+\ganttbar[progress=100]{5}{11}{16} \\
+\ganttbar[progress=100]{6}{11}{23} \\
+\ganttbar[progress=100]{7}{13}{21} \\
+\ganttbar[progress=100]{8}{23}{24} \\
+\ganttbar[progress=100]{9}{22}{23} \\
+\ganttbar[progress=100]{10}{22}{23} \\
+\ganttbar[progress=85]{11}{12}{25} \\
+\ganttbar[progress=90]{12}{1}{26} \\
+\ganttbar[progress=90]{14}{1}{26} 
+\end{ganttchart}
+}
+
+
 \input{Capitulos/DesarrollodelaAplicacion/Secciones/Analisis}
 \input{Capitulos/DesarrollodelaAplicacion/Secciones/DisenodeVersionamiento}
 \input{Capitulos/DesarrollodelaAplicacion/Secciones/FlujodeCompetencias}

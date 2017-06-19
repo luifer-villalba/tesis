@@ -1,6 +1,20 @@
-\section{Reportes de versiones de cursos}
-\subsection{Reporte de registro de esquemas de curso}
-La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como especialista curricular, me gustaría ser capaz de hacer reportes de registro de esquemas de curso, para que pueda de esta manera ser compartidas por los diferentes colaboradores}}.
+\section{Reportes y notificaciones para flujos de trabajo}
+\begin{table}[H]
+\centering
+\caption{Historias de usuario para los reportes y notificaciones de versiones de cursos}
+\label{epic:9}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+Historias de usuario                     			& HE & HC & PH & PA & CS \\ \midrule
+Notificaciones para las partes del flujo de trabajo & 58 & 60 &  5 &  1 &  1 \\
+Reporte de esquemas de curso 						& 88 & 91 &  8 &  2 &  2 \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+
+\subsection{Notificaciones para las partes del flujo de trabajo}
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como especialista curricular, me gustaría que mi equipo de diseño y revisión de flujos de trabajo reciban las notificaciones cuando tengan trabajos pendientes (y alertas cuando este retrasado), para que pueda manejar mejor mis procesos curriculares}}.
 
 Como criterios de aceptación se encuentran los siguientes:
 \begin{itemize}
@@ -17,3 +31,25 @@ Algunas de las tareas identificadas en la planificación de las iteraciones eran
 \end{itemize}
 
 La historia fue finalizada en tres iteraciones con una cantidad de 60 horas cargadas en el sistema.
+
+\subsection{Reporte de esquemas de curso}
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como especialista curricular, me gustaría ser capaz de hacer reportes de registro de esquemas de curso, para que pueda de esta manera ser compartidas por los diferentes colaboradores}}.
+
+Como criterios de aceptación se encuentran los siguientes:
+\begin{itemize}
+	\item Reporte diseñado por el equipo de diseño curricular.
+	\item Incluir competencias es opcional para el reporte.
+	\item Incluir alineación de competencias es opcional para el reporte.
+	\item Formatos en DOC, PDF o HTML (no Excel).
+	\item Se puede ejecutar desde la lista de cursos o de la lista de reportes.
+	\item Cuando se corre desde la lista de reportes se pueden elegir uno o más cursos.
+\end{itemize}
+
+Algunas de las tareas identificadas en la planificación de las iteraciones eran los siguientes:
+\begin{itemize}
+	\item Diseñar e implementar el reporte.
+	\item Implementar los métodos que acceden a la base de datos.
+	\item Diseñar e implementar la página de generación de reportes.
+\end{itemize}
+
+La historia fue finalizada en tres iteraciones con una cantidad de 111 horas cargadas en el sistema.

@@ -1,4 +1,26 @@
 \section{Flujo de trabajo para el versionamiento de cursos}
+\begin{table}[H]
+\centering
+\caption{Historias de usuario para el flujo de trabajo para el versionamiento de cursos}
+\label{epic:6}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+Historias de usuario              & HE & HC & PH & PA & CS \\ \midrule
+Versionamiento de cursos          & 84 & 96 & 13 & 8 & 2 \\
+Información básica de curso       & 46 & 53 & 5 & 1 & 1 \\
+Horas y unidades de evaluación    & 48 & 66 & 5 & 0 & 1 \\
+Especificaciones de curso         & 40 & 40 & 5 & 2 & 1 \\
+Requisitos de curso               & 44 & 40 & 5 & 3 & 1 \\
+Revisar y aprobar curso           & 48 & 68 & 5 & 2 & 1 \\
+Competencias de curso             & 80 & 76 & 8 & 2 & 1 \\
+Esquema de curso                  & 40 & 48 & 5 & 1 & 1 \\
+Códigos de clasificación de curso & 56 & 80 & 5 & 3 & 1 \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+
+
 \subsection{Versionamiento de cursos}
 Esta historia de usuario fue realizada en tres iteraciones con un total de 96 horas cargadas, debido a que los cambios que suponía conlleva a una migración importante de datos de los usuarios.
 
@@ -146,7 +168,7 @@ Esta historia tiene como propósito de crear o versionar competencias para el cu
 
 La organización ha proporcionado mockups (figura \ref{course_learning_outcomes}) para el paso a desarrollarse y era un criterio de aceptación de parte del ticket que siga el mismo formato.
 
-La historia de usuario tiene como descripción: \enquote{\textit{Como encargado del formulario de curso, me gustaría ser capaz de articular las competencias de mi nuevo curso}}.
+La historia de usuario tiene como descripción: \enquote{\textit{Como encargado del formulario de curso, me gustaría ser capaz de articular las competencias de mi nuevo curso, para de esa manera de tener que estar añadiendo una a una después de completar el proceso de creación de cursos con el flujo}}.
 
 Como criterio de aceptación de la historia fue la de agregar el flujo de trabajo de competencias en el flujo de trabajo de cursos. Algunas de las tareas de la historia fueron:
 \begin{itemize}
@@ -168,7 +190,22 @@ La historia ha sido terminada en dos iteraciones con un total de 76 horas cargad
 \end{figure}
 
 \subsection{Esquema de curso}
-[COMPLETAR]
+Esta historia tiene como propósito de diseñar la pantalla para un nuevo paso para el flujo de trabajo. 
+
+La organización ha proporcionado mockups (figura \ref{course_outline}) para el paso a desarrollarse y era un criterio de aceptación de parte del ticket que siga el mismo formato.
+
+La historia de usuario tiene como descripción: \enquote{\textit{Como encargado del formulario de curso, me gustaría ser capaz de agregar el esquema de un curso, para de esta manera dar un resúmen de curso para el que esté revisando mi flujo y para que los estudiantes puedan tener una idea de se trata una vez que se curse}}.
+
+Como criterio de aceptación de la historia fue la de agregar el flujo de trabajo de competencias en el flujo de trabajo de cursos. Algunas de las tareas de la historia fueron:
+\begin{itemize}
+	\item Modificar la base de datos donde se tendría que almacenar los nuevos campos de esquema ya sea para el curso y para el flujo que se desarrolla.
+	\item Modificar o agregar clases de las entidades que van a ser usadas durante la historia.
+	\item Actualizar la plantilla de flujo de trabajo para que soporte el nuevo paso de esquema de cursos.
+	\item Actualizar el visualizador de flujo de trabajo para que soporte el nuevo paso de competencias.
+	\item Actualizar los servicios de guardado y de revisión para que soporte nuevo paso.
+\end{itemize}
+
+La historia ha sido terminada en dos iteraciones con un total de 48 horas cargadas en el sistema.
 
 \begin{figure}[H]
 \centering
