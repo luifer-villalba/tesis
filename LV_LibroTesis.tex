@@ -35,7 +35,7 @@ singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespac
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
-%parskip, % Uncomment to add space between paragraphs
+parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
 headsepline, % Uncomment to get a line under the header
 ]{MastersDoctoralThesis} % The class file specifying the document structure
@@ -48,7 +48,13 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{flexisym}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage{booktabs}
-\usepackage{indentfirst}
+
+% \usepackage{indentfirst}
+% \setlength\parskip{.5\baselineskip plus .1\baselineskip  minus .1\baselineskip}
+% \setlength{\parindent}{1em}
+
+\setlength{\parindent}{0.5cm}
+
 \usepackage[ddmmyyyy]{datetime}
 
 \usepackage{titlesec}
@@ -149,15 +155,17 @@ headsepline, % Uncomment to get a line under the header
 
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1.5cm] % Horizontal line
+\HRule \\[1cm] % Horizontal line
 
 \Large \emph{Autor:}\\
-\Large \href{}{\authorname} \\[1cm] % Author name - remove the \href bracket to remove the link
+\Large \href{}{\authorname} \\[5mm] % Author name - remove the \href bracket to remove the link
+\Large \emph{Tutores:}\\
+\Large \href{}{Ing. Sebastián \textsc{Ortíz} \\ Ing. Wilfrido \textsc{Inchaustti}} \\[1cm]
 
 \Large \facname\\ % Research group name and department name
 \Large \deptname \\[5mm]
 
-{\large\today}\\[1cm] % Date
+{\large\the\year}\\[1cm] % Date
 
 \end{center}
 \end{titlepage}
@@ -245,7 +253,7 @@ headsepline, % Uncomment to get a line under the header
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\abstractname}{Resumen}
+\renewcommand{\abstractname}{Abstract}
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
@@ -289,6 +297,20 @@ The acknowledgments and the people to thank go here, don't forget to include you
 
 \textbf{AMS} & \textbf{A}ssessment \textbf{M}anagement \textbf{S}ystem\\
 \textbf{CMS} & \textbf{C}urriculum \textbf{M}anagement \textbf{S}ystem \\
+\textbf{UX} & \textbf{U}ser e\textbf{X}perience \\
+\textbf{LMS} & \textbf{L}earning \textbf{M}anagement \textbf{S}ystem \\
+\textbf{SaaS} & \textbf{S}oftware \textbf{a}s \textbf{a} \textbf{S}ervice \\
+\textbf{SLO} & \textbf{S}tudent \textbf{L}earning \textbf{O}utcomes \\
+\textbf{PCAH} & \textbf{P}rogram and \textbf{C}ourse \textbf{A}pproval \textbf{H}andbook \\
+\textbf{INVEST} & e\textbf{I}ndependent \textbf{N}egotiable \textbf{V}aluable \textbf{E}stimatable \textbf{S}mall \textbf{T}estable \\
+\textbf{HCI} & \textbf{H}uman \textbf{C}omputer \textbf{I}nteraction \\
+\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
+\textbf{DECA} & \textbf{DE}cision a\textbf{CA}demic \\
+\textbf{AWS} & \textbf{A}mazon \textbf{W}eb \textbf{S}ervices \\
+\textbf{VCS} & \textbf{V}ersion \textbf{C}ontrol \textbf{S}ystem \\
+\textbf{MVC} & \textbf{M}odel \textbf{V}iew \textbf{C}ontroller \\
+\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
+\textbf{POJO} & \textbf{P}lain \textbf{O}ld \textbf{J}ava \textbf{O}bject \\
 
 \end{abbreviations}
 
