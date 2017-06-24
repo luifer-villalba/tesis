@@ -1,9 +1,9 @@
 \section{Diseño}
-Se procederá a documentar el proceso de desarrollo de parte del equipo encargado del desarrollo del módulo de Curriculum, debido a que dicho módulo es un proyecto y está dividido en varias épicas utilizadas para implementar las exigencias de los clientes en los Estados Unidos.
+El módulo como proyecto de desarrollo enfocado a la metodología Ágil se encuentra dividido en varias épicas para partir en las funcionalidades.
 
-Una épica se encuentra dividida en varias historias de usuario, donde las historias de usuario tienen el propósito de entregar valores de negocio al cliente en un periodo máximo establecido de 2 semanas. Estas historias de usuario pueden ser a la vez divididas buscando la simplicidad de las historias donde cada una debe seguir la práctica INVEST\footnote{de sus siglas al español Independientes, Negociables, Valoradas, Estimables, Pequeñas y Verificables.} de la metodología ágil.
+Una épica se encuentra dividida en varias historias de usuario, donde las historias de usuario tienen el propósito de entregar valores de negocio al cliente en un periodo establecido de 2 semanas como sprint. Estas historias de usuario pueden ser a la vez divididas buscando la simplicidad de las historias donde cada una debe seguir la práctica INVEST de la metodología Ágil.
 
-Una épica consiste en un conjunto de historias de usuario que los desarrolladores pueden terminar en un sprint, y cada una está compuesta de tareas que tienen como propósito servir al desarrollador como recordatorio de algunas labores pendientes a la hora de desarrollar la historia. Cada tarea debía tener un encargado, pero eso no significaba que esa persona debía hacer sola la implementación.
+Cada historia puede estar compuesta de tareas que tienen como propósito servir al desarrollador como recordatorio de algunas labores pendientes a la hora de desarrollar la historia. Cada tarea debía tener un encargado, pero eso no significaba que esa persona debía hacer sola la implementación.
 
 \begin{figure}[H]
 \centering
@@ -14,15 +14,17 @@ Una épica consiste en un conjunto de historias de usuario que los desarrollador
 
 El PO\footnote{de sus siglas en inglés, Product Owner, que significa en español dueño del producto.} se encarga de la creación de épicas e historias de usuario, en caso de que la historia sea muy grande para terminar en un solo sprint o iteración se vuelve a partir en historias más pequeñas. 
 
-Se ha establecido que cada sprint consta de 2 semanas de trabajo, donde los desarrolladores como equipo se comprometen a entregar cierto valor de negocio que ellos estiman poder terminar en dicho periodo. Sin embargo, en caso de que el equipo considere que la totalidad de historias no podrán ser entregadas antes de que termine el periodo se pasa al siguiente sprint o se achica la historia minimizando los criterios de aceptación y los restantes se agregan en otra historia de usuario para las siguientes iteraciones.
+En el caso de estudio, cada sprint consta de 2 semanas de trabajo, donde los desarrolladores como equipo se comprometen a entregar cierto valor de negocio que ellos estiman poder terminar en dicho periodo. Sin embargo, en caso de que el equipo considere que la totalidad de historias no podrán ser entregadas antes de que termine el periodo se pasa al siguiente sprint o se achica la historia minimizando los criterios de aceptación y los restantes se agregan en otra historia de usuario para las siguientes iteraciones.
 
 Cada equipo tiene un líder, donde cada líder tiene como rol ser la brecha que une al PO con los desarrolladores. El PO se reúne con el líder de cada equipo para verificar las prioridades de las historias de usuario que están pendientes en el backlog\footnote{Bolsa de historias de usuarios pendientes.}. 
 
-Al terminar una historia de usuario, se deben cumplir los criterios de aceptación para que sea considerada como realizada y el equipo de validación proceda con la validación de las nuevas características del sistema. En caso de que la historia no consiga cumplir los criterios de aceptación correspondientes se considera que la historia no está terminada y que debe mantenerse abierta o se debe volver a abrir en caso de que fue cerrada. Estos criterios de aceptación se verifican primeramente por los mismos desarrolladores antes de cambiar el estado de la historia a resuelto o “done”. Luego, la historia pasa a ser verificada por un grupo experto en dominios de didáctica en universidades norteamericanas incluyendo a un PhD en educación. Si en las dos partes la historia es aprobada, entonces pasa al estado de realizado. 
+En la figura \ref{workflow} se puede apreciar el ciclo de vida de las historias de usuario, donde una vez que es creada pasa al estado de \enquote{TODO}, que quiere decir que está pendiente a ser desarrollada. Una vez que un miembro del equipo de desarrollo comienza una historia o tarea pasa al estado de \enquote{IN PROGRESS} y cuando termina pasa al estado de \enquote{UNDER REVIEW}. 
 
-Cualquier otro problema o error de código que tenga la nueva característica se debe crear un ticket de bug especificando como reproducir el problema y el comportamiento esperado. En caso de no poder reproducir este comportamiento se pide más información al respecto o pasa al estado de “won’t do” en caso de que el comportamiento ya no se pueda reproducir.
+En dicho estado se revisa la funcionalidad mediante validaciones de parte de los miembros del equipo de desarrollo y de parte del equipo de expertos en dominios de didáctica en universidades norteamericanas incluyendo a un PhD en educación, donde se deben cumplir los criterios de aceptación para que pase al estado de \enquote{CLOSED} que quiere decir que se terminó y que la historia fué aprobada.  
 
-HABLAR MAS DE ESTO \ref{workflow}
+En caso de que la historia no consiga cumplir los criterios de aceptación correspondientes durante la validación se considera que la historia no está terminada y que debe pasar al estado de \enquote{REOPEN}, en este estado se puede pasar ya sea desde el estado \enquote{UNDER REVIEW} o si ya está en el estado \enquote{CLOSED}.
+
+Cualquier otro problema o error de código que tenga la nueva funcionalidad se debe crear un ticket de error o bug especificando como reproducir el problema y el comportamiento esperado. En caso de no poder reproducir este comportamiento se pide más información al respecto o pasa al estado de \enquote{CLOSED} en caso de que el comportamiento ya no se pueda reproducir.
 
 \begin{figure}[H]
 \centering
@@ -30,6 +32,8 @@ HABLAR MAS DE ESTO \ref{workflow}
 \caption{Flujo de desarrollo de historias de usuario.}
   \label{workflow}
 \end{figure}
+
+Al inicio del diseño de la aplicación se llevará a cabo una serie de diseños de funcionalidad y usabilidad que llevar a la mejor experiencia de uso del módulo de gestión curricular, donde dichos diseños serán validados por el equipo en los Estados Unidos antes de iniciar el desarrollo.
 
 \subsection{SCRUM}
 Scrum es un proceso en el que se aplican de manera regular un conjunto de prácticas para trabajar colaborativamente, en equipo, y obtener el mejor resultado posible de un proyecto. Estas prácticas se apoyan unas a otras y su selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos.
@@ -49,8 +53,6 @@ El proceso parte de la lista de objetivos o requisitos priorizada del producto
 \caption{Flujo de la técnica SCRUM.}
   \label{flujo_scrum}
 \end{figure}
-
-[HABLAR MAS DE ESTE FLUJO]
 
 \subsection{Planificación de iteraciones}
 El primer día de la iteración se realiza la reunión de planificación de la iteración y consta de dos partes:
