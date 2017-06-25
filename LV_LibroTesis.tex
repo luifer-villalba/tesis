@@ -26,7 +26,7 @@
 
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
-oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+% oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 %chapterinoneline,% Have the chapter title next to the number in one single line
 english, % ngerman for German
 spanish,
@@ -35,7 +35,7 @@ singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespac
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
-%parskip, % Uncomment to add space between paragraphs
+parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
 headsepline, % Uncomment to get a line under the header
 ]{MastersDoctoralThesis} % The class file specifying the document structure
@@ -48,7 +48,13 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{flexisym}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage{booktabs}
-\usepackage{indentfirst}
+
+% \usepackage{indentfirst}
+% \setlength\parskip{.5\baselineskip plus .1\baselineskip  minus .1\baselineskip}
+% \setlength{\parindent}{1em}
+
+\setlength{\parindent}{0.5cm}
+
 \usepackage[ddmmyyyy]{datetime}
 
 \usepackage{titlesec}
@@ -64,10 +70,24 @@ headsepline, % Uncomment to get a line under the header
 \addbibresource{references.bib} % The filename of the bibliography
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
+\DefineBibliographyStrings{spanish}{%
+  andothers = {et\addabbrvspace al\adddot}
+}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+
+% Paquetes para las tablas
+\usepackage{tablefootnote}
+
+% Paquete para Gantt
+\usepackage{pgfgantt}
+
+
+% BULLET a DASH
+\usepackage{enumitem}
+\setlist[itemize]{label=$-$}
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -135,15 +155,17 @@ headsepline, % Uncomment to get a line under the header
 
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1.5cm] % Horizontal line
+\HRule \\[1cm] % Horizontal line
 
 \Large \emph{Autor:}\\
-\Large \href{}{\authorname} \\[1cm] % Author name - remove the \href bracket to remove the link
+\Large \href{}{\authorname} \\[5mm] % Author name - remove the \href bracket to remove the link
+\Large \emph{Tutores:}\\
+\Large \href{}{\supname} \\[1cm]
 
 \Large \facname\\ % Research group name and department name
 \Large \deptname \\[5mm]
 
-{\large\today}\\[1cm] % Date
+{\large\the\year}\\[1cm] % Date
 
 \end{center}
 \end{titlepage}
@@ -179,7 +201,7 @@ headsepline, % Uncomment to get a line under the header
 \facname\\ % Research group name and department name
 \deptname \\[2cm]
 
-{\large\today}\\[1cm] % Date
+{\large\the\year}\\[1cm] % Date
 
 \vfill
 
@@ -231,11 +253,25 @@ headsepline, % Uncomment to get a line under the header
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\abstractname}{Resumen}
+\renewcommand{\abstractname}{Abstract}
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+En el proyecto final se toma como caso de estudio con enfoque en interacción humano-computador y en observación participante al diseño e implementación de un módulo de gestión curricular para un sistema de gestión de evaluaciones basadas en competencias académicas, la cual tiene sus cimientos en el mercado y también dispone de clientes utilizando la misma. 
 
+Se diseñó la manera de integrar y estructurar procesos separados de validación de competencias, cursos, y programas para el estado de California en un sistema de gestión de evaluaciones basadas en competencias. Dicho proceso era un proceso que se hacía en papel y tenía sus falencias debido a que el proceso requería mucho tiempo en revisar y aprobar el formulario, y la complejidad del flujo aumentaba cuando habían más personas colaboradoras o evaluadoras en el proceso.
+
+Debido a que los requerimientos eran cambiantes y el equipo que diseña no dispone de un panorama completo de las funcionalidades del módulo curricular, la elección de la metodología ágil para el desarrollo del proyecto fue utilizada debido a que la misma permite el desarrollo iterativo e incremental del software con validaciones del cliente como proceso de desarrollo, que en este caso el equipo de validación tomará el rol de cliente debido al conocimiento y experiencia en didáctica de sus miembros.
+
+% Al diseñar los flujos de trabajo para el diseño y revisión de formularios de competencias, cursos, y programas permitió a los profesores encargados de los mismos y evaluadores de dichos formularios, seguir el proceso de una manera intuitiva buscando la mejor experiencia de usuario y con menos cuellos de botella. Como ayuda, que cada paso genera un mensaje que el usuario puede acceder en su buzón de entrada en caso de que tuviera trabajo pendiente.
+
+% En el desarrollo del módulo se utilizaron muchas de las tecnologías y herramientas que disponía el sistema como requerimiento no funcional de parte de la organización. El uso de estas tablas en común para la funcionalidad de plantillas de flujos de trabajo fue una decisión errónea, debido a que agregaba complejidad a las mismas y además las pruebas de componentes se convertían en pruebas de regresión debido a la complejidad de la estructura. 
+
+% Sin embargo, al utilizar MySQL para guardar el flujo de trabajo y todos sus datos temporales no fue la mejor decisión debido a que la funcionalidad y el estándar tienen cambios constantes en cuanto a datos que tendrían que guardarse, y migrar los datos y columnas de los usuarios aumenta siempre la complejidad de la historia de usuario.
+
+% Debido a la capa adicional de comunicaciones con el usuario final personificada por el equipo de Estados Unidos (que en nuestro caso actúa como cliente), la realimentación de valor real o valor aún necesario provisto al usuario final es lenta e implica grandes cambios luego de varios sprints.
+
+% A pesar de todas las falencias de desarrollo, el módulo tuvo resultados positivos por parte de los usuarios finales ya que es una herramienta que automatiza trabajos de validación curricular para las instituciones. Además, al tener comentarios acerca de qué habría que mejorar en la aplicación y con la utilización de la metodología ágil se permitió que se creen nuevas historias de usuario para algunos retoques futuros en el módulo curricular. 
 
 
 \end{abstract}
@@ -275,6 +311,20 @@ The acknowledgments and the people to thank go here, don't forget to include you
 
 \textbf{AMS} & \textbf{A}ssessment \textbf{M}anagement \textbf{S}ystem\\
 \textbf{CMS} & \textbf{C}urriculum \textbf{M}anagement \textbf{S}ystem \\
+\textbf{UX} & \textbf{U}ser e\textbf{X}perience \\
+\textbf{LMS} & \textbf{L}earning \textbf{M}anagement \textbf{S}ystem \\
+\textbf{SaaS} & \textbf{S}oftware \textbf{a}s \textbf{a} \textbf{S}ervice \\
+\textbf{SLO} & \textbf{S}tudent \textbf{L}earning \textbf{O}utcomes \\
+\textbf{PCAH} & \textbf{P}rogram and \textbf{C}ourse \textbf{A}pproval \textbf{H}andbook \\
+\textbf{INVEST} & \textbf{I}ndependent \textbf{N}egotiable \textbf{V}aluable \textbf{E}stimatable \textbf{S}mall \textbf{T}estable \\
+\textbf{HCI} & \textbf{H}uman \textbf{C}omputer \textbf{I}nteraction \\
+\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
+\textbf{DECA} & \textbf{DE}cision a\textbf{CA}demic \\
+\textbf{AWS} & \textbf{A}mazon \textbf{W}eb \textbf{S}ervices \\
+\textbf{VCS} & \textbf{V}ersion \textbf{C}ontrol \textbf{S}ystem \\
+\textbf{MVC} & \textbf{M}odel \textbf{V}iew \textbf{C}ontroller \\
+\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
+\textbf{POJO} & \textbf{P}lain \textbf{O}ld \textbf{J}ava \textbf{O}bject \\
 
 \end{abbreviations}
 
@@ -329,14 +379,14 @@ The acknowledgments and the people to thank go here, don't forget to include you
 % INTRODUCCION
 \include{Capitulos/Introduccion/main}
 
+% OBJETIVOS
+\include{Capitulos/Objetivos/main}
+
 % MARCO TEORICO
 \include{Capitulos/MarcoTeorico/main}
 
 % ESTADO DEL ARTE
 \include{Capitulos/EstadodelArte/main}
-
-% CASO DE ESTUDIO
-\include{Capitulos/CasodeEstudio/main}
 
 % PROPUESTA DE SOLUCION
 \include{Capitulos/PropuestadeSolucion/main}

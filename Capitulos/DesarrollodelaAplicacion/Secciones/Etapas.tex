@@ -1,6 +1,23 @@
 \section{Soporte de etapas en los flujos de trabajo}
+\begin{table}[H]
+\centering
+\caption{Historias de usuario para soporte de etapas en los flujos de trabajo}
+\label{epic:8}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+Historias de usuario                                             & HE & HC & PH & PA & CS \\ \midrule
+Roles de creación y edición para las partes de flujos de trabajo & 102& 112& 13 &  3 &  1 \\
+Diseño e implementación de etapas                                & 288& 505& 21 &  8 &  3 \\
+Mejora en comportamientos para las etapas por roles              & 84 & 108&  8 &  3 &  2 \\
+Composición de etapas y partes                                   & 216& 391& 13 &  3 &  3 \\
+Etapas y partes opcionales en la revisión del flujo              & 64 & 76 &  8 &  3 &  1 \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+
 \subsection{Roles de creación y edición para las partes de flujos de trabajo}
-La historia de usuario tiene como descripción lo siguiente \enquote{Como participante en el proceso curricular, podría no solo revisar nuevos cursos y programas, sino que también realizar pequeñas revisiones como parte del proceso o participe también en el paso de compleción del formulario.}.
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como participante en el proceso curricular, podría no solo revisar nuevos cursos y programas, sino que también realizar pequeñas revisiones como parte del proceso o participe también en el paso de compleción del formulario}}.
 
 Como criterios de aceptación se encuentran los siguientes:
 \begin{itemize}
@@ -22,7 +39,7 @@ La historia fue finalizada en tres iteraciones con una cantidad de 112 horas car
 
 
 \subsection{Diseño e implementación de Etapas}
-La historia de usuario tiene como descripción lo siguiente \enquote{Como administrador curricular quiero ser capaz de configurar mi plantilla de flujo de trabajo para que pueda dividir en etapas donde se especifiquen que roles pueden completar que funciona en una o múltiples secciones o partes de mi programa o curso.}. Y los criterios de aceptación consistían en el desarrollo de la pantalla que se puede apreciar en la figura \ref{visualize_changes}.
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como administrador curricular quiero ser capaz de configurar mi plantilla de flujo de trabajo para que pueda dividir en etapas donde se especifiquen que roles pueden completar que funciona en una o múltiples secciones o partes de mi programa o curso}}. Y los criterios de aceptación consistían en el desarrollo de la pantalla que se puede apreciar en la figura \ref{visualize_changes}.
 
 Como criterios de aceptación se encuentran los siguientes:
 \begin{itemize}
@@ -56,13 +73,13 @@ La historia fue finalizada en tres iteraciones con una cantidad de 505 horas car
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=125mm,scale=1]{Capitulos/DesarrollodelaAplicacion/Imagenes/workflow_stage}
+\includegraphics[width=125mm,scale=1]{Capitulos/DesarrollodelaAplicacion/Imagenes/workflow_template_stage}
 \caption{Mockup de la pantalla de plantillas con etapas por flujo.}
   \label{workflow_template_stage}
 \end{figure}
 
 \subsection{Mejora en comportamientos para las etapas por roles}
-La historia de usuario tiene como descripción lo siguiente \enquote{Como coordinador de educación a distancia, yo solo necesito revisar el esquema del curso para aquellos cursos diseñados para educación a distancia.}.
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como coordinador de educación a distancia, yo solo necesito revisar el esquema del curso para aquellos cursos diseñados para educación a distancia}}.
 
 El criterio de aceptación de la historia consistía en permitir que una etapa que no tiene roles asignados sea opcional.
 
@@ -77,13 +94,13 @@ Algunas de las tareas identificadas en la planificación de las iteraciones eran
 La historia fue finalizada en tres iteraciones con una cantidad de 108 horas cargadas en el sistema.
 
 \subsection{Composición de etapas y partes}
-La historia de usuario tiene como descripción lo siguiente \enquote{Como presidente curricular, me gustaría ser capaz de componer flujos de trabajo de cursos o programas y etapas (incluyendo actores en cada etapa y sus acciones), para que de esa manera se pueda modelar el proceso curricular en la aplicación.}.
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como presidente curricular, me gustaría ser capaz de componer flujos de trabajo de cursos o programas y etapas (incluyendo actores en cada etapa y sus acciones), para que de esa manera se pueda modelar el proceso curricular en la aplicación}}.
 
 Como criterios de aceptación se encuentran los siguientes:
 \begin{itemize}
 	\item Cada etapa puede contener una o más partes.
 	\item Los actores de cada etapa pueden asignarse actiones a cada parte, o a todas.
-	\item Etapas equivalentes no pueden bloquearse entre sí. Por ejemplo, si Suzy y Joe son evaluadores de tres partes, Joe no tiene que esperar que Suzy revise la parte 1 antes de que el pueda evaluar el step 2, es decir, ambos pueden evaluar sus partes en simultáneo.
+	\item Etapas equivalentes no pueden bloquearse entre sí. Por ejemplo, si Suzy y Joe son evaluadores de tres partes, Joe no tiene que esperar que Suzy revise la parte 1 antes de que el pueda evaluar la parte 2, es decir, ambos pueden evaluar sus partes en simultáneo.
 \end{itemize}
 
 Algunas de las tareas identificadas en la planificación de las iteraciones eran los siguientes:
@@ -97,8 +114,8 @@ Algunas de las tareas identificadas en la planificación de las iteraciones eran
 
 La historia fue finalizada en tres iteraciones con una cantidad de 391 horas cargadas en el sistema.
 
-\subsection{Etapas y partes por etapas opcionales en la revisión del flujo}
-La historia de usuario tiene como descripción lo siguiente \enquote{Como administrador curricular quiero ser capaz de configurar mi plantilla de flujo de trabajo para que pueda dividir en etapas donde se especifiquen que roles pueden completar que funciona en una o múltiples secciones o partes de mi programa o curso.}.
+\subsection{Etapas y partes opcionales en la revisión del flujo}
+La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como administrador curricular quiero ser capaz de configurar mi plantilla de flujo de trabajo para que pueda dividir en etapas donde se especifiquen que roles pueden completar que funciona en una o múltiples secciones o partes de mi programa o curso}}.
 
 Como criterios de aceptación se encuentran los siguientes:
 \begin{itemize}

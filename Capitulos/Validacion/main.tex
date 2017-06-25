@@ -1,16 +1,43 @@
 % Chapter 7
 
-\chapter{Validación del desarrollo} % Main chapter title
+\chapter{Validación del desarrollo} \label{capitulo7}
 
-\label{capitulo7} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo7}
+El flujo de validación de las historias de usuario es un proceso preciso, consistente y controlado por parte de los desarrolladores y de los miembros del equipo educativo. Entre las validaciones se encuentran las siguientes:
+\begin{itemize}
+	\item Entradas, salidas y funciones del módulo curricular.
+	\item Todos los requisitos no funcionales con sus respectivas pruebas. Entre ellas están las pruebas de rendimiento, fiabilidad, precisión y tiempos de respuesta.
+	\item Interacciones de usuario.
+	\item Funcionamiento en diferentes arquitecturas (plataformas, sistemas operativos, navegadores, etc.).
+	\item Límites de intervalos, valores por defecto y valores específicos que el módulo acepta.
+	\item Criterios de aceptación, especificaciones en los requerimientos, funcionalidades, o funciones implementadas en el software.
+\end{itemize}
 
-% Evaluación comparativa de los modelos
+Sin embargo, vale la pena resaltar, el hecho de que se redacta un documento de este tipo no nos obliga a que todo el proceso sea documentado. De hecho, para la metodología ágil, se puede desarrollar de forma incremental. Pero antes de cualquier lanzamiento a los usuarios, se hacen varias validaciones de funcionamiento para cerciorarse de que refleja absolutamente correctamente el estado atual del comportamiento del sistema de software a partir de ese momento. Es un trabajo de gran magnitud, pero no exige que se lo haga de una vez, y de antemano.
 
-% Analisis de Forcasting en base al mejor modelo
+El objetivo de cada sprint ágil es producir un producto utilizable, y, como la metodología ágil se desarrolló como un modelo para su uso en el desarrollo de software, más a menudo el producto utilizable es el código. La verificación del trabajo realizado en cada sprint tiene tres partes: pruebas automatizadas, revisión por pares y revisión del propietario del producto o en nuestro caso por parte del equipo educativo.
 
-% Documentación de los resultados obtenidos: Una vez obtenidos los resultados se
-% procederá a documentarlos en forma clara y detallada.
+\section{Pruebas automatizadas}
+Por pruebas automatizadas nos referimos por funcionalidades programas para realizar la mayoria de las pruebas de código que debe hacer el desarrollador. Con las pruebas automatizadas, el equipo de desarrollo puede desarrollar y probar su código de manera rápida, la cual es un gran beneficio para los proyectos ágiles.
 
-\section{Validación por parte del equipo educativo}
+A menudo, el equipo de desarrollo desarrolla el código durante el día y corren las pruebas automatizadas durante la noche para tener los resultados a la mañana. Por la mañana, el equipo del proyecto puede revisar el informe de errores que generó el programa de pruebas, informar sobre cualquier problema durante el informe diario de cada desarrollador y buscar corregir esos problemas inmediatamente durante el día.
 
-\section{Validación por parte de los usuarios}
+Algunas de las pruebas automatizadas pueden incluir:
+\begin{itemize}
+	\item \textbf{Unit Testing:} pruebas automatizadas de pequeñas funcionalidades de código, a nivel de componentes.
+	\item \textbf{System Testing:} pruebas automatizadas de código integradas con el sistema.
+	\item \textbf{Static Testing:} pruebas estáticas que verifican que el código cumple con los estándares basadas en reglas y buenas prácticas que el equipo de desarrollo estableció al inicio del proyecto.
+\end{itemize}
+
+\section{Revisión por pares}
+Revisión por pares significa que los miembros del equipo de desarrollo revisa el código del otro miembro.
+
+El equipo de desarrollo puede realizar evaluaciones por pares durante el desarrollo. La forma en que están sentados puede facilitar este proceso ya que puede dirigirse a la persona que está a su lado y pedirle que revise su trabajo. El equipo de desarrollo también puede reservar tiempo durante el día específicamente para revisar el código. Los equipos autogestionarios deben decidir qué es lo que funciona mejor para su equipo ya sea al inicio de cada iteración o luego de cierto periodo de pruebas.
+
+\section{Revisión por parte del equipo de validación}
+Una vez finalizado el proceso de desarrollo y verificación de las historias de usuario, el equipo de validación se encarga de revisar la funcionalidad y verifica que cumple con los criterias de aceptación. El equipo de validación forma parte del ciclo de vida de cada historia de usuario y hace las verificaciones acorde se agreguen a su lista de trabajos pendientes.
+
+Finalmente, el propietario del producto debe comprobar y verificar que la historia de usuario en cuestión cumple con la definición de \enquote{DONE}. Cuando una historia de usuario cumple la definición de \enquote{DONE}, el propietario del producto actualiza la tabla de tareas moviendo la historia de usuario de la columna \enquote{UNDER REVIEW} a la columna \enquote{DONE}.
+
+\section{Revisión por parte del cliente}
+El papel del cliente es más notorio en el proceso de desarrollo de las metodologías ágiles; uno de los principios del Manifiesto dice que los responsables de negocio y los desarrolladores trabajan juntos de manera cotidiana durante todo el proyecto [6]. Esta condición no es fácil de satisfacer. Los clientes pueden estar separados geográficamente o puede ser muy costoso para ellos mantener un representante con la capacidad de responder por la totalidad de los requerimientos del sistema que se está desarrollando, de manera permanente.
+Para resolver estas limitantes es posible utilizar varias estrategias. La primera, tener múltiples dueños de historias de usuario. Con esto se busca no inhabilitar a un cliente durante todo el desarrollo. Al tener cada historia de usuario su dueño, una vez que esta termina, la siguiente se trata como una historia de usuario con un dueño distinto. La segunda estrategia consiste en nombrar un intermediario del cliente, lo que involucra a un desarrollador del equipo que coordina de manera conjunta los requerimientos.
