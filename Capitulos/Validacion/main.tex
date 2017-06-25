@@ -1,15 +1,13 @@
 % Chapter 7
 
-\chapter{Validación del desarrollo} % Main chapter title
-
-\label{capitulo7} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo7}
+\chapter{Validación del desarrollo} \label{capitulo7}
 
 El flujo de validación de las historias de usuario es un proceso preciso, consistente y controlado por parte de los desarrolladores y de los miembros del equipo educativo. Entre las validaciones se encuentran las siguientes:
 \begin{itemize}
 	\item Entradas, salidas y funciones del módulo curricular.
 	\item Todos los requisitos no funcionales con sus respectivas pruebas. Entre ellas están las pruebas de rendimiento, fiabilidad, precisión y tiempos de respuesta.
 	\item Interacciones de usuario.
-	\item Funcionamiento en diferentes arquitecturas (plataformas, sistemas operativos, navegadores, etc.)
+	\item Funcionamiento en diferentes arquitecturas (plataformas, sistemas operativos, navegadores, etc.).
 	\item Límites de intervalos, valores por defecto y valores específicos que el módulo acepta.
 	\item Criterios de aceptación, especificaciones en los requerimientos, funcionalidades, o funciones implementadas en el software.
 \end{itemize}
@@ -38,4 +36,8 @@ El equipo de desarrollo puede realizar evaluaciones por pares durante el desarro
 \section{Revisión por parte del equipo de validación}
 Una vez finalizado el proceso de desarrollo y verificación de las historias de usuario, el equipo de validación se encarga de revisar la funcionalidad y verifica que cumple con los criterias de aceptación. El equipo de validación forma parte del ciclo de vida de cada historia de usuario y hace las verificaciones acorde se agreguen a su lista de trabajos pendientes.
 
-Finalmente, el propietario del producto debe comprobar y verificar que la historia de usuario en cuestión cumple con la definición de \enquote{done}. Cuando una historia de usuario cumple la definición de \enquote{done}, el propietario del producto actualiza la tabla de tareas moviendo la historia de usuario de la columna \enquote{Under Review} a la columna \enquote{Done}.
+Finalmente, el propietario del producto debe comprobar y verificar que la historia de usuario en cuestión cumple con la definición de \enquote{DONE}. Cuando una historia de usuario cumple la definición de \enquote{DONE}, el propietario del producto actualiza la tabla de tareas moviendo la historia de usuario de la columna \enquote{UNDER REVIEW} a la columna \enquote{DONE}.
+
+\section{Revisión por parte del cliente}
+El papel del cliente es más notorio en el proceso de desarrollo de las metodologías ágiles; uno de los principios del Manifiesto dice que los responsables de negocio y los desarrolladores trabajan juntos de manera cotidiana durante todo el proyecto [6]. Esta condición no es fácil de satisfacer. Los clientes pueden estar separados geográficamente o puede ser muy costoso para ellos mantener un representante con la capacidad de responder por la totalidad de los requerimientos del sistema que se está desarrollando, de manera permanente.
+Para resolver estas limitantes es posible utilizar varias estrategias. La primera, tener múltiples dueños de historias de usuario. Con esto se busca no inhabilitar a un cliente durante todo el desarrollo. Al tener cada historia de usuario su dueño, una vez que esta termina, la siguiente se trata como una historia de usuario con un dueño distinto. La segunda estrategia consiste en nombrar un intermediario del cliente, lo que involucra a un desarrollador del equipo que coordina de manera conjunta los requerimientos.
