@@ -85,6 +85,10 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{pgfgantt}
 
 
+\usepackage{pgf-pie}
+\usepackage{pgfplots}
+
+
 % BULLET a DASH
 \usepackage{enumitem}
 \setlist[itemize]{label=$-$}
@@ -150,8 +154,8 @@ headsepline, % Uncomment to get a line under the header
 %\caption[Logo de la UCA]{UCA.}
 \end{figure}
 
-{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
-\textsc{\Large Proyecto final de carrera}\\[0.5cm] % Thesis type
+{\scshape\LARGE \univname\par}\vspace{1cm} % University name
+\textsc{\Large Ingeniería Informática\\[0.5cm] Proyecto final de carrera }\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
@@ -259,7 +263,9 @@ headsepline, % Uncomment to get a line under the header
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 En el proyecto final se toma como caso de estudio con enfoque en interacción humano-computador y en observación participante al diseño e implementación de un módulo de gestión curricular para un sistema de gestión de evaluaciones basadas en competencias académicas, la cual tiene sus cimientos en el mercado y también dispone de clientes utilizando la misma. 
 
-Se diseñó la manera de integrar y estructurar procesos separados de validación de competencias, cursos, y programas para el estado de California en un sistema de gestión de evaluaciones basadas en competencias. Dicho proceso era un proceso que se hacía en papel y tenía sus falencias debido a que el proceso requería mucho tiempo en revisar y aprobar el formulario, y la complejidad del flujo aumentaba cuando habían más personas colaboradoras o evaluadoras en el proceso.
+Se diseñó la manera de integrar y estructurar procesos separados de validación de competencias, cursos, y programas para instituciones de educación superior del estado de California en un sistema de gestión de evaluaciones basadas en competencias. Dicho proceso era uno que se hacía en papel y tenía sus falencias debido a que el proceso requería mucho tiempo en revisar y aprobar los formularios, y la complejidad del flujo aumentaba cuando habían más personas colaboradoras o evaluadoras en el proceso.
+
+Estos procesos fueron automatizados por el módulo curricular, además de brindar una forma de notificar a los encargados de revisiones y ediciones que tienen trabajo pendiente o en falta.
 
 Debido a que los requerimientos eran cambiantes y el equipo que diseña no dispone de un panorama completo de las funcionalidades del módulo curricular, la elección de la metodología ágil para el desarrollo del proyecto fue utilizada debido a que la misma permite el desarrollo iterativo e incremental del software con validaciones del cliente como proceso de desarrollo, que en este caso el equipo de validación tomará el rol de cliente debido al conocimiento y experiencia en didáctica de sus miembros.
 
@@ -380,7 +386,7 @@ The acknowledgments and the people to thank go here, don't forget to include you
 \include{Capitulos/Introduccion/main}
 
 % OBJETIVOS
-\include{Capitulos/Objetivos/main}
+% \include{Capitulos/Objetivos/main}
 
 % MARCO TEORICO
 \include{Capitulos/MarcoTeorico/main}

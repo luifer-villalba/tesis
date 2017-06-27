@@ -1,21 +1,27 @@
-\section{Versionamiento encadenado de evaluaciones debido al versionamiento de competencias}
+\section{Versionamiento de evaluaciones}
+La épica fue creada para abarcar todos los cambios que requerían las evaluaciones en sus diferentes formas de versionamiento. Entre ellas, se encuentra el versionamiento encadenado de las evaluaciones debido al flujo terminado de versionamiento de competencias. 
+
+En caso de que existan evaluaciones ya creadas para las secciones de los cursos y en dicho curso se generaba una nueva versión de alguna de sus competencias, el sistema debía versionar las evaluaciones que utilizaba la versión anterior de dicha competencia con la versión actual para el periodo.
+
+Como trabajo futuro se cuenta con el desarrollo de flujos de trabajo para las evaluaciones, ya que el versionamiento que ahora cuenta el sistema es automático y no a través de formularios web.
+
 \begin{table}[H]
 \centering
 \caption{Historias de usuario para el versionamiento encadenado de evaluaciones debido al versionamiento de competencias}
 \label{epic:5}
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{@{}llllll@{}}
+\begin{tabular}{@{}lllll@{}}
 \toprule
-Historias de usuario           & HE & HC & PH & PA & CS \\ \midrule
-Versionamiento de evaluaciones & 102 & 87 & 8 &  3 &  2 \\ \bottomrule
+Historias de usuario           & HE & HC & PH &  Sprints \\ \midrule
+Versionamiento de evaluaciones & 102 & 87 & 8 &  2 \\ \bottomrule
 \end{tabular}
 }
 \end{table}
 
-\subsection{Versionamiento de evaluaciones}
+\subsection{Versionamiento de evaluaciones} \label{versionamiento_encadenado}
 La historia de versionamiento de evaluaciones tiene como propósito permitir el versionamiento automático de evaluaciones existentes que utilizar competencias del sistema. Por ejemplo, en caso de que una evaluación hecha por un profesor tenga una nueva versión en el nuevo periodo de su sección, el sistema versiona la evaluación para ese periodo obteniendo las competencias actuales.
 
-La historia de usuario tiene como descripción lo siguiente \enquote{\textit{Como usuario del módulo curricular, me gustaría ser capaz de versionar mis evaluaciones, para que se observen los cambios a través del tiempo. Y que la interfaz y los reportes sigan presentando datos para los diseños históricos}}.
+La historia de usuario tiene como descripción: \enquote{\textit{Como usuario del módulo curricular, me gustaría ser capaz de versionar mis evaluaciones, para que se observen los cambios a través del tiempo. Y que la interfaz y los reportes sigan presentando datos para los diseños históricos}}.
 
 Algunas de las tareas fueron las siguientes:
 \begin{itemize}

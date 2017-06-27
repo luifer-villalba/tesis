@@ -1,0 +1,106 @@
+\section{Aporte}
+En la tabla \ref{mis-aportes} se puede apreciar cuáles son los aportes en cada historia de usuario utilizada para desarrollar de manera iterativa el módulo curricular del AMS, los datos fueron calculados desde la herramienta \enquote{JIRA} en la que se cargaban las horas, historias de usuario y fallas del sistema.
+
+En la cual el trabajo consistía en desarrollo de la historia, desarrollo de tests, y la persona que no desarrolló la historia es la encargada de hacer la validación de código y funcionalidad.
+
+\begin{table}[H]
+\centering
+\caption{Tabla de historias de usuario y aportes}
+\label{mis-aportes}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Historias de usuario                                & Aporte \\ \midrule
+Diseño de modelo de versionamiento de entidades     &  20\%  \\
+Versionamiento de competencias                      & 61,5\% \\
+Flujo de trabajo simple                             & 62,5\% \\
+Aprobar pasos completados de flujos de trabajo      &  40\%  \\
+Rechazar pasos completados de flujo de trabajo      &  60\%  \\
+Buzón de entradas de flujos de trabajo              &  40\%  \\
+Notificaciones con soporte a etapas                 &  20\%  \\
+Versionamiento de evaluaciones                      & 37,5\% \\
+Versionamiento de cursos                            & 61,5\% \\
+Información básica de curso                         &  20\%  \\
+Horas y unidades de evaluación de curso             &   8\%  \\
+Especificaciones de curso                           &  40\%  \\
+Requisitos de cursos                                &  60\%  \\
+Revisar y aprobar curso                             &  40\%  \\
+Competencias de curso                               &  25\%  \\
+Esquema de curso                                    &  20\%  \\
+Códigos de clasificación de curso                   &  60\%  \\
+Información básica del programa                     &  50\%  \\
+Competencias de programa                            &  60\%  \\
+Bloques de curso por programa                       &  20\%  \\
+Visualizar cambios en los campos                    &   8\%  \\
+Roles de creación y edición para partes             &  23\%  \\
+Diseño e implementación de etapas                   &  38\%  \\
+Mejora en comportamientos para las etapas por roles & 37,5\% \\
+Composición de etapas por roles                     &  23\%  \\
+Etapas y partes opcionales por en la revisión       & 37,5\% \\
+Notificaciones para las partes de flujos de trabajo &  20\%  \\
+Reporte de esquemas de curso                        &  25\%  \\
+Interfaz de alineación de códigos TOP/CIP           & 100\%  \\
+Reorganización de pestañas del módulo curricular    & 100\%  \\
+Lista mejorada de cursos y programas                & 100\%  \\
+Retoques finales para el flujo de trabajo de curso  & 37,5\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Dichas historias de usuario eran entregadas para validación de parte del equipo de desarrolladores y por el equipo de expertos en didáctica, una vez que era aprobada se procedía a integrar el nuevo código con el del AMS. Si en la aplicación o en el módulo se encontraban fallas, se procedían a crear tickets de fallas. Además, si habían mejoras que hacerse se creaban tickets de mejoras. En la figura \ref{tickets_by_type} podemos ver la distribución de tickets aportados por tipo.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pie [rotate = 180] {45/Historias de usuario, 48.3/Fallas, 6.7/Mejoras}
+\end{tikzpicture}
+\caption{Distribución de tickets por tipo.}
+  \label{tickets_by_type}
+\end{figure}
+
+Las historias de usuario que no cumplieron con todos los criterios de aceptación vuelve a ser abierta para que se continue su desarrollo. El porcentaje de historias que no cumplieron los criterios de aceptación se puede apreciar en la figura \ref{user_story_perc}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pie [rotate = 180] {85.2/Terminada, 14.8/Reabierta}
+\end{tikzpicture}
+\caption{Porcentajes de historias de usuario reabiertas.}
+  \label{user_story_perc}
+\end{figure}
+
+Los tickets de fallas que se trabajaron fueron fallas o errores de dominio encontrados en la funcionalidad del módulo curricular, cuando el equipo de desarrollo solucionaba dichas fallas debía seguir el mismo proceso de validación. En caso de que la falla mediante pruebas seguía se volvía a abrir para que se continúe trabajando hasta que cumpla con el criterio de aceptación que era solucionar la falla que se reportaba. En la figura \ref{bugs_perc} se puede ver cuántas fallas fueron cerradas y reabiertas en el periodo de desarrollo.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pie [rotate = 180] {86.2/Terminado, 13.8/Reabierto}
+\end{tikzpicture}
+\caption{Porcentajes de tickets de fallas que fueron reabiertos.}
+  \label{bugs_perc}
+\end{figure}
+
+Los tickets de fallas por lo general eran tickets de dificultad pequeña que un programador podía terminar en uno o dos días aproximadamente, es decir en un sprint. En cambio, las historias de usuario eran de mayor dificultad y podía tomar a varios desarrolladores hasta más tiempo que sprint podía brindar, en esos casos se continuaba en el siguiente sprint o se separaba la funcionalidad en tickets más pequeños, como se puede apreciar en la figura \ref{sprint_perc}.
+
+\pgfplotstableread[row sep=\\,col sep=&]{
+    interval 		& carT \\
+    1 sprint     	& 22  \\
+    2 sprints     	& 5 \\
+    3 sprints    	& 4 \\
+    4 sprints   	& 1 \\
+    }\mydata
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+            ybar,
+            symbolic x coords={1 sprint,2 sprints, 3 sprints, 4 sprints},
+            xtick=data,
+            nodes near coords,
+        ]
+        \addplot table[x=interval,y=carT]{\mydata};
+        \legend{Historias de usuario}
+    \end{axis}
+\end{tikzpicture}
+\caption{Cantidad de historias de usuarios terminadas en cantidad de sprints.}
+  \label{sprint_perc}
+\end{figure}
