@@ -1,7 +1,6 @@
 % Chapter 7
 
 \chapter{Validación del desarrollo} \label{capitulo6}
-
 El flujo de validación de las historias de usuario fue un proceso sistemático, consistente y controlado por parte de los desarrolladores y de los expertos en educación encargados de validar el software desarrollado. Las pruebas y otras validaciones abarcan las siguientes dimensiones:
 \begin{itemize}
 	\item Entradas, salidas y funciones del módulo curricular.
@@ -16,6 +15,21 @@ El flujo de validación de las historias de usuario fue un proceso sistemático,
 Cabe resaltar que la documentación de los casos de prueba en Scrum no involucra necesariamente una secuencia paso a paso a ser utilizada en las pruebas y otros controles de calidad. Al mismo tiempo, los usuarios que validan las historias (expertos en educación en el marco de este proyecto), tienen amplia libertad para aceptar o rechazar las historias de usuarios entregadas por el equipo de desarrollo. 
 
 Así también, los expertos de dominio tienen la potestad de pedir cambios a partir de la experiencia de utilización de las herramientas desarrolladas. Todos estos preceptos fueron observados en la realización de este trabajo.
+
+En la figura \ref{workflow} se puede apreciar el ciclo de vida de las historias de usuario, donde una vez que es creada pasa al estado de \enquote{TODO}, que quiere decir que está pendiente a ser desarrollada. Una vez que un miembro del equipo de desarrollo comienza una historia o tarea pasa al estado de \enquote{IN PROGRESS} y cuando termina pasa al estado de \enquote{UNDER REVIEW}. 
+
+En dicho estado se revisa la funcionalidad mediante validaciones de parte de los miembros del equipo de desarrollo y de parte del equipo de expertos en dominios de didáctica en universidades norteamericanas incluyendo a un PhD en educación, donde se deben cumplir los criterios de aceptación para que pase al estado de \enquote{CLOSED} que quiere decir que se terminó y que la historia fué aprobada.  
+
+En caso de que la historia no consiga cumplir los criterios de aceptación correspondientes durante la validación se considera que la historia no está terminada y que debe pasar al estado de \enquote{REOPEN}, en este estado se puede pasar ya sea desde el estado \enquote{UNDER REVIEW} o si ya está en el estado \enquote{CLOSED}.
+
+Cualquier otro problema o error de código que tenga la nueva funcionalidad se debe crear un ticket de error o bug especificando como reproducir el problema y el comportamiento esperado. En caso de no poder reproducir este comportamiento se pide más información al respecto o pasa al estado de \enquote{CLOSED} en caso de que el comportamiento ya no se pueda reproducir.
+
+\begin{figure}[]
+\centering
+\includegraphics[scale=0.4]{Figuras/workflow}
+\caption{Flujo de desarrollo de historias de usuario.}
+  \label{workflow}
+\end{figure}
 
 \section{Revisión por pares}
 Revisión por pares significa que los miembros del equipo de desarrollo revisa el código del otro miembro.
@@ -34,11 +48,10 @@ La plantilla de los PR del repositorio tienen los siguientes campos:
 
 Y deben seguir los siguientes requisitos:
 \begin{itemize}
-	\item La rama debe estar probada desde una de las instancias del equipo en AWS. En caso de que las pruebas pasan, el usuario que no trabajó en la rama y que se encarga de probar la misma debe aprobar el PR desde la interfaz de revisión.
-	\item Se deben cumplir los criterios de aceptación y no debe agregar fallas al proyecto. En caso de encontrar fallas se debe notificar al propietario de la rama mediante comentarios desde la interfaz del PR en \enquote{GitHub}.
-	\item Por cada rama en PR se ejecutan las pruebas automatizadas de karma, debe pasar las nuevas pruebas y las ya existentes.
+	\item La rama debe estar probada desde una de las instancias del equipo en AWS. En caso de que las pruebas pasan, el usuario que no trabajó en la rama y que se encarga de probar la misma debe aprobar el PR desde la interfaz de revisión de \enquote{GitHub}.
+	\item Se deben cumplir los criterios de aceptación y no debe agregar fallas al proyecto. En caso de encontrar fallas se debe notificar al propietario de la rama mediante comentarios desde la interfaz.
+	\item Por cada rama en PR se ejecutan las pruebas automatizadas de karma.
 	\item Debe pasar las reglas de código estático de la herramienta \enquote{Sonarqube}.
-	\item No deben de haber conflictos de código de la rama de la funcionalidad con el del repositorio.
 \end{itemize}
 
 En caso de que uno de estos requisitos no se cumplan, \enquote{GitHub} no permite a los usuarios hacer la integración de la rama en el repositorio.
@@ -48,21 +61,19 @@ Consiste en la automatización de pruebas por medio de código ejecutable, que p
 
 A menudo, el equipo de desarrollo desarrolla el código durante el día y corren las pruebas automatizadas durante la noche para tener los resultados a la mañana. Por la mañana, el equipo del proyecto puede revisar el informe de errores que generó el programa de pruebas, informar sobre cualquier problema durante el informe diario de cada desarrollador y buscar corregir esos problemas inmediatamente durante el día.
 
-Algunas de las pruebas automatizadas utilizadas son:
+Algunas de las pruebas utilizadas son:
 \begin{itemize}
 	\item \textbf{Pruebas de integración:} 264 pruebas automatizadas de karma escritas para el módulo curricular, en la cual debían pasar las que hay en el sistema con las nuevas que se agregan.
-	\item \textbf{Pruebas de exploración:}
-	\item \textbf{Análisis de código estático:}
+	\item \textbf{Pruebas de exploración:} con el fin de asegurar la funcionalidad y la estabilidad del producto haciendo pruebas manuales buscando un comportamiento semejante a lo que haría un usuario normal.
+	\item \textbf{Análisis de código estático:} 1221 reglas de Java de \enquote{Sonarqube} donde se informa sobre código duplicado, estándares de codificación, potenciales errores, comentarios y diseño del software.
 \end{itemize}
 
-Los sistemas de pruebas automatizadas empleados en la organización, tanto unitarios como extremo a extremo, se basan en el uso de Karma, un lanzador de tests que se integra con distintos frameworks (Jasmine, QUnit, Mocha, etc.) para ejecutar tests en navegadores reales (Firefox, Chrome, Phantom, e Internet Explorer).
+Esto permitió comprobar que la aplicación funciona sobre los motores de javascript que la van a ejecutar, lo que nos ayudó a detectar posibles problemas por incompatibilidades de javascript entre ellos.
 
-Esto permitió comprobar que la aplicación funciona sobre los motores de javascript que la van a ejecutar, lo que nos ayudará a detectar posibles problemas por incompatibilidades de javascript entre ellos.
-
-Con karma para las pruebas de interfaz, se decidió también el uso de la plataforma \enquote{Sonarqube} para evaluar el código fuente que se escribe para el módulo curricular. Donde dicha plataforma utiliza diversas herramientas de análisis estático de código funte para obtener métricas que pueden ayudar a mejorar la calidad del código del programa. Como ya se comentó, uno de los requisitos para que la funcionalidad pueda ser agregada al repositorio es que el PR pase las reglas que la plataforma impone.
+Con karma para las pruebas de interfaz, se decidió también el uso de la herramienta \enquote{Sonarqube} para evaluar el código fuente que se escribe para el módulo curricular. Donde dicha plataforma utiliza diversas herramientas de análisis estático de código funte para obtener métricas que pueden ayudar a mejorar la calidad del código del programa. Como ya se comentó, uno de los requisitos para que la funcionalidad pueda ser agregada al repositorio es que el PR pase las reglas que la plataforma impone.
 
 \section{Revisión por parte del equipo de validación}
-Una vez finalizado el proceso de desarrollo y verificación de las historias de usuario, el equipo de validación se encarga de revisar la funcionalidad y verifica que cumple con los criterias de aceptación. El equipo de validación forma parte del ciclo de vida de cada historia de usuario y hace las verificaciones acorde se agreguen a su lista de trabajos pendientes.
+Una vez finalizado el proceso de desarrollo y verificación de las historias de usuario, el equipo de validación se encarga de revisar la funcionalidad y verifica que cumple con los criterios de aceptación. El equipo de validación forma parte del ciclo de vida de cada historia de usuario y hace las verificaciones acorde se agreguen a su lista de trabajos pendientes.
 
 Finalmente, el propietario del producto debe comprobar y verificar que la historia de usuario en cuestión cumple con la definición de \enquote{DONE}. Cuando una historia de usuario cumple la definición de \enquote{DONE}, el propietario del producto actualiza la tabla de tareas moviendo la historia de usuario de la columna \enquote{UNDER REVIEW} a la columna \enquote{DONE}.
 

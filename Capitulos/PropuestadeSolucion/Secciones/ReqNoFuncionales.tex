@@ -1,5 +1,5 @@
 \section{Requerimientos no funcionales} \label{reqnofuncional}
-Se ha realizado una breve revisión de las tecnologías y abordajes brindadas como requerimientos funcionales. Sin embargo, al utilizar un abordaje ágil, la validación de las decisiones tecnológicas depende en ultima instancia de la validación del proceso de desarrollo realizada por expertos y usuarios.
+Se ha realizado una breve revisión de las tecnologías y abordajes brindadas como requerimientos funcionales. Sin embargo, al utilizar un abordaje ágil, la validación de las decisiones tecnológicas depende en última instancia de la validación del proceso de desarrollo realizada por expertos y usuarios.
 
 Las decisiones de tecnologías para el módulo de gestión curricular fueron basadas en los conocimientos adquiridos de los miembros del equipo de desarrollo, con el fin de optimizar tiempos utilizados en curvas de aprendizaje. Sin embargo, se hicieron análisis previos a su uso para corroborar que dichas tecnologías cumplen con el propósito de desarrollo.
 
@@ -10,14 +10,14 @@ Java fue diseñado para alcanzar los desafíos del desarrollo de aplicaciones en
 
 Operar en múltiples plataformas con redes heterogéneas invalida la arquitectura tradicional de distribución de binarios, \enquote{release}, actualización, parcheo, etc\citep{arnold2005java}.
 
-Hoy día, Java es uno de los lenguajes de programación más utilizados a nivel mundial debido a su portabilidad y evolución con el paso del tiempo, como se observa en la figura \ref{graph_java}. Además, al ser un lenguaje de programación multiplataforma cualquier proyecto se puede desarrollar en cualquier sistema operativo o plataforma para luego ser levantada en el servidor independiente a su plataforma. 
+Hoy día, Java es uno de los lenguajes de programación más utilizados a nivel mundial debido a su portabilidad y evolución con el paso del tiempo, como se observa en la Figura \ref{graph_java}. Además, al ser un lenguaje de programación multiplataforma cualquier proyecto se puede desarrollar en cualquier sistema operativo o plataforma para luego ser levantada en el servidor independiente a su plataforma. 
 
-El lenguaje es reconocido por ser intuitivo a la hora de programar, altamente portátil y portable\citep{hunt2011java}. Además, la comunidad es uno de los fuertes de Java. Además, en la Web hay una gran cantidad de foros y librerías de la comunidad para resolver diferentes problemáticas de los desarrolladores.
+El lenguaje es reconocido por ser intuitivo a la hora de programar, altamente portátil y portable\citep{hunt2011java}. Por otra parte, la comunidad es uno de los fuertes de Java. Además, en la Web hay una gran cantidad de foros y librerías de la comunidad para resolver diferentes problemáticas de los desarrolladores.
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=125mm,scale=1]{Figuras/tecnologias/java}
-\caption{Gráfico de uso de lenguajes de programación con respecto al tiempo.}
+\caption{Gráfico de uso de lenguajes de programación con respecto al tiempo\citep{tiobe_programming}.}
   \label{graph_java}
 \end{figure}
 
@@ -41,23 +41,23 @@ En las siguientes figuras \ref{graph_db_1} y \ref{graph_db_2} podemos observar q
 \begin{figure}[H]
 \centering
 \includegraphics[width=125mm,scale=1]{Figuras/tecnologias/rank_db_1}
-\caption{Gráfico que muestra el puntaje de uso de motores de base de datos.}
+\caption{Gráfico que muestra el puntaje de uso de motores de base de datos\citep{db_engines_page}.}
   \label{graph_db_1}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=125mm,scale=1]{Figuras/tecnologias/rank_db_2}
-\caption{Gráfico de uso de motores de base de datos con respecto al tiempo.}
+\caption{Gráfico de uso de motores de base de datos con respecto al tiempo\citep{db_engines_page}.}
   \label{graph_db_2}
 \end{figure}
 
-Como el motor de base de datos es otro requerimiento no funcional, como es otra tecnología utilizada para la aplicación base. Sin embargo, se hizo un breve análisis de vulnerabilidades para verificar que el uso de MySQL como base de datos relacional podría ser efectivo para el proyecto final, además, los desarrolladores están familiarizados con la misma.
+El motor de base de datos es otro requerimiento no funcional, ya que es otra tecnología utilizada para la aplicación base. Sin embargo, se hizo un breve análisis de vulnerabilidades para verificar que el uso de MySQL como base de datos relacional podría ser efectivo para el proyecto final, además, los desarrolladores están familiarizados con la misma.
 
 \subsection{Amazon Web Services}
 Amazon Web Services, o más conocida como AWS, es una plataforma de servicios web que ofrece soluciones de procesado, almacenamiento y redes en diferentes capas de abstracción. Se pueden usar estos servicios para hospedar sitios web, correr aplicaciones complejas y para minería de grandes cantidades de datos\citep{wittig2015amazon}. 
 
-La interfaz web puede ser manejada por máquinas o por usuarios por medio de una interfaz de usuario gráfica. Los servicios más utilizados son EC2 en la cual ofrece servidores virtuales, y S3 que es utilizada para almacenamiento.
+La interfaz web puede ser manejada por máquinas o por usuarios mediante de una interfaz de usuario gráfica. Los servicios más utilizados son EC2 en la cual ofrece servidores virtuales, y S3 que es utilizada para almacenamiento.
 
 AWS es una nube pública, donde tiene las siguientes clasificaciones como nube:
 \begin{itemize}
@@ -71,14 +71,14 @@ En la figura \ref{graph_cloud} se puede mostrar como AWS lidera entre las altern
 \begin{figure}[H]
 \centering
 \includegraphics[width=125mm,scale=1]{Capitulos/PropuestadeSolucion/Imagenes/rank_cloud}
-\caption{Ranking de compañias que brindan servicios de cloud computing.}
+\caption{Ranking de compañias que brindan servicios de cloud computing\citep{statista_ranking}.}
   \label{graph_cloud}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=125mm,scale=1]{Capitulos/PropuestadeSolucion/Imagenes/gartner_cloud}
-\caption{Figura de Gartner que muestra las alternativas de cloud computing..}
+\includegraphics[scale=0.5]{Capitulos/PropuestadeSolucion/Imagenes/gartner_cloud}
+\caption{Figura de Gartner que muestra las alternativas de cloud computing\citep{gartner_webpage}.}
   \label{gartner_cloud}
 \end{figure}
 
@@ -94,16 +94,16 @@ Git modela sus datos más como un conjunto de instantáneas de un pequeño siste
 \begin{figure}[H]
 \centering
 \includegraphics[width=125mm,scale=1]{Figuras/tecnologias/git_over_time}
-\caption{Flujo de versiones de Git.}
+\caption{Flujo de versiones de Git\citep{chacon2014pro}.}
   \label{graph_git}
 \end{figure}
 
-Uno de los fuertes importantes de Git como VCS\footnote{de sus siglas en inglés, Version Control System, que significa en español sistema de control de versionamiento.} es su integridad, debido a que toda versión es verificada mediante una suma de comprobación\footnote{También conocida como checksum.} antes de ser almacenada, y es identificada a partir de ese momento dicha suma. Esta suma es utilizada para volver a un estado anterior del repositorio en caso de ser necesario o ver cuáles fueron los cambios que se realizaron en ese pedazo de código trabajado o más conocido como commit\citep{chacon2014pro}.
+Uno de los fuertes importantes de Git como VCS\footnote{de sus siglas en inglés, Version Control System, que significa en español sistema de control de versionamiento.} es su integridad, debido a que toda versión es verificada mediante una suma de comprobación\footnote{También conocida como checksum.} antes de ser almacenada, y es identificada a partir de ese momento dicha suma. Esta suma es utilizada para volver a un estado anterior del repositorio en caso de ser necesario o ver cuáles fueron los cambios que se realizaron en la porción de código trabajado o más conocido como commit\citep{chacon2014pro}.
 
 \subsection{Spring}
 El AMS cuenta con un framework propio desarrollado internamente, el cual esta deprecado y uno nuevo en el cual se estuvo trabajando para los nuevos módulos que se fueron desarrollando. El mismo es Spring MVC y fue utilizado para la parte lógica de la aplicación.
 
-Spring es un framework que facilita el desarrollo de aplicaciones escritas en Java. El propósito de Spring es manejar la infraestructura de las aplicaciones utilizando el método de inversión de control. Es por ello, que el programador se encargará de programar la lógica de negocio usando objetos simples de Java o POJOs (Plain Old Java Objets) y Spring se encargará de añadir las capacidades de empresa o J2EE a nuestra aplicación\citep{bauer2005hibernate}.
+Spring es un framework que facilita el desarrollo de aplicaciones escritas en Java. El propósito de Spring es manejar la infraestructura de las aplicaciones utilizando el método de inversión de control. Es por ello, que el programador se encargará de programar la lógica de negocio usando objetos simples de Java o POJOs (Plain Old Java Objets) y Spring se encargará de añadir las capacidades de empresa o J2EE a la aplicación\citep{bauer2005hibernate}.
 
 Spring tiene las siguientes características:
 \begin{itemize}
@@ -116,7 +116,7 @@ Spring tiene las siguientes características:
 Spring se utiliza en el proyecto como framework para toda la aplicación, por lo tanto, usar Spring es también un requerimiento no funcional.
 
 \subsection{AngularJS}
-Para empezar a trabajar con la interfaz de usuario se hizo un estudio previo de las ventajas entre Frameworks como JQuery y AngularJS, debido a que la organización que brinda el AMS dio total libertad a la hora de elegir cual utilizar. Por lo tanto, la elección del framework Javascript del módulo de Curriculum entra como decisión de diseño para el proyecto final. 
+Para empezar a trabajar con la interfaz de usuario se hizo un análisis previo de las ventajas entre Frameworks como JQuery y AngularJS, debido a que la organización que brinda el AMS dio total libertad a la hora de elegir cual utilizar. Por lo tanto, la elección del framework Javascript del módulo de Curriculum entra como decisión de diseño para el proyecto final. 
 
 Con la llegada de los framework de Javascript, tales como JQuery, las páginas web ya no tenían la necesidad de volver a renderizar las páginas cada vez que se necesitaba información del servidor, ya que con la aparición de las llamadas asíncronas se ha logrado mejorar la experiencia del usuario\citep{ruebbelke2015angularjs}.
 
