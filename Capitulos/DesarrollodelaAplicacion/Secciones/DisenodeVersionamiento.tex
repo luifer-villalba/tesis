@@ -1,23 +1,28 @@
 \section{Diseño de modelo de datos para versionamiento}
+Al iniciar el proceso de desarrollo se debía iniciar un \enquote{spike} para buscar la manera de modelar los datos y tablas ya existentes en el sistema de competencias, cursos, y programas. 
+
+Un \enquote{spike} es un término que se utiliza en el desarrollo Ágil para incluir una tarea en un sprint que no pertenece necesariamente a una historia de usuario. Es necesario ya que sirve para incluir tareas que ayudan de alguna manera en el futuro desarrollo de las historias de usuario, pero que no implica directamente un incremento al producto que se está desarrollando ni un valor de negocio para el cliente\citep{leffingwell2010agile}.
+
+Se diseñó de una manera que fuera lo más general posible en caso de que cualquier otra entidad se decida versionar en el futuro. En futuras iteraciones se llegó a la conclusión que la idea fué acertada, debido a que se abarcaría el versionamiento de evaluaciones de manera automática por el sistema (sección \ref{versionamiento_encadenado}) y la misma contiene una de las entidades versionables que es la de competencias.
 
 \begin{table}[H]
 \centering
-\caption{Historias de usuario para el diseño de modelo de datos para versionamiento}
-\label{epic:1}
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{@{}llllll@{}}
+\begin{tabular}{@{}lllll@{}}
 \toprule
-Historias de usuario                                                        & HE\tablefootnote{de sus siglas, Horas Estimadas; horas que estimó el equipo para terminar la historia.}                     & HC\tablefootnote{de sus siglas, Horas Cargadas; horas utilizadas para desarrollar la historia.}                     & PH\tablefootnote{de sus siglas, Puntos de Historia; medición de complejidad de la historia.}                    & PA\tablefootnote{de sus siglas, Puntos Aportados; puntos aportados por el tesista.}                    & CI\tablefootnote{de sus siglas, Cantidad de Iteraciones; cantidad de iteraciones utilizadas.}                    \\ \midrule
-Diseño del modelo de versionamiento para competencias, cursos, y programas. & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{1} \\ \bottomrule
+Historias de usuario                                                        & HE        & HC         & PH    & Sprints               \\ \midrule
+Diseño del modelo de versionamiento para competencias, cursos, y programas. & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{61} & \multicolumn{1}{c}{5} & \multicolumn{1}{c}{1} \\ \bottomrule
 \end{tabular}
 }
+\caption{Historias de usuario para el diseño de modelo de datos para versionamiento}
+\label{epic:1}
 \end{table}
 
 
 \subsection{Diseño del modelo de versionamiento para competencias, cursos y programas}
-Al iniciar con las historias de versionamiento, se definió una tarea en la cual participaron algunos miembros de equipo y tenía como propósito principal el diseño de una lógica de negocios que permita adaptar las tablas existentes de las competencias, evaluaciones, cursos, y programas para que soporten una revisión o versionamiento de sus registros.
+Al iniciar con las historias de versionamiento, se definió una tarea que tenía como propósito principal el diseño de una lógica de negocios que permita adaptar las tablas existentes de las competencias, evaluaciones, cursos, y programas para que soporten una revisión o versionamiento de sus registros.
 
-Como resúmen de actividades del modelo desarrollado (figura \ref{version_model}) se puede resaltar lo siguiente:
+Como resumen de actividades del modelo desarrollado (figura \ref{version_model}) se puede resaltar lo siguiente:
 \begin{itemize}
 	\item Cada tabla de cualquier entidad posee un identificador único. Las tablas entidades versionables son las de competencias, cursos, programas, y evaluaciones.
 	\item Se decidió agregar una nueva columna \enquote{entity_atid} que tiene como propósito el de apuntar al origen de la versión. Por ejemplo; si el usuario crea un nuevo curso para el año lectivo, este curso tiene su identificador \enquote{course_id} y su \enquote{course_atid} apuntando a su mismo identificador por ser el origen para las versiones posteriores. Luego, se crea una nueva versión para el año posterior, esta nueva versión tiene su propio identificador pero su campo denominado como \enquote{course_atid} que apunta al primer curso creado u origen.

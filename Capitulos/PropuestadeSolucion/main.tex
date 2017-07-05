@@ -1,8 +1,10 @@
 \chapter{Propuesta de solución} % Main chapter title
-\label{capitulo5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo5}
-Una vez que los requerimientos iniciales han sido fijados y aclarados se busca la manera de automatizar los procesos, investigar tecnologías, y metodologías que ayuden al equipo de desarrollo para entregar funcionalidades de manera iterativa y evolutiva. Durante este proceso se diseñan modelos donde se propone el módulo a ser desarrollado (figura \ref{curriculum_model}) y se busca unir procesos separados del diseño curricular (figura \ref{course_creation_flow}) con el flujo de agregar las competencias, cursos, y programas al AMS (figura \ref{after_creation}).
+\label{capitulo4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{capitulo5}
+En este capítulo se presenta en detalle la arquitectura del sistema planteada como solución, con un correspondiente estudio para la determinación de las herramientas para cada paso. Se expone además el flujo de datos y se presenta un diseño del mismo, donde queda gráficamente los pasos a seguir. Se incluyen también las técnicas de validación y evaluación que se deben utilizar.
 
-\begin{figure}[H]
+Una vez que los requerimientos iniciales han sido fijados y aclarados se busca la manera de automatizar los procesos, investigar tecnologías, y metodologías que ayuden al equipo de desarrollo para entregar funcionalidades de manera iterativa y evolutiva. Durante este proceso se diseñan modelos donde se propone el módulo a ser desarrollado (Figura \ref{curriculum_model}) y se busca unir procesos separados del diseño curricular (Figura \ref{course_creation_flow}) con el flujo de agregar las competencias, cursos, y programas al AMS (Figura \ref{after_creation}).
+
+\begin{figure}[]
 \centering
 \includegraphics[scale=0.5]{Capitulos/PropuestadeSolucion/Imagenes/curriculum_model}
 \caption{Modelo propuesto del módulo curricular adherido a un sistema de gestión de evaluaciones basadas en competencias.}
@@ -22,3 +24,8 @@ Se agrega también la funcionalidad de mensajes generados y notificaciones a los
 \input{Capitulos/PropuestadeSolucion/Secciones/Arquitectura}
 \input{Capitulos/PropuestadeSolucion/Secciones/ReqNoFuncionales}
 \input{Capitulos/PropuestadeSolucion/Secciones/Diseno}
+
+\section{Sumario}
+Se justificó el enfoque del caso de estudio. Se definió la arquitectura del sistema como propuesta de solución donde se muestra la arquitectura del AMS que sirve como base y la arquitectura del módulo curricular. Además, se listaron algunos de los requerimientos no funcionales de la organización en cuanto a tecnologías de desarrollo.
+
+Y para el diseño del módulo se explica cuál fue el proceso que se seguía para la definición e implementación de las historias de usuario.

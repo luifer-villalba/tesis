@@ -305,7 +305,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 %	ABSTRACT PAGE DESIGN
 %----------------------------------------------------------------------------------------
 
-\newcommand{\byname}{by}
+\newcommand{\byname}{por}
 \providecaptionname{german,ngerman,austrian,naustrian}{\byname}{von}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\byname}{por}
 \newenvironment{abstract}{

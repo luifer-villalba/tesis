@@ -1,30 +1,30 @@
 \section{Flujo de trabajo para el versionamiento de cursos}
 \begin{table}[H]
 \centering
-\caption{Historias de usuario para el flujo de trabajo para el versionamiento de cursos}
-\label{epic:6}
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{@{}llllll@{}}
+\begin{tabular}{@{}lllll@{}}
 \toprule
-Historias de usuario              & HE & HC & PH & PA & CS \\ \midrule
-Versionamiento de cursos          & 84 & 96 & 13 & 8 & 3 \\
-Información básica de curso       & 46 & 53 & 5 & 1 & 1 \\
-Horas y unidades de evaluación    & 48 & 66 & 5 & 0 & 1 \\
-Especificaciones de curso         & 40 & 40 & 5 & 2 & 1 \\
-Requisitos de curso               & 44 & 40 & 5 & 3 & 1 \\
-Revisar y aprobar curso           & 48 & 68 & 5 & 2 & 1 \\
-Competencias de curso             & 80 & 76 & 8 & 2 & 1 \\
-Esquema de curso                  & 40 & 48 & 5 & 1 & 1 \\
-Códigos de clasificación de curso & 56 & 80 & 5 & 3 & 1 \\ \bottomrule
+Historias de usuario              & HE & HC & PH & Sprints \\ \midrule
+Versionamiento de cursos          & 84 & 96 & 13 & 3       \\
+Información básica de curso       & 46 & 53 & 5  & 1       \\
+Horas y unidades de evaluación    & 48 & 66 & 5  & 1       \\
+Especificaciones de curso         & 40 & 40 & 5  & 1       \\
+Requisitos de curso               & 44 & 40 & 5  & 1       \\
+Revisar y aprobar curso           & 48 & 68 & 5  & 1       \\
+Competencias de curso             & 80 & 76 & 8  & 1       \\
+Esquema de curso                  & 40 & 48 & 5  & 1       \\
+Códigos de clasificación de curso & 56 & 80 & 5  & 1       \\ \bottomrule
 \end{tabular}
 }
+\caption{Historias de usuario para el flujo de trabajo para el versionamiento de cursos}
+\label{epic:6}
 \end{table}
 
 
 \subsection{Versionamiento de cursos}
-Esta historia de usuario fue realizada en tres iteraciones con un total de 96 horas cargadas, debido a que los cambios que suponía conlleva a una migración importante de datos de los usuarios.
+Esta historia de usuario fue realizada en tres iteraciones con un total de 96 horas cargadas, debido a que los cambios que suponía conllevan a una migración importante de datos de los usuarios.
 
-Tenía como descripción los siguiente \enquote{\textit{Como coordinador del AMS, me gustaría poder hacer una versión de mi plan de curso para que pueda realizar un seguimiento de los cambios para cosas como la revisión de programas y los acuerdos de articulación y transferencia en la aplicación}}.
+Tenía como descripción: \enquote{\textit{Como coordinador del AMS, me gustaría poder hacer una versión de mi plan de curso para que pueda realizar un seguimiento de los cambios para cosas como la revisión de programas y los acuerdos de articulación y transferencia en la aplicación}}.
 
 Algunas de las tareas realizadas en la historia fueron las siguientes:
 
@@ -32,7 +32,7 @@ Algunas de las tareas realizadas en la historia fueron las siguientes:
 	\item Buscar técnicas y herramientas de versionamiento parecidas para implementar.
 	\item Diseñar una posible solución a la problemática.
 	\item Implementar cambios en la base de datos mediante scripts en el proyecto.
-	\item Actualizar clases de Java existentes en el proyecto de cursos.
+	\item Actualizar clases Java existentes en el proyecto de cursos.
 	\item Implementar la solución para el flujo de trabajo.
 	\item Actualizar la creación de cursos sin el módulo curricular con los nuevos campos.
 	\item Adaptar la relación de cursos y competencias para que soporte el versionamiento de los mismos.
@@ -66,7 +66,7 @@ En esta historia se desarrolló un nuevo paso para el desarrollo de flujo de tra
 
 La organización ha proveído mockups (figura \ref{course_units_hours}) para la página como criterio de aceptación de la historia es que siga el modelo de la misma.
 
-La historia tenía la siguiente descripción: \enquote{\textit{Como profesor encargado del curso, me gustaría tener una página de horas y métricas para que pueda conseguir información básica sobre mi curso en eLumen}}.
+La historia tenía la siguiente descripción: \enquote{\textit{Como profesor encargado del curso, me gustaría tener una página de horas y métricas para que pueda conseguir información básica sobre mi curso en el AMS}}.
 
 La historia a desarrollar se dividió entre miembros del equipo de desarrollo en las siguientes tareas:
 \begin{itemize}
@@ -128,7 +128,7 @@ La historia de usuario tiene como descripción: \enquote{\textit{Como persona en
 
 La historia fue dividida en partes para que los desarrolladores puedan trabajar en partes independientes durante el proceso de la misma, y eran las siguientes:
 \begin{itemize}
-	\item Diseñar y actualizar el modelo de datos atual.
+	\item Diseñar y actualizar el modelo de datos actual.
 	\item Generar y actualizar clases Java para la lógica.
 	\item Actualizar la plantilla de flujo de trabajo para que soporte un nuevo paso.
 	\item Actualizar el visualizador de flujo de trabajo.
@@ -148,7 +148,7 @@ La historia de usuario ha sido terminada en una iteración con 44 horas de desar
 \subsection{Revisar y aprobar curso}
 La historia de usuario tiene como criterios de aceptación los siguientes puntos:
 \begin{itemize}
-	\item Las páginas para revisar los flujo de trabajos tienen una región de retroalimentación o feedback debajo de cada paso, con la opción de ocultar y mostrar para que el usuario que está revisando el flujo de trabajo en desarrollo pueda dejar comentarios al encargado del formulario del curso.
+	\item Las páginas para revisar los flujos de trabajos tienen una región de retroalimentación o feedback debajo de cada paso, con la opción de ocultar y mostrar para que el usuario que está revisando el flujo de trabajo en desarrollo pueda dejar comentarios al encargado del formulario del curso.
 	\item La interfaz tiene elementos de estado que indican que cierta parte es nueva, aprobada, y rechazada.
 	\item Los pasos tienen regiones que permiten aceptar o rechazar los campos propuestos por los desarrolladores del curso. Por lo tanto, deben tener elementos de interfaz que indiquen al usuario que puede aprobar o rechazar cada parte.
 \end{itemize}
@@ -194,7 +194,7 @@ Esta historia tiene como propósito de diseñar la pantalla para un nuevo paso p
 
 La organización ha proporcionado mockups (figura \ref{course_outline}) para el paso a desarrollarse y era un criterio de aceptación de parte del ticket que siga el mismo formato.
 
-La historia de usuario tiene como descripción: \enquote{\textit{Como encargado del formulario de curso, me gustaría ser capaz de agregar el esquema de un curso, para de esta manera dar un resúmen de curso para el que esté revisando mi flujo y para que los estudiantes puedan tener una idea de se trata una vez que se curse}}.
+La historia de usuario tiene como descripción: \enquote{\textit{Como encargado del formulario de curso, me gustaría ser capaz de agregar el esquema de un curso, para de esta manera dar un resumen de curso para el que esté revisando mi flujo y para que los estudiantes puedan tener una idea de se trata una vez que se curse}}.
 
 Como criterio de aceptación de la historia fue la de agregar el flujo de trabajo de competencias en el flujo de trabajo de cursos. Algunas de las tareas de la historia fueron:
 \begin{itemize}
@@ -214,8 +214,8 @@ La historia ha sido terminada en dos iteraciones con un total de 48 horas cargad
   \label{course_outline}
 \end{figure}
 
-\subsection{Codigos de clasificación de curso}
-La siguiente historia tiene como propósito la de asignar códigos de clasificación a los cursos.
+\subsection{Códigos de clasificación de curso}
+Esta historia tiene como propósito la de asignar códigos de clasificación a los cursos.
 
 Para entrar en contexto, habría que definir primero que es TOP\footnote{de sus siglas en inglés, Taxonomy Of Programs, que significa en español taxonomía de programas.}.
 
@@ -232,7 +232,7 @@ Algunos usos a los códigos:
 	\item En contabilidad vocacional estudiantil, para reportes de compleción de programas y cursos de ciertos programas vocacionales.
 \end{itemize}
 
-La descripción de la historia fue la siguiente: \enquote{\textit{Como miembro del comité curricular, me gustaría ser capaz de asignar a mis cursos de códigos de clasificación como parte de la aprobación de mis flujo de trabajos para asegurar que estén correctos, como esto es motivo de rechazo en la oficina del canciller del Estado}}.
+La historia de usuario tiene como descripción: \enquote{\textit{Como miembro del comité curricular, me gustaría ser capaz de asignar a mis cursos de códigos de clasificación como parte de la aprobación de mis flujo de trabajos para asegurar que estén correctos, como esto es motivo de rechazo en la oficina del canciller del Estado}}.
 
 Algunas de las tareas fueron las siguientes:
 \begin{itemize}
@@ -244,7 +244,4 @@ Algunas de las tareas fueron las siguientes:
 	\item Pruebas de funcionalidad.
 \end{itemize}
 
-La historia de usuarioha sido terminada en una iteración con 80 horas cargadas en el sistema.
-
-
-[VER SI TIENE MOCKUP]
+La historia de usuario ha sido terminada en una iteración con 80 horas cargadas en el sistema.

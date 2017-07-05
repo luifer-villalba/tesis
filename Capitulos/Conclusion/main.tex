@@ -1,46 +1,43 @@
 % Chapter 8
 
-\chapter{Conclusión y aportes} \label{capitulo8} 
+\chapter{Conclusión y aportes} \label{capitulo7} 
+En este capítulo se encuentran las conclusiones obtenidas, acompañado de un breve resumen de toda la investigación. Se exponen los aportes a la problemática, así como también se proponen posibles temas de investigación y trabajos futuros o complementarios, que puedan continuar a partir del presente trabajo.
 
 \section{Conclusiones generales}
-En el proyecto final se tomó como caso de estudio con enfoque en la interacción humano-computador y con observación participante el diseño e implementación de un módulo de gestión curricular para un sistema de gestión de evaluaciones basadas en competencias académicas, la cual tiene sus cimientos en el mercado y también dispone de clientes utilizando la misma. 
+En el proyecto final se planteó como un caso de estudio con enfoque en la interacción humano-computador a través de una observación participante en el diseño e implementación de un módulo de gestión curricular para un sistema de gestión de evaluaciones basadas en competencias académicas. Se contó con un grupo de expertos en educación, así como un grupo de usuarios que acompañaron todo el proceso de desarrollo y validación.
 
-Se diseñó la manera de integrar y estructurar procesos separados de validación de competencias, cursos, y programas para el estado de California en un sistema de gestión de evaluaciones basadas en competencias. Dicho proceso era un proceso que se hacía en papel y tenía sus falencias debido a que el proceso requería mucho tiempo en revisar y aprobar el formulario como se muestra en la figura \ref{course_creation_flow}, y la complejidad del flujo aumentaba cuando habían más personas colaboradoras o evaluadoras en el proceso.
+Se diseñó la manera de integrar y estructurar procesos separados de validación de cursos y programas para el estado de California con un sistema de gestión de evaluaciones basadas en competencias. Dicho proceso se realizaba en el pasado en papel y tenía sus falencias debido a que el mismo requería mucho tiempo en revisar y aprobar los formularios pertinentes. Asimismo, la complejidad del flujo aumentaba cuando había más personas colaboradoras o evaluadoras en el proceso.
 
 Debido a que los requerimientos eran cambiantes y el equipo que diseñaba no disponía de un panorama completo de las funcionalidades del módulo curricular, la elección de la metodología ágil para el desarrollo del proyecto fue acertada debido a que la misma permitía el desarrollo iterativo e incremental del software con validaciones del cliente como proceso de desarrollo, que en este caso el equipo de validación tomaba el rol de cliente debido al conocimiento y experiencia en didáctica de sus miembros.
 
-Por lo tanto, algunas de las conclusiones al utilizar la metodología ágil son las siguientes:
+Por lo tanto, algunas de las experiencias adquiridas en este caso de estudio al utilizar la metodología ágil fueron las siguientes:
 \begin{itemize}
-	\item Posee el potencial para mejorar rápidamente la elección de que construir, pero sólo si se tiene en cuenta las señales del mercado que sugieren el cambio, y sólo si luego se toman medidas de cambios.
-	\item Posee el potencial para entregar de manera más eficiente, pero sólo si se invierte tiempo en modular en unidades de trabajo más pequeñas. 
-	\item Posee el potencial para proporcionar mejores predicciones, pero sólo si usted invierte en habilidades de estimación, y sólo si se hace una distinción entre la predicción y el compromiso.
-	\item Posee el potencial para ofrecer productos de mayor calidad, pero sólo si se recopilan los comentarios de los clientes sobre el enfoque de la solución y sólo si se realizan los cambios apropiados.
+	\item Se pudo mejorar rápidamente la elección de que construir, pero tuvimos que tener en cuenta las revisiones de los expertos y usuarios que sugirieron cambios para luego realizarlos.
+	\item Se realizó un importante esfuerzo en modular las unidades de trabajo en pequeños incrementos.
+	\item Con la experiencia que se fue acumulando, el equipo fue progresivamente mejorando la calidad de sus estimaciones respecto al trabajo que se podía realizar en cada sprint.
 \end{itemize}
 
-Al diseñar los flujos de trabajo para el diseño y revisión de formularios de competencias, cursos, y programas permitió a los profesores encargados de los mismos y evaluadores de dichos formularios, seguir el proceso de una manera intuitiva buscando la mejor experiencia de usuario y con menos cuellos de botella. Como ayuda, que cada paso genera un mensaje que el usuario puede acceder en su buzón de entrada en caso de que tuviera trabajo pendiente.
+El diseñar los flujos de trabajo para el diseño y revisión de formularios de competencias, cursos, y programas permitió a los profesores encargados y a los evaluadores de dichos formularios seguir el proceso de una manera intuitiva logrando una mejor experiencia de usuario. Esto se puede apreciar en la aceptación de las historias de usuario y la creación de nuevas historias de mejora, propuestas por los usuarios, que a su vez fueron aprobadas. Un ejemplo de estas mejoras fue la generación de mensajes en cada paso para que el usuario pueda acceder en su buzón de entrada en caso de que tuviera trabajo pendiente.
 
-En el desarrollo del módulo se utilizaron muchas de las tecnologías y herramientas que disponía el sistema como requerimiento no funcional de parte de la organización. El uso de estas tablas en común para la funcionalidad de plantillas de flujos de trabajo fue una decisión errónea, debido a que agregaba complejidad a las mismas y además las pruebas de componentes se convertían en pruebas de regresión debido a la complejidad de la estructura. 
+En el desarrollo del módulo se utilizaron muchas de las tecnologías y herramientas que disponía el sistema como requerimiento no funcional de parte de la organización. El uso de estas tablas en común para la funcionalidad de plantillas de flujos de trabajo trajo consigo muchos problemas técnicos, debido a que agregaba complejidad a las mismas y además las pruebas de componentes se convertían en pruebas de regresión debido a la complejidad de la estructura. 
 
-Sin embargo, al utilizar MySQL para guardar el flujo de trabajo y todos sus datos temporales no fue la mejor decisión debido a que la funcionalidad y el estándar tienen cambios constantes en cuanto a datos que tendrían que guardarse, y migrar los datos y columnas de los usuarios aumenta siempre la complejidad de la historia de usuario.
+La decisión de utilizar MySQL para guardar el flujo de trabajo y todos sus datos temporales también acarreó muchos problemas técnicos pues la funcionalidad y el estándar de estructuras de datos de cursos tienen cambios constantes. Sin embargo, la naturaleza iterativa del proceso de desarrollo ágil nos permitió identificar estas falencias y corregirlas en el curso del proyecto.
 
-Debido a la capa adicional de comunicaciones con el usuario final personificada por el equipo de Estados Unidos (que en nuestro caso actúa como cliente), la realimentación de valor real o valor aún necesario provisto al usuario final es lenta e implica grandes cambios luego de varios sprints.
+Debido a la capa adicional de comunicaciones con el usuario final personificada por el equipo de Estados Unidos (que en nuestro caso actúa como cliente), la realimentación de valor real o valor aún necesario provisto al usuario final es lenta e implica grandes cambios luego de varios sprints. Sin embargo, dado el gran número de usuarios finales involucrados, el grupo de expertos también ayudó a clasificar y organizar la comunicación con los mismos.
 
-A pesar de todas las falencias de desarrollo, el módulo tuvo resultados positivos por parte de los usuarios finales ya que es una herramienta que automatiza trabajos de validación curricular para las instituciones. Además, al tener comentarios acerca de qué habría que mejorar en la aplicación y con la utilización de la metodología ágil se permitió que se creen nuevas historias de usuario para algunos retoques futuros en el módulo curricular. 
+A pesar de todas las falencias de desarrollo, el módulo tuvo resultados positivos por parte de los usuarios finales ya que la herramienta construida automatiza trabajos de validación curricular para las instituciones. Además, al tener comentarios acerca de qué habría que mejorar en la aplicación y con la utilización de la metodología ágil se permitió que se creen nuevas historias de usuario para algunos retoques futuros en el módulo curricular. 
 
 \section{Aportes del proyecto}
-Se puede afirmar que la llegada del módulo curricular representa la tecnología al servicio de la educación, en específico para automatizar el proceso de diseño curricular. 
-
-Una buena parte de su importancia radica en las amplias posibilidades que ofrece, entre las cuáles las más sobresalientes son la capacidad otorgada por este sistema para gestionar el diseño y validación de material curricular en el estado de California, y la comunicación que ofrece entre los encargados del diseño de los formularios y los evaluadores de los mismos.
+La capacidad otorgada por este sistema para gestionar el diseño y validación de material curricular en el estado de California, y la comunicación que ofrece entre los encargados del diseño de los formularios y los evaluadores de los mismos constituye el principal aporte de este trabajo.
 
 Además, podemos citar otros aportes:
 \begin{itemize}
 	\item El módulo desarrollado reemplaza la preparación manual de formularios, los procesos de revisión y aprobación curricular de colegios ya sea para universidades, cursos, y programas.
-	\item Al implementar el módulo en un ambiente que puede ser accedido desde cualquier navegador y la capacidad de compartir comentarios, permite a las personas trabajar en conjunto sin necesidad de agendar reuniones para desarrollar el formulario o las revisiones.
-	\item Al permitir almacenar los datos nuevos, históricos, propuestos y activos de competencias, cursos, y programas.
+	\item El módulo constituye un ambiente que puede ser accedido desde cualquier navegador y la capacidad de compartir comentarios, permite a las personas trabajar en conjunto sin necesidad de agendar reuniones para desarrollar el formulario o las revisiones.
+	\item El módulo desarrollado permite almacenar los datos nuevos, históricos, propuestos y activos de competencias, cursos, y programas.
 	\item Al proveer notificaciones automatizadas cuando hay cambios de estado en los flujos de trabajo.
-	\item Se redujo el tiempo promedio de formulación y revisión de cada flujo de diseño e implementación de flujos de trabajo, debido a que se facilitó llenar formularios utilizando información ya existente en el AMS.
+	\item En la opinión de expertos y usuarios, la utilización del módulo desarrollado reduciría el tiempo promedio de formulación y revisión de cada flujo de diseño e implementación de flujos de trabajo, debido a que el mismo facilita la labor de llenar formularios utilizando información ya existente en el AMS.
 \end{itemize}
-
 
 \section{Proyectos futuros}
 En consenso con los usuarios finales de la aplicación y los que diseñan las historias de usuarios se observaron ciertas características que podrían dar una mayor utilidad al proyecto, donde citaremos algunos de los trabajos futuros ya creadas como épicas del proyecto:
@@ -49,5 +46,6 @@ En consenso con los usuarios finales de la aplicación y los que diseñan las hi
 	\item \textbf{Migración de motor de base de datos de los flujos de trabajo:} como ya comentamos, la decisión de tecnología en cuanto al motor de base de datos fue una decisión errónea, debido a que el estándar de California para diseño y revisión de cursos y programas puede variar con el tiempo y la utilización de MySQL como motor de base de datos dificulta el desarrollo en sí debido al constante cambio del modelo de datos, por lo que se considera un motor de base de datos no relacional basada en documentos, e.g. \enquote{MongoDB} como una opción a futuro.
 	\item \textbf{Acceso de información a través de API\footnote{de sus siglas en inglés, Application Programming Interface, que sirve como un conjunto de reglas para que las aplicaciones puedan comunicarse entre ellas.} pública:} es una práctica que exige el estado de California que todos los datos en cuanto a cursos y programas de las universidades puedan ser accedidas desde una API pública. Por lo tanto, se debe diseñar e implementar una interfaz pública que permita comunicarse y acceder a los datos del módulo curricular.
 	\item \textbf{Catálogo de cursos:} los CMS del estado tienen la opción de mostrar sus cursos válidos de manera pública para que las universidades puedan cargar en sus sistemas académicos como se aprecia en la figura \ref{after_creation}. Por lo tanto, como trabajo futuro para el módulo curricular se busca catalogar los cursos de manera pública desde una interfaz web.
-	\item \textbf{Flujo de trabajo para evaluaciones:} el mismo flujo de trabajo que se diseño e implementó para las competencias, cursos, y programas, se debe implementar para las evaluaciones.
+	\item \textbf{Flujo de trabajo para evaluaciones:} el mismo flujo de trabajo que se diseñó e implementó para las competencias, cursos, y programas, se debe implementar para las evaluaciones.
 \end{itemize}
+Desde el punto de vista académico sería interesante realizar una experiencia controlada de usabilidad del sistema para medir con mayor precisión las ganancias en materia de productividad que conlleva la utilización de este módulo.

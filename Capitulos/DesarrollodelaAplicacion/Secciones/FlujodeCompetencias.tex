@@ -4,20 +4,20 @@
 % \usepackage{booktabs}
 \begin{table}[H]
 \centering
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Historias de usuario                & HE  & HC  & PH & Sprints \\ \midrule
+Versionamiento de competencias      & 148 & 170 & 13 & 3       \\
+Flujo de trabajo simple             & 78  & 78  & 8  & 1       \\
+Aprobar pasos del flujo de trabajo  & 44  & 44  & 5  & 1       \\
+Rechazar pasos del flujo de trabajo & 52  & 53  & 5  & 1       \\ \bottomrule
+\end{tabular}
 \caption{Historias de usuario para el flujo de trabajo para el versionamiento de competencias}
 \label{epic:3}
-\begin{tabular}{@{}llllll@{}}
-\toprule
-Historias de usuario                & HE                   & HC                   & PH                   & PA                   & CS                   \\ \midrule
-Versionamiento de competencias      & 148 & 170 & 13 & 8 & 3 \\ 
-Flujo de trabajo simple             & 78 & 78 & 8 & 5 & 1 \\
-Aprobar pasos del flujo de trabajo  & 44 & 44 & 5 & 2 & 1 \\
-Rechazar pasos del flujo de trabajo & 52 & 53 & 5 & 3 & 1 \\ \bottomrule
-\end{tabular}
 \end{table}
 
 \subsection{Versionamiento de competencias}
-Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como encargado del sistema de gestión de competencias, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas}}.
+Esta historia de usuario tenía como descripción: \enquote{\textit{Como encargado del sistema de gestión de competencias, me gustaría ser capaz de versionar competencias con la finalidad de que se puedan redefinir competencias con el paso del tiempo, sin perder datos de corrección de las mismas}}.
 
 Algunas tareas que se definieron en la historia de usuario son las siguientes:
 \begin{itemize}
@@ -30,9 +30,9 @@ Algunas tareas que se definieron en la historia de usuario son las siguientes:
 Fue desarrollado durante tres iteraciones con un total de 170 horas cargadas en el sistema, debido a la complejidad a la hora de migrar los datos ya existentes de todas las universidades y por la cantidad de servicios que debían ser modificados.
 
 \subsection{Flujo de trabajo simple}
-En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo donde las plantillas de los flujos de trabajo pueden ser creados, editados, y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del flujo de trabajo si así lo decide en el futuro. Inicialmente se considera un solo paso para la iteración inicial de desarrollo.
+En la siguiente historia de usuario inicia el proceso de creación de flujos de trabajo donde las plantillas de los mismos pueden ser creados, editados, y eliminados por el administrador encargado de la aplicación de cada universidad. Para esta historia se debe diseñar y desarrollar las plantillas de manera que el administrador pueda agregar los diferentes pasos del flujo de trabajo si así lo decide en el futuro. Inicialmente se considera un solo paso para la iteración inicial de desarrollo.
 
-Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como coordinador del AMS, me gustaría ser capaz de crear flujos de trabajo simples para administrar la aprobación de revisiones de competencias y que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus}}.
+Esta historia de usuario tenía como descripción: \enquote{\textit{Como coordinador del AMS, me gustaría ser capaz de crear flujos de trabajo simples para administrar la aprobación de revisiones de competencias y que se pueda tener un mejor manejo de las creaciones y aprobaciones de las mismas en el campus}}.
 
 La historia tiene los siguientes criterios de aceptación:
 \begin{itemize}
@@ -50,13 +50,15 @@ Además, se da inicio al desarrollo de plantillas de flujos de trabajo con las c
 
 Como las plantillas era una funcionalidad conocida y utilizada en otra parte de la aplicación, se imitó el comportamiento de la misma utilizando las mismas tablas para el almacenamiento de los datos en la base de datos relacional como requerimiento no funcional de la organización. Se diseñaron las nuevas pantallas con la definición de las plantillas de flujo de trabajo y también la pantalla para listar las mismas. En la misma el usuario administrador puede crear, editar si aún no ha sido usada, eliminar, y clonar plantillas.
 
+El flujo simple de competencias consta con campos para agregar nombre, descripción, y periodo donde empieza a ser válido. Se empezó con el desarrollo del flujo para competencias como era el proceso de desarrollo inicial más simple, ya que la información para la creación de competencias en el sistema sin el módulo curricular solo requería de un nombre para la competencia en el nivel en la que se está creando. Además, los flujos simple también pueden ser personalizados, la única diferencia que adquiría es que se agregan campos personalizados para la definición del formulario institucional, para que puedan responder los que proponen la nueva competencia.
+
 La historia de usuario fue desarrollada durante una iteración con un total de 78 horas cargadas en el sistema.
 
 \subsection{Aprobación de pasos completados de flujos de trabajo}
 
 Luego de la historia en la que se diseñaron las plantillas y fue desarrollado un flujo de trabajo simple inicial para creación o versionamiento de competencias, el siguiente paso es que un usuario designado desde la plantilla pueda iniciar y otro pueda aprobar el proceso de creación o revisión de competencias de cualquier nivel.
 
-Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como evaluador de un flujo de trabajo, me gustaría un simple proceso paso por paso en el que pueda revisar y/o aprobar competencias de manera sencilla e intuitiva}}.
+Esta historia de usuario tenía como descripción: \enquote{\textit{Como evaluador de un flujo de trabajo, me gustaría un simple proceso paso por paso en el que pueda revisar y/o aprobar competencias de manera sencilla e intuitiva}}.
 
 La historia de usuario tiene los siguientes criterios de aceptación:
 \begin{itemize}
@@ -71,7 +73,7 @@ Como en las reuniones de demostración de cada sprint se notaban ciertos aspecto
 La historia de usuario fue desarrollada durante una iteración en un periodo de tiempo de 44 horas cargadas en el sistema.
 
 \subsection{Rechazar pasos completados del flujo de trabajo}
-Esta historia de usuario tenía como descripción los siguiente \enquote{\textit{Como evaluador de flujos de trabajo, me gustaría ser capaz de rechazar partes de los mismos y poder dar feedback a partes que no cumplen con nuestros estándares}}.
+Esta historia de usuario tenía como descripción: \enquote{\textit{Como evaluador de flujos de trabajo, me gustaría ser capaz de rechazar partes de los mismos y poder dar feedback a partes que no cumplen con nuestros estándares}}.
 
 \begin{itemize}
 	\item Diseño e implementación de funcionalidad de rechazo de pasos en los flujos de trabajo.
@@ -80,6 +82,6 @@ Esta historia de usuario tenía como descripción los siguiente \enquote{\textit
 
 Esta funcionalidad tiene como propósito permitir a la persona que hace la revisión de los pasos rechazar y dejar feedback para que se puedan hacer los cambios correspondientes. Cuando se rechaza un paso, se rechaza el flujo de trabajo, y por lo tanto vuelven a estar activos los campos para que se hagan los cambios correspondientes.
 
-El trabajo se inició la actualización del modelo de base de datos actual, luego de crear las clases correspondientes en el código para su utilización. Luego, se actualizaron las páginas donde el usuario puede aprobar los steps para que soporte rechazar pasos y poder así dejar algunos comentarios. 
+El trabajo se inició la actualización del modelo de base de datos actual, luego de crear las clases correspondientes en el código para su utilización. Luego, se actualizaron las páginas donde el usuario puede aprobar los pasos para que soporte rechazar pasos y poder así dejar algunos comentarios. 
 
 La historia de usuario fue desarrollada durante una iteración en un periodo de tiempo de 53 horas cargadas en el sistema.
