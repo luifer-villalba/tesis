@@ -1,7 +1,7 @@
 \section{Aporte}
-En la tabla \ref{mis-aportes} se puede apreciar cuáles son los aportes en cada historia de usuario utilizada para desarrollar de manera iterativa el módulo curricular del AMS, los datos fueron calculados desde la herramienta \enquote{JIRA} en la que se cargaban las horas, historias de usuario y fallas del sistema.
+En la tabla \ref{mis-aportes} se puede apreciar cuáles son los aportes por cada historia de usuario, donde se desarrolló de manera iterativa el módulo curricular del AMS, los datos fueron calculados desde la herramienta \enquote{JIRA} en la que se cargaban las horas, historias de usuario y fallas del sistema.
 
-En la cual el trabajo consistía en desarrollo de la historia, desarrollo de tests, y la persona que no desarrolló la historia es la encargada de hacer la validación de código y funcionalidad.
+En la cual el trabajo consistía en desarrollo de la historia, desarrollo de pruebas manuales y automatizadas, y la persona que no desarrolló la historia es la encargada de hacer la validación de código y funcionalidad.
 
 \begin{table}[H]
 \centering
@@ -45,7 +45,11 @@ Retoques finales para el flujo de trabajo de curso  & 37,5\% \\ \bottomrule
 \label{mis-aportes}
 \end{table}
 
-Dichas historias de usuario eran entregadas para validación de parte del equipo de desarrolladores y por el equipo de expertos en didáctica, una vez que era aprobada se procedía a integrar el nuevo código con el del AMS. Si en la aplicación o en el módulo se encontraban fallas, se procedían a crear tickets de fallas. Además, si habían mejoras que hacerse se creaban tickets de mejoras. En la figura \ref{tickets_by_type} podemos ver la distribución de tickets aportados por tipo.
+Las historias de usuario una vez terminadas y validadas por el equipo de desarrollo, la misma pasaba a validación por parte del equipo de expertos en didácticas. Los expertos en didáctica tenían la potestad de volver a abrir las historias en caso de que no se cumplan los criterios de aceptación, ya sea por dominio erróneo de parte de los desarrolladores o funcionalidades faltantes. Dichas historias podían volver a cerrarse en caso de que sea un falso positivo o volver a pasar al estado de desarrollo si aún le quedaba trabajo pendiente.
+
+Una vez que la historia ya fue cerrada, el código ya se encuentra integrado al repositorio del módulo curricular, y se encuentran fallas en la funcionalidad, se procede a crear tickets de falla especificando cuál es el problema y el resultado esperado. Algunos usuarios finales de la aplicación también participaban del proceso de validación de las historias una vez que tenían las nuevas funcionalidades en el sistema de su universidad, donde los mismos pueden sugerir mejoras o casos de uso verdaderos de acorde a sus experiencias como usuario se procedían a crear tickets del estilo mejora de las funcionalidades ya agregadas.
+
+De la totalidad de tickets trabajados se puede apreciar en la Figura \ref{tickets_by_type} los porcentajes de historias de usuario, fallas y de mejoras durante el proceso de desarrollo. Y en la Figura \ref{user_story_perc} la cantidad de historias de usuario que fueron reabiertas debido a fallas, desconocimiento de dominio, y criterios de aceptación que no se cumplían durante el proceso de validación por parte del equipo de expertos en didáctica.
 
 \begin{figure}[H]
 \centering
@@ -56,8 +60,6 @@ Dichas historias de usuario eran entregadas para validación de parte del equipo
   \label{tickets_by_type}
 \end{figure}
 
-Las historias de usuario que no cumplieron con todos los criterios de aceptación vuelve a ser abierta para que se continue su desarrollo. El porcentaje de historias que no cumplieron los criterios de aceptación se puede apreciar en la figura \ref{user_story_perc}.
-
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
@@ -67,18 +69,15 @@ Las historias de usuario que no cumplieron con todos los criterios de aceptació
   \label{user_story_perc}
 \end{figure}
 
-Los tickets de fallas que se trabajaron fueron fallas o errores de dominio encontrados en la funcionalidad del módulo curricular, cuando el equipo de desarrollo solucionaba dichas fallas debía seguir el mismo proceso de validación. En caso de que la falla mediante pruebas seguía se volvía a abrir para que se continúe trabajando hasta que cumpla con el criterio de aceptación que era solucionar la falla que se reportaba. En la figura \ref{bugs_perc} se puede ver cuántas fallas fueron cerradas y reabiertas en el periodo de desarrollo.
 
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
-	\pie [rotate = 180] {86.2/Terminado, 13.8/Reabierto}
-\end{tikzpicture}
-\caption{Porcentajes de tickets de fallas que fueron reabiertos.}
-  \label{bugs_perc}
-\end{figure}
-
-Los tickets de fallas por lo general eran tickets de dificultad pequeña que un programador podía terminar en uno o dos días aproximadamente, es decir en un sprint. En cambio, las historias de usuario eran de mayor dificultad y podía tomar a varios desarrolladores hasta más tiempo que sprint podía brindar, en esos casos se continuaba en el siguiente sprint o se separaba la funcionalidad en tickets más pequeños, como se puede apreciar en la figura \ref{sprint_perc}.
+% \begin{figure}[H]
+% \centering
+% \begin{tikzpicture}
+% 	\pie [rotate = 180] {86.2/Terminado, 13.8/Reabierto}
+% \end{tikzpicture}
+% \caption{Porcentajes de tickets de fallas que fueron reabiertos.}
+%   \label{bugs_perc}
+% \end{figure}
 
 \pgfplotstableread[row sep=\\,col sep=&]{
     interval 		& carT \\

@@ -1,0 +1,91 @@
+\documentclass[10pt]{article}
+
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage[english, spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{float} % Para ubicar imagenes en donde corresponden
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+
+\usepackage{pgfgantt}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\usepackage{fancyhdr}
+	\lhead{}
+	\chead{}
+	\rhead{}
+	\rfoot{\thepage}
+	\cfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+	\pagestyle{fancy}
+
+%% Sets page size and margins
+\usepackage[ a4paper, top=1.5cm, bottom=1.5cm, inner=1cm, outer=2cm, bindingoffset=2cm]{geometry}
+
+\usepackage{caption}
+\captionsetup[table]{name=Tabla}
+\captionsetup[figure]{name=Figura}
+
+\usepackage[backend=bibtex,style=numeric,maxcitenames=1,natbib=true,sorting=none]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\addbibresource{bibs/references} % The filename of the bibliography
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+%Used to draw gantt charts, which I will use for the calendar.
+%Let's define some awesome new ganttchart elements:
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\begin{document}
+	\begin{center}
+		\thispagestyle{fancy}
+		{\Large\bfseries Universidad Católica \enquote{Nuestra Señora de la Asunción} \par}
+			\vspace{2mm}
+		{\Large\bfseries Proyecto Final de Ingeniería Informática\par}
+	    		\vspace{2mm}
+
+	   	Tema: Desarrollo de un sistema de gestión de programas de estudio orientado a resultados pedagógicos.
+	    		\vspace{1mm}
+	    
+	    Alumno: Luis Fernando Villalba Vera
+	    		\vspace{1mm}
+	   	
+	   	Tutor: Ing. Sebastián Ortíz
+	    		\vspace{1mm}
+	   	
+	   	Co-Tutor: Ing. Wilfrido Inchaustti
+        
+	\end{center}
+
+
+%----------------------------------------------------------------------------------------
+%	 CONTENT - SECTIONS
+%----------------------------------------------------------------------------------------
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% \renewcommand{\chaptername}{Capítulo}
+
+\input{Secciones/1-Introduccion}
+\input{Secciones/2-MarcoTeorico}
+\input{Secciones/3-EstadodelArte}
+\input{Secciones/4-CasodeEstudio}
+\input{Secciones/5-PropuestadeTrabajo}
+\input{Secciones/6-Desarrollo}
+\input{Secciones/7-Validacion}
+\input{Secciones/8-Conclusion}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\printbibliography[heading=bibintoc,title={Bibliografía}]
+
+\end{document}
