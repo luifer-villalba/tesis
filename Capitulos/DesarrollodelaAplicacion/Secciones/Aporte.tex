@@ -1,7 +1,7 @@
 \section{Aporte}
-En la tabla \ref{mis-aportes} se puede apreciar cuáles son los aportes por cada historia de usuario, donde se desarrolló de manera iterativa el módulo curricular del AMS, los datos fueron calculados desde la herramienta \enquote{JIRA} en la que se cargaban las horas, historias de usuario y fallas del sistema.
+En la tabla \ref{mis-aportes} se puede apreciar cuáles fueron los aportes por cada historia de usuario, donde se desarrolló de manera iterativa el módulo curricular del AMS, los datos fueron calculados desde la herramienta \enquote{JIRA} en la que se cargaban las horas, historias de usuario y fallas del sistema.
 
-En la cual el trabajo consistía en desarrollo de la historia, desarrollo de pruebas manuales y automatizadas, y la persona que no desarrolló la historia es la encargada de hacer la validación de código y funcionalidad.
+El trabajo consistía en el desarrollo de la historia, desarrollo de pruebas manuales y automatizadas, y el miembro del equipo que no desarrolló la historia es la encargada de hacer la validación de código y funcionalidad.
 
 \begin{table}[H]
 \centering
@@ -41,11 +41,11 @@ Reorganización de pestañas del módulo curricular    & 100\%  \\
 Lista mejorada de cursos y programas                & 100\%  \\
 Retoques finales para el flujo de trabajo de curso  & 37,5\% \\ \bottomrule
 \end{tabular}
-\caption{Tabla de historias de usuario y aportes}
+\caption{Historias de usuario y aportes}
 \label{mis-aportes}
 \end{table}
 
-Las historias de usuario una vez terminadas y validadas por el equipo de desarrollo, la misma pasaba a validación por parte del equipo de expertos en didácticas. Los expertos en didáctica tenían la potestad de volver a abrir las historias en caso de que no se cumplan los criterios de aceptación, ya sea por dominio erróneo de parte de los desarrolladores o funcionalidades faltantes. Dichas historias podían volver a cerrarse en caso de que sea un falso positivo o volver a pasar al estado de desarrollo si aún le quedaba trabajo pendiente.
+Las historias de usuario una vez terminadas y validadas por el equipo de desarrollo, la misma pasaba a validación por parte del equipo de expertos en didáctica. Dichos expertos tenían la potestad de volver a abrir las historias en caso de que no se cumplan los criterios de aceptación, ya sea por dominio erróneo de parte de los desarrolladores o funcionalidades faltantes. Dichas historias podían volver a cerrarse en caso de que sea un falso positivo o volver a pasar al estado de desarrollo si aún le quedaba trabajo pendiente.
 
 Una vez que la historia ya fue cerrada, el código ya se encuentra integrado al repositorio del módulo curricular, y se encuentran fallas en la funcionalidad, se procede a crear tickets de falla especificando cuál es el problema y el resultado esperado. Algunos usuarios finales de la aplicación también participaban del proceso de validación de las historias una vez que tenían las nuevas funcionalidades en el sistema de su universidad, donde los mismos pueden sugerir mejoras o casos de uso verdaderos de acorde a sus experiencias como usuario se procedían a crear tickets del estilo mejora de las funcionalidades ya agregadas.
 
@@ -69,15 +69,14 @@ De la totalidad de tickets trabajados se puede apreciar en la Figura \ref{ticket
   \label{user_story_perc}
 \end{figure}
 
-
-% \begin{figure}[H]
-% \centering
-% \begin{tikzpicture}
-% 	\pie [rotate = 180] {86.2/Terminado, 13.8/Reabierto}
-% \end{tikzpicture}
-% \caption{Porcentajes de tickets de fallas que fueron reabiertos.}
-%   \label{bugs_perc}
-% \end{figure}
+Algunas historias de usuario tomaron mas de un sprint en completarse debido a cambios de alcance o reaperturas por parte del equipo de expertos en didáctica, como se puede apreciar en la Figura \ref{sprint_perc}. Los motivos más importantes fueron:
+\begin{itemize}
+    \item Estimación errónea de parte del equipo de desarrollo, ya que la historia de usuario era muy grande para que el equipo pudiese terminar en una iteración.
+    \item La validación y realimentación de parte del equipo de desarrollo podría tomar mucho tiempo hasta que la historia pase al estado de \enquote{DONE}.
+    \item La historia de usuario podría reabrirse y volver al sprint en caso de que se encuentren fallos en general.
+    \item Falta de dominio en la aplicación por parte de los desarrolladores del módulo curricular.
+    \item La definición de las historias de usuario era incompleta y el equipo utilizaba tiempo de desarrollo para definir los criterios de aceptación con el cliente.
+\end{itemize}
 
 \pgfplotstableread[row sep=\\,col sep=&]{
     interval 		& carT \\
