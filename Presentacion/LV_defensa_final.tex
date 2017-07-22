@@ -32,11 +32,11 @@
 
 
 \title{Desarrollo de un sistema de gestión de programas de estudio orientado a resultados pedagógicos}
-\subtitle{Proyecto final de la carrera}
+\subtitle{Defensa final de tesis de Ingeniería en Informática}
 \author{Luis Fernando Villalba Vera}
 \institute{Universidad Católica - Nuestra Señora de la Asunción}
 \date{\today}
-\titlegraphic{\hfill\includegraphics[height=1.5cm]{../Figuras/uca}}
+\titlegraphic{\hfill\includegraphics[height=1.7cm]{../Figuras/uca}}
 
 \begin{document}
 
@@ -44,11 +44,10 @@
 
 \begin{frame}{Contenido}
 	\begin{enumerate}
-	    \item Justificación
+	    \item Motivación
 	    \item Objetivos
-	    \item Estado del arte
 	    \item Marco teórico
-	    \item Caso de estudio
+	    \item Estado del arte
 	    \item Propuesta de trabajo
 	    \item Proceso de desarrollo
 	    \item Validación del desarrollo
@@ -57,12 +56,13 @@
 \end{frame}
 
 % JUSTIFICACIÓN
-\section{Justificación}
+\section{Motivación}
 \begin{frame}{Conceptos}
   \begin{itemize}[<+- | alert@+>]
     \item Problemática
     \item Competencias académicas y su evaluación
     \item Sistemas de gestión de evaluaciones (AMS)
+    \item Diseño de programas educativos orientados a competencias
     \item Sistemas de gestión curricular (CMS)
   \end{itemize}
 \end{frame}
@@ -93,13 +93,96 @@
       \end{alertblock}
 
 	\metroset{block=fill}
-	\begin{alertblock}{Objetivos específicos}
+	\begin{alertblock}<2>{Objetivos específicos}
         \begin{itemize}
         	\item Realizar un relevamiento de los requerimientos, diseño e implementación de un sistema de gestión de programas orientado a competencias.
         	\item Realizar el proyecto en un marco de programación ágil, estimando y desarrollando la aplicación de acuerdo a las directrices brindadas por la metodología.
         	\item Validar la herramienta desarrollada: con expertos del dominio principalmente y de manera preliminar con experiencias limitadas con los usuarios finales.
         \end{itemize}
     \end{alertblock}
+\end{frame}
+
+% MARCO TEORICO
+\section{Marco teórico}
+\subsection{Software as a Service}
+\begin{frame}{Software as a Service}
+	\metroset{block=fill}
+	\begin{alertblock}{Definición}
+		Paradigma de entrega de software como servicio a través de una red.
+	\end{alertblock}
+
+	\begin{columns}[c,onlytextwidth]
+    	\column{0.6\textwidth}
+		\begin{block}{Características}
+			\begin{itemize}
+	        	\item Modelo de suscripción.
+	        	\item Acceso y administración a través de una red.
+	        	\item Actividades gestionadas desde ubicaciones centrales.
+	        	\item Actualizaciones centralizadas.
+	      		\item Arquitectura multi-tenant.
+	    	\end{itemize}
+		\end{block}
+	    \column{0.4\textwidth}
+		\begin{figure}[H]
+			\includegraphics[scale=0.23]{../Figuras/saas}
+		\end{figure}
+  	\end{columns}
+\end{frame}
+
+\subsection{Sistemas de gestión de evaluaciones}
+\begin{frame}{Sistemas de gestión de evaluaciones}
+	\begin{figure}
+		\centering
+	    \includegraphics<1>[scale=0.55]{../Figuras/ams_1}
+	    \includegraphics<2>[scale=0.55]{../Figuras/ams_2}
+	    \includegraphics<3>[scale=0.55]{../Figuras/ams_3}
+	\end{figure}
+\end{frame}
+
+\subsection{Metodología ágil}
+\begin{frame}{Metodología ágil}
+	\metroset{block=fill}
+	\begin{alertblock}{Definición}
+		Enfoque para toma de decisiones basado en el desarrollo iterativo e incremental.
+	\end{alertblock}
+
+	\begin{columns}[c,onlytextwidth]
+    	\column{0.5\textwidth}
+		\begin{block}{Características}
+			\begin{itemize}
+	        	\item Entregas de valor agregado en iteraciones.
+	        	\item Adaptación al cambio.
+	        	\item El cliente es parte del proceso de desarrollo.
+	    	\end{itemize}
+		\end{block}
+	    \column{0.5\textwidth}
+		\begin{figure}
+		    \includegraphics[scale=0.32]{../Figuras/met_agiles}
+		\end{figure}
+  	\end{columns}
+\end{frame}
+
+\subsection{Interacción Humano-Computador}
+\begin{frame}{Interacción Humano-Computador}
+	\metroset{block=fill}
+	\begin{alertblock}{Definición}
+		Diseño que busca lograr un balance óptimo entre la calidad y la eficiencia de los servicios.
+	\end{alertblock}
+
+	\begin{columns}[c,onlytextwidth]
+    	\column{0.6\textwidth}
+		\begin{block}{Características}
+			\begin{itemize}
+	        	\item Definen la funcionalidad y la interacción de los usuarios.
+	        	\item Facilita e incrementa la usabilidad de los sistemas.
+	        	\item Busca optimizar la interacción y el procesamiento de información.
+	    	\end{itemize}
+		\end{block}
+	    \column{0.4\textwidth}
+		\begin{figure}
+		    \includegraphics[scale=0.12]{../Figuras/happy_agile}
+		\end{figure}
+  	\end{columns}
 \end{frame}
 
 % ESTADO DEL ARTE
@@ -149,110 +232,34 @@
 	\end{table}
 \end{frame}
 
-% MARCO TEORICO
-\section{Marco teórico}
-\subsection{Software as a Service}
-\begin{frame}{Software as a Service}
-	\metroset{block=fill}
-	\begin{alertblock}{Definición}
-		Paradigma de entrega de software como servicio a través de una red.
-	\end{alertblock}
-
-	\begin{columns}[c,onlytextwidth]
-    	\column{0.6\textwidth}
-		\begin{block}{Características}
-			\begin{itemize}
-	        	\item Modelo de suscripción.
-	        	\item Acceso y administración a través de una red.
-	        	\item Actividades gestionadas desde ubicaciones centrales.
-	        	\item Actualizaciones centralizadas.
-	      		\item Arquitectura multi-tenant.
-	    	\end{itemize}
-		\end{block}
-	    \column{0.4\textwidth}
-		\begin{figure}[H]
-			\includegraphics[scale=0.23]{../Figuras/saas}
-		\end{figure}
-  	\end{columns}
-\end{frame}
-
-\subsection{Sistemas de gestión de evaluaciones}
-\begin{frame}{Sistemas de gestión de evaluaciones}
-	\begin{figure}
-		\centering
-	    \includegraphics[scale=0.55]{../Figuras/ams}
-	\end{figure}
-\end{frame}
-
-\subsection{Metodología ágil}
-\begin{frame}{Metodología ágil}
-	\metroset{block=fill}
-	\begin{alertblock}{Definición}
-		Enfoque para toma de decisiones basado en el desarrollo iterativo e incremental.
-	\end{alertblock}
-
-	\begin{columns}[c,onlytextwidth]
-    	\column{0.5\textwidth}
-		\begin{block}{Características}
-			\begin{itemize}
-	        	\item Entregas de valor agregado en iteraciones.
-	        	\item Adaptación al cambio.
-	        	\item El cliente es parte del proceso de desarrollo.
-	    	\end{itemize}
-		\end{block}
-	    \column{0.5\textwidth}
-		\begin{figure}
-		    \includegraphics[scale=0.32]{../Figuras/met_agiles}
-		\end{figure}
-  	\end{columns}
-\end{frame}
-
-\subsection{Interacción Humano-Computador}
-\begin{frame}{Interacción Humano-Computador}
-	% \metroset{block=fill}
-	% \begin{alertblock}{Definición}
-	% 	Enfoque para toma de decisiones basado en el desarrollo iterativo e incremental.
-	% \end{alertblock}
-
-	% \begin{columns}[c,onlytextwidth]
- %    	\column{0.5\textwidth}
-	% 	\begin{block}{Características}
-	% 		\begin{itemize}
-	%         	\item Entregas de valor agregado en iteraciones.
-	%         	\item Adaptación al cambio.
-	%         	\item El cliente es parte del proceso de desarrollo.
-	%     	\end{itemize}
-	% 	\end{block}
-	%     \column{0.5\textwidth}
-	% 	\begin{figure}
-	% 	    \includegraphics[scale=0.32]{../Figuras/met_agiles}
-	% 	\end{figure}
- %  	\end{columns}
-\end{frame}
-
-% CASO DE ESTUDIO
-\section{Caso de estudio}
-\subsection{Caso de estudio}
+% PROPUESTA DE TRABAJO
+\section{Propuesta de trabajo}
+\subsection{Definición del proyecto}
 \begin{frame}{Caso de estudio}
-  	Caso de estudio de observación participante: desarrollo de un sistema de curriculums orientado a competencias.
+	\metroset{block=fill}
+	\begin{alertblock}{Definición}
+		Desarrollo de un sistema de gestión de cursos y programas orientado a competencias con un enfoque HCI y observación participante.
+	\end{alertblock}
 
-	\begin{block}{Requerimientos no funcionales}
+	\begin{block}<2>{Características}
 		\begin{itemize}
 			\item Arquitectura Software as a Service.
 			\item Utilización de abordaje ágil de desarrollo.
+        	\item Observación participante como método de recolección de información.
+        	\item HCI para mejorar la usabilidad e interacción con el usuario.
+			\item Validaciones por un equipo de expertos en dominio educativo.
     	\end{itemize}
 	\end{block}
 \end{frame}
 
-% PROPUESTA DE TRABAJO
-\section{Propuesta de trabajo}
 \subsection{Módulo de gestión curricular integrado a un AMS}
 \begin{frame}{Módulo de gestión curricular integrado a un AMS}
 	\begin{figure}
 		\centering
-	    \includegraphics[scale=0.25,left]{../Figuras/proposal}
+	    \includegraphics[scale=0.35]{../Figuras/proposal}
 	\end{figure}
 \end{frame}
+
 
 \begin{frame}{Modelo de la propuesta de solución}
 	\begin{figure}
@@ -263,85 +270,125 @@
 
 % PROCESO DE DESARROLLO
 \section{Proceso de desarrollo}
-\subsection{Definición de épicas e historias de usuario}
-\begin{frame}{Definición de épicas e historias de usuario}
+\subsection{Épicas e historias de usuario}
+\begin{frame}{Épicas e historias de usuario}
 	\begin{figure}
 		\centering
 	    \includegraphics[scale=0.5]{../Figuras/epic_diagram}
 	\end{figure}
 \end{frame}
 
+\subsection{Flujo de la iteración}
+\begin{frame}{Flujo de la iteración}
+	\begin{figure}
+		\centering
+		\includegraphics<1>[scale=0.235]{../Figuras/flujo_scrum_1}
+		\includegraphics<2>[scale=0.235]{../Figuras/flujo_scrum_2}
+		\includegraphics<3>[scale=0.235]{../Figuras/flujo_scrum_3}
+		\includegraphics<4>[scale=0.235]{../Figuras/flujo_scrum_4}
+	\end{figure}
+	\decoRule \\
+  	\tiny \textit{Charles G Cobb. The project manager’s guide to mastering Agile: Principles and practices for an adaptive approach. John Wiley \& Sons, 2015.} \\
+\end{frame}
+
 \subsection{Flujo del desarrollo}
 \begin{frame}{Flujo del desarrollo}
-	\begin{figure}
+\begin{figure}
 		\centering
-	    \includegraphics[scale=0.235]{../Figuras/flujo_scrum_1}
-	\end{figure}
-	\decoRule \\
-  	\tiny \textit{Charles G Cobb. The project manager’s guide to mastering Agile: Principles and practices for an adaptive approach. John Wiley \& Sons, 2015.} \\
-\end{frame}
-
-\begin{frame}{Flujo del desarrollo}
-	\begin{figure}
-		\centering
-	    \includegraphics[scale=0.235]{../Figuras/flujo_scrum_2}
-	\end{figure}
-	\decoRule \\
-  	\tiny \textit{Charles G Cobb. The project manager’s guide to mastering Agile: Principles and practices for an adaptive approach. John Wiley \& Sons, 2015.} \\
-\end{frame}
-
-\begin{frame}{Flujo del desarrollo}
-	\begin{figure}
-		\centering
-	    \includegraphics[scale=0.235]{../Figuras/flujo_scrum_3}
-	\end{figure}
-	\decoRule \\
-  	\tiny \textit{Charles G Cobb. The project manager’s guide to mastering Agile: Principles and practices for an adaptive approach. John Wiley \& Sons, 2015.} \\
-\end{frame}
-
-\begin{frame}{Flujo del desarrollo}
-	\begin{figure}
-		\centering
-	    \includegraphics[scale=0.235]{../Figuras/flujo_scrum_4}
-	\end{figure}
-	\decoRule \\
-  	\tiny \textit{Charles G Cobb. The project manager’s guide to mastering Agile: Principles and practices for an adaptive approach. John Wiley \& Sons, 2015.} \\
-\end{frame}
-
-\begin{frame}{Aportes}
-	\begin{figure}
-		\centering
-		\begin{tikzpicture}[scale=0.8]
-			\pie [rotate = 180] {45/Historias de usuario, 48.3/Fallas, 6.7/Mejoras}
-		\end{tikzpicture}
+	    \includegraphics[scale=0.35]{../Figuras/workflow_1}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Aportes}
+\subsection{Plantillas de flujos de trabajo}
+\begin{frame}{Plantillas de flujos de trabajo}
 	\begin{figure}
 		\centering
-		\begin{tikzpicture}[scale=0.8]
-			\pie [rotate = 180] {85.2/Terminada, 14.8/Reabierta}
-		\end{tikzpicture}
+		\includegraphics<1>[scale=0.4]{../Figuras/Pantallas/template_1}
+		\includegraphics<2>[scale=0.3]{../Figuras/Pantallas/template_2}
+		\includegraphics<3>[scale=0.3]{../Figuras/Pantallas/template_3}
+		\includegraphics<4>[scale=0.3]{../Figuras/Pantallas/template_4}
+	\end{figure}
+\end{frame}
+
+\subsection{Lista mejorada de cursos y programas}
+\begin{frame}{Lista mejorada de cursos y programas}
+	\begin{figure}
+		\centering
+		\includegraphics<1>[scale=0.3]{../Figuras/Pantallas/curriculum_list_1}
+		\includegraphics<2>[scale=0.3]{../Figuras/Pantallas/curriculum_list_2}
+	\end{figure}
+\end{frame}
+
+\subsection{Flujo de trabajo para cursos}
+\begin{frame}{Flujo de trabajo para cursos}
+	\begin{figure}
+		\centering
+		\includegraphics<1>[scale=0.275]{../Figuras/Pantallas/course_creation_1}
+		\includegraphics<2>[scale=0.23]{../Figuras/Pantallas/course_creation_2}
+		\includegraphics<3>[scale=0.26]{../Figuras/Pantallas/course_creation_3}
+		\includegraphics<4>[scale=0.26]{../Figuras/Pantallas/course_creation_4}
+		\includegraphics<5>[scale=0.26]{../Figuras/Pantallas/course_creation_5}
+		\includegraphics<6>[scale=0.3]{../Figuras/Pantallas/course_creation_6}
+		\includegraphics<7>[scale=0.3]{../Figuras/Pantallas/course_creation_7}
+		\includegraphics<8>[scale=0.25]{../Figuras/Pantallas/course_creation_8}
+		\includegraphics<9>[scale=0.3]{../Figuras/Pantallas/course_creation_submit}
+	\end{figure}
+\end{frame}
+
+\subsection{Buzón de entrada}
+\begin{frame}{Buzón de entrada}
+	\begin{figure}
+		\centering
+		\includegraphics<1>[scale=0.3]{../Figuras/Pantallas/inbox}
+		\includegraphics<2>[scale=0.3]{../Figuras/Pantallas/inbox_2}
+	\end{figure}
+\end{frame}
+
+\subsection{Revisión de flujos de trabajo}
+\begin{frame}{Revisión de flujos de trabajo}
+	\begin{figure}
+		\centering
+		\includegraphics<1>[scale=0.27]{../Figuras/Pantallas/course_revision_1}
+		\includegraphics<2>[scale=0.3]{../Figuras/Pantallas/course_revision_2}
+		\includegraphics<3>[scale=0.3]{../Figuras/Pantallas/course_revision_3}
+		\includegraphics<4>[scale=0.3]{../Figuras/Pantallas/course_revision_4}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Resultados}
+	\begin{figure}
+		\centering
+	    \includegraphics[scale=0.235]{../Figuras/tickets_tipo}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Resultados}
+	\begin{figure}
+		\centering
+	    \includegraphics[scale=0.235]{../Figuras/historias_cerradas_reabiertas}
 	\end{figure}
 \end{frame}
 
 % VALIDACIÓN DEL DESARROLLO
 \section{Validación del desarrollo}
-\subsection{Revisión de las historias de usuario}
-\begin{frame}
+\subsection{Por parte de los programadores}
+\begin{frame}{Por parte de los programadores}
 	\begin{itemize}[<+- | alert@+>]
-	    \item Revisión por pares
-	    \item Pruebas automatizadas
-	    \item Revisión por parte del equipo de validación
+	    \item Revisión de códigos
+	    \item Pruebas manuales y automatizadas
+	    \item Pruebas de rendimiento
+	    \item Comprobación de los criterios de aceptación
 	\end{itemize}
 \end{frame}
 
-\subsection{Revisión por parte del equipo de validación}
-\begin{frame}{Revisión por parte del equipo de validación}
+\subsection{Por parte de los expertos en dominio}
+\begin{frame}{Por parte de los expertos en dominio}
 	\begin{figure}
 		\centering
-	    \includegraphics[scale=0.35]{../Figuras/workflow}
+	    \includegraphics<1>[scale=0.35]{../Figuras/workflow_1}
+	    \includegraphics<2>[scale=0.35]{../Figuras/workflow_2}
+	    \includegraphics<3>[scale=0.35]{../Figuras/workflow_3}
+	    \includegraphics<4>[scale=0.35]{../Figuras/workflow_4}
 	\end{figure}
 \end{frame}
 
@@ -349,24 +396,69 @@
 % CONCLUSIÓN Y APORTES
 \section{Conclusión y aportes}
 \subsection{Conclusión}
-\begin{frame}{Aportes}
-	\begin{itemize}[<+- | alert@+>]
-	    \item Reduce el tiempo de diseño y validación de material curricular.
-	    \item Facilita la comunicación entre encargados del diseño y validación de los formularios.
-	\end{itemize}
+\begin{frame}{Funcionalidades del módulo curricular}
+	\begin{table}[]
+	\small
+	\centering
+	\resizebox{\columnwidth}{!}{%
+	\begin{tabular}{@{}lllccll@{}}
+	\midrule
+	\multicolumn{3}{l}{Características}                                     & CurricUNET   & CourseLeaf   & DECA         & MC           \\ \midrule
+	\rowcolor[HTML]{ECF4FF}
+	\multicolumn{3}{l}{Creación y versionamiento de competencias.}          &              &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Creación y versionamiento de cursos.}                & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+	\multicolumn{3}{l}{Creación y versionamiento de programas de estudio.}  & $\checkmark$ & $\checkmark$ &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Cumple los Estándares de códigos de California.}     & $\checkmark$ &              &              & $\checkmark$ \\
+	\rowcolor[HTML]{ECF4FF}
+	\multicolumn{3}{l}{Historial de versiones de competencias.}             &              &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Historial de versiones de cursos.}                   & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+	\multicolumn{3}{l}{Historial de versiones de programas de estudio.}     & $\checkmark$ &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Reporte de Comparación entre versiones de cursos.}   &              &              & $\checkmark$ & $\checkmark$ \\
+	\rowcolor[HTML]{ECF4FF}
+	\multicolumn{3}{l}{Soporta competencias de aprendizaje.}                &              &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Plantilla de flujo de trabajo customizable.}         & $\checkmark$ &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Permite asignar roles evaluadores en la aplicación.} & $\checkmark$ & $\checkmark$ &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Permite asignar usuarios como colaboradores.}        & $\checkmark$ &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Soporte de correlatividades entre cursos.}           & $\checkmark$ &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{Incluye un catálogo de cursos.}                      & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+	\multicolumn{3}{l}{Incluye un catálogo de programas de estudio.}        & $\checkmark$ &              &              & $\checkmark$ \\
+	\rowcolor[HTML]{ECF4FF}
+	\multicolumn{3}{l}{Incluye un catálogo de competencias.}                &              &              &              & $\checkmark$ \\
+	\multicolumn{3}{l}{UX intuitiva y efectiva.}                            &              & $\checkmark$ & $\checkmark$ & $\checkmark$ \\ \midrule
+	\end{tabular}
+	}
+\end{table}
 \end{frame}
 
-\subsection{Trabajos futuros}
+\begin{frame}{Conclusiones y aportes}
+\metroset{block=fill}
+	\begin{alertblock}{Conclusiones generales}
+		Desarrollo de un sistema de gestión de cursos y programas orientado a competencias con un enfoque HCI y observación participante.
+	\end{alertblock}
+
+	\begin{block}{Aportes}
+		\begin{itemize}
+			\item Importador de cursos
+		    \item Migración de motor de base de datos de los flujos de trabajo
+		    \item Accesso de información a través de API pública
+		    \item Catálogo de cursos
+		    \item Flujo de trabajo para evaluaciones
+    	\end{itemize}
+	\end{block}
+\end{frame}
+
 \begin{frame}{Trabajos futuros}
-	\begin{itemize}[<+- | alert@+>]
-	    \item Importador de cursos
-	    \item Migración de motor de base de datos de los flujos de trabajo
-	    \item Accesso de información a través de API pública
-	    \item Catálogo de cursos
-	    \item Flujo de trabajo para evaluaciones
-	\end{itemize}
+	\metroset{block=fill}
+	\begin{block}{Épicas}
+		\begin{itemize}
+			\item Importador de cursos
+		    \item Migración de motor de base de datos de los flujos de trabajo
+		    \item Accesso de información a través de API pública
+		    \item Catálogo de cursos
+		    \item Flujo de trabajo para evaluaciones
+    	\end{itemize}
+	\end{block}
 \end{frame}
-
 
 \begin{frame}[standout]
   ¡Gracias por su atención!
