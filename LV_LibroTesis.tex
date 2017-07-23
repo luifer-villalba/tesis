@@ -29,7 +29,7 @@
 % oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 %chapterinoneline,% Have the chapter title next to the number in one single line
 english, % ngerman for German
-spanish,P
+spanish,
 singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
@@ -128,11 +128,11 @@ headsepline, % Uncomment to get a line under the header
 \hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
 \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
 \hypersetup{
-    colorlinks = blue,
-    filecolor = magenta,
-    linkcolor = blue,		% Links del indice, etc
-    urlcolor = blue,		% Links de texto con URL asociado
-    citecolor = blue,		% Links de texto citado
+    colorlinks = black,
+    filecolor = black,
+    linkcolor = black,		% Links del indice, etc
+    urlcolor = black,		% Links de texto con URL asociado
+    citecolor = black,		% Links de texto citado
 }
 
 \begin{document}
@@ -257,27 +257,21 @@ headsepline, % Uncomment to get a line under the header
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\abstractname}{Abstract}
+\renewcommand{\abstractname}{Resumen}
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-En el proyecto final se toma como caso de estudio con enfoque en interacción humano-computador y en observación participante al diseño e implementación de un módulo de gestión curricular para un sistema de gestión de evaluaciones basadas en competencias académicas, la cual tiene sus cimientos en el mercado y también dispone de clientes utilizando la misma. 
 
-Se diseñó la manera de integrar y estructurar procesos separados de validación de competencias, cursos, y programas para instituciones de educación superior del estado de California en un sistema de gestión de evaluaciones basadas en competencias. Dicho proceso era uno que se hacía en papel y tenía sus falencias debido a que el proceso requería mucho tiempo en revisar y aprobar los formularios, y la complejidad del flujo aumentaba cuando habían más personas colaboradoras o evaluadoras en el proceso.
+El mercado laboral requiere actualmente de un mayor número de estudiantes en nivel técnico y universitario que posean habilidades comprobadas. Las perspectivas pedagógicas basadas en competencias están orientadas precisamente a medir estas habilidades como resultado de procesos de aprendizaje. Es por esto que los sistemas de gestión académica del estado de California, Estados Unidos, tienen como requisito para la aprobación de programas y cursos de educación superior una perspectiva de resultados orientados a competencias para su red de universidades. 
 
-Estos procesos fueron automatizados por el módulo curricular, además de brindar una forma de notificar a los encargados de revisiones y ediciones que tienen trabajo pendiente o en falta.
+Al mismo tiempo, el proceso de creación y aprobación de estos programas es uno colaborativo: requiere de aprobaciones y modificaciones por parte de docentes, coordinadores y autoridades utilizando complejos flujos de trabajo. Las herramientas de gestión curricular existentes tienen importantes limitaciones: no están integradas a sistemas de gestión de resultados pedagógicos.
 
-Debido a los requerimientos altamente cambiantes y a que el equipo que diseña la aplicación no dispone de un panorama completo de las funcionalidades del módulo curricular, la elección de la metodología ágil para el desarrollo del proyecto fue utilizada para permitir un desarrollo más iterativo e incremental del software con validaciones del cliente como proceso de desarrollo, que en este caso el equipo de validación tomará el rol de cliente debido al conocimiento y experiencia en didáctica de sus miembros.
+En este caso de estudio planteamos el desarrollo de una aplicación Web que tenga como objetivo brindar una herramienta de gestión curricular orientada a resultados pedagógicos. Este planteamiento presenta varias dificultades desde el punto de vista técnico y de interacción humano computador. La propuesta de realización de dicho sistema ha atraído a expertos en educación, usuarios e instituciones involucradas, quienes han conformado equipos comprometidos con el proceso de desarrollo, en todas sus etapas, de una herramienta de estas características.
 
-% Al diseñar los flujos de trabajo para el diseño y revisión de formularios de competencias, cursos, y programas permitió a los profesores encargados de los mismos y evaluadores de dichos formularios, seguir el proceso de una manera intuitiva buscando la mejor experiencia de usuario y con menos cuellos de botella. Como ayuda, que cada paso genera un mensaje que el usuario puede acceder en su buzón de entrada en caso de que tuviera trabajo pendiente.
+\newpage
+Dadas las características innovadoras del sistema planteado, el complejo desafío técnico y de diseño de experiencia de usuario, así como el compromiso de utilización del mismo en un entorno real (no uno de laboratorio) hemos realizado este caso de estudio que tiene dos ejes principales de análisis. El primero es el de recoger la experiencia técnica de realizar un sistema de esta complejidad con requerimientos poco definidos y cambiantes. El segundo es analizar si las herramientas desarrolladas son capaces de brindar una experiencia de usuario que permita a los mismos lidiar con la complejidad de desarrollar y aprobar programas educativos en un contexto de orientación a resultados pedagógicos. 
 
-% En el desarrollo del módulo se utilizaron muchas de las tecnologías y herramientas que disponía el sistema como requerimiento no funcional de parte de la organización. El uso de estas tablas en común para la funcionalidad de plantillas de flujos de trabajo fue una decisión errónea, debido a que agregaba complejidad a las mismas y además las pruebas de componentes se convertían en pruebas de regresión debido a la complejidad de la estructura. 
-
-% Sin embargo, al utilizar MySQL para guardar el flujo de trabajo y todos sus datos temporales no fue la mejor decisión debido a que la funcionalidad y el estándar tienen cambios constantes en cuanto a datos que tendrían que guardarse, y migrar los datos y columnas de los usuarios aumenta siempre la complejidad de la historia de usuario.
-
-% Debido a la capa adicional de comunicaciones con el usuario final personificada por el equipo de Estados Unidos (que en nuestro caso actúa como cliente), la realimentación de valor real o valor aún necesario provisto al usuario final es lenta e implica grandes cambios luego de varios sprints.
-
-% A pesar de todas las falencias de desarrollo, el módulo tuvo resultados positivos por parte de los usuarios finales ya que es una herramienta que automatiza trabajos de validación curricular para las instituciones. Además, al tener comentarios acerca de qué habría que mejorar en la aplicación y con la utilización de la metodología ágil se permitió que se creen nuevas historias de usuario para algunos retoques futuros en el módulo curricular. 
+La experiencia recogida en el caso de estudio arroja evidencia positiva sobre la utilidad de las metodologías ágiles en la construcción de sistemas innovadores en los cuales los requerimientos y diseño son difusos al principio del proceso. La complejidad de los flujos de trabajo ha conllevado a una necesidad constante de mejorar la interfaz de usuario de forma iterativa en un constante e intenso diálogo con expertos de dominio y usuarios del sistema. Al final del proceso de desarrollo, hemos podido comprobar que los usuarios e instituciones involucradas en el proyecto efectivamente han validado el sistema desarrollado y se encuentran utilizándolo para gestionar el desarrollo de sus programas curriculares.
 
 
 \end{abstract}
@@ -320,21 +314,30 @@ Y por último, pero no menos importante, a Guille y a Gabriel, por ser mis compa
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
 \textbf{AMS} & \textbf{A}ssessment \textbf{M}anagement \textbf{S}ystem\\
-\textbf{CMS} & \textbf{C}urriculum \textbf{M}anagement \textbf{S}ystem \\
-\textbf{UX} & \textbf{U}ser e\textbf{X}perience \\
-\textbf{LMS} & \textbf{L}earning \textbf{M}anagement \textbf{S}ystem \\
-\textbf{SaaS} & \textbf{S}oftware \textbf{a}s \textbf{a} \textbf{S}ervice \\
-\textbf{SLO} & \textbf{S}tudent \textbf{L}earning \textbf{O}utcomes \\
-\textbf{PCAH} & \textbf{P}rogram and \textbf{C}ourse \textbf{A}pproval \textbf{H}andbook \\
-\textbf{INVEST} & \textbf{I}ndependent \textbf{N}egotiable \textbf{V}aluable \textbf{E}stimatable \textbf{S}mall \textbf{T}estable \\
-\textbf{HCI} & \textbf{H}uman \textbf{C}omputer \textbf{I}nteraction \\
-\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
-\textbf{DECA} & \textbf{DE}cision a\textbf{CA}demic \\
+\textbf{API} & \textbf{A}pplication \textbf{P}rogramming \textbf{I}nterface\\
 \textbf{AWS} & \textbf{A}mazon \textbf{W}eb \textbf{S}ervices \\
-\textbf{VCS} & \textbf{V}ersion \textbf{C}ontrol \textbf{S}ystem \\
+\textbf{CIP} & \textbf{C}lassification of \textbf{I}nstructional \textbf{P}rograms \\
+\textbf{CMS} & \textbf{C}urriculum \textbf{M}anagement \textbf{S}ystem \\
+\textbf{COR} & \textbf{C}ourse \textbf{O}utline of \textbf{R}ecords \\
+\textbf{CRUD} & \textbf{C}reate \textbf{R}ead \textbf{U}pdate \textbf{D}elete \\
+\textbf{DECA} & \textbf{DE}cision a\textbf{CA}demic \\
+\textbf{HC} & \textbf{H}oras \textbf{C}argadas \\
+\textbf{HCI} & \textbf{H}uman \textbf{C}omputer \textbf{I}nteraction \\
+\textbf{HE} & \textbf{H}oras \textbf{E}stimadas \\
+\textbf{INVEST} & \textbf{I}ndependent \textbf{N}egotiable \textbf{V}aluable \textbf{E}stimatable \textbf{S}mall \textbf{T}estable \\
+\textbf{LMS} & \textbf{L}earning \textbf{M}anagement \textbf{S}ystem \\
 \textbf{MVC} & \textbf{M}odel \textbf{V}iew \textbf{C}ontroller \\
-\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
+\textbf{PCAH} & \textbf{P}rogram and \textbf{C}ourse \textbf{A}pproval \textbf{H}andbook \\
+\textbf{PH} & \textbf{P}untos de \textbf{H}istoria \\
+\textbf{PO} & \textbf{P}roduct \textbf{O}wner \\
 \textbf{POJO} & \textbf{P}lain \textbf{O}ld \textbf{J}ava \textbf{O}bject \\
+\textbf{PR} & \textbf{P}ull \textbf{R}equest \\
+\textbf{SAAS} & \textbf{S}oftware \textbf{A}s \textbf{A} \textbf{S}ervice \\
+\textbf{SLO} & \textbf{S}tudent \textbf{L}earning \textbf{O}utcomes \\
+\textbf{TOP} & \textbf{T}axonomy \textbf{O}f \textbf{P}rograms \\
+\textbf{UI} & \textbf{U}ser \textbf{I}nteraction \\
+\textbf{UX} & \textbf{U}ser e\textbf{X}perience \\
+\textbf{VCS} & \textbf{V}ersion \textbf{C}ontrol \textbf{S}ystem \\
 
 \end{abbreviations}
 
@@ -388,9 +391,6 @@ Y por último, pero no menos importante, a Guille y a Gabriel, por ser mis compa
 
 % INTRODUCCION
 \include{Capitulos/Introduccion/main}
-
-% OBJETIVOS
-% \include{Capitulos/Objetivos/main}
 
 % MARCO TEORICO
 \include{Capitulos/MarcoTeorico/main}
