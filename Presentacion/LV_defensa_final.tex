@@ -1,4 +1,4 @@
-\documentclass[10pt,xcolor=table ]{beamer}
+\documentclass[10pt,xcolor=table]{beamer}
 	
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
@@ -294,7 +294,7 @@
 
 \section{Funcionalidades del módulo curricular}
 \subsection{Definición de plantillas}
-\begin{frame}{Definición de plantillas}
+\begin{frame}{Flujo del sistema}
 \begin{figure}
 		\centering
 	    \includegraphics<1>[scale=0.55]{../Figuras/Pantallas/funcionalidades_1}
@@ -313,7 +313,7 @@
 
 
 \subsection{Utilización de flujos de trabajo}
-\begin{frame}{Utilización de flujos de trabajo}
+\begin{frame}{Flujo del sistema}
 \begin{figure}
 		\centering
 	    \includegraphics<1>[scale=0.55]{../Figuras/Pantallas/funcionalidades_2}
@@ -325,7 +325,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics<1>[scale=0.275]{../Figuras/Pantallas/course_creation_1}
-		\includegraphics<2>[scale=0.3]{../Figuras/Pantallas/course_creation_7}
+		\includegraphics<2>[scale=0.3]{../Figuras/Pantallas/course_creation_6}
 		\includegraphics<3>[scale=0.3]{../Figuras/Pantallas/course_creation_submit}
 		\includegraphics<4>[scale=0.27]{../Figuras/Pantallas/course_revision_1}
 		\includegraphics<5>[scale=0.3]{../Figuras/Pantallas/course_revision_4}
@@ -334,7 +334,7 @@
 
 
 \subsection{Lista de cursos, programas y competencias}
-\begin{frame}{Lista de cursos, programas y competencias}
+\begin{frame}{Flujo del sistema}
 \begin{figure}
 		\centering
 	    \includegraphics<1>[scale=0.55]{../Figuras/Pantallas/funcionalidades_3}
@@ -370,14 +370,14 @@
 \end{frame}
 
 \subsection{Resultados}
-\begin{frame}{Resultados}
+\begin{frame}{Clasificación de trabajo}
 	\begin{figure}
 		\centering
 	    \includegraphics[scale=0.235]{../Figuras/tickets_tipo}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Resultados}
+\begin{frame}{Clasificación de trabajo}
 	\begin{figure}
 		\centering
 	    \includegraphics[scale=0.235]{../Figuras/historias_cerradas_reabiertas}
@@ -447,38 +447,31 @@
 
 \begin{frame}{Conclusiones}
 	\metroset{block=fill}
-	\begin{alertblock}{Resultados}
+	\begin{block}{Resultados}
 		\begin{itemize}
-			\item Utilización de la metodología Ágil de desarrollo.
-			\item Utilización del motor de base de datos.
-			\item Aprobación por parte de los usuarios finales.
-			\item Feedback de parte de los usuarios finales.
+			\item La metodología Ágil resultó útil para lidiar con requerimientos complejos y cambiantes.
+			\item La utilización de DBRMS fué más un problema que solución.
+			\item El proceso de diseño fué adecuado ya que se obtuvo la aprobación de los usuarios finales.
+			\item Metodología Ágil + Feedback de los usuarios = Mejoras iterativas
 		\end{itemize}
-	\end{alertblock}
-\end{frame}
-
-\begin{frame}{Aportes del proyecto}
-	\begin{itemize}
-	    \item Gestión del diseño y validación de material curricular en el estado de California.
-	    \item Reemplaza la preparación manual de formularios, los procesos de revisión y aprobación curricular.
-	    \item Permite a las personas trabajar en conjunto sin necesidad de agendar reuniones.
-	    \item Permite almacenar datos nuevos, históricos, propuestos y activos de competencias, cursos, y programas.
-	    \item Proveer notificaciones automatizadas cuando hay cambios de estado en los flujos de trabajo.
-	    \item Según expertos y usuarios, la utilización del módulo desarrollado reduce el tiempo promedio de formulación y revisión de cada flujo de diseño e implementación de flujos de trabajo.
-	\end{itemize}
+	\end{block}
+	\begin{block}{Aportes}
+		\begin{itemize}
+			\item Diseño e implementación de un sistema curricular como módulo integrado a un AMS.
+			\item Validación empírica de la metodología Ágil en desarrollo de una aplicación enterprise en un contexto internacional.
+			\item Integración de feedback para mejorar el proceso de desarrollo.
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 \begin{frame}{Trabajos futuros}
-	\metroset{block=fill}
-	\begin{alertblock}{Épicas}
-		\begin{itemize}
-			\item Importador de cursos
-		    \item Migración de motor de base de datos de los flujos de trabajo
-		    \item Accesso de información a través de API pública
-		    \item Catálogo de cursos
-		    \item Flujo de trabajo para evaluaciones
-    	\end{itemize}
-	\end{alertblock}
+	\begin{itemize}[<+- | alert@+>]
+		\item Importador de cursos
+	    \item Migración de motor de base de datos de los flujos de trabajo
+	    \item Acceso de información a través de API pública
+	    \item Catálogo público de cursos y programas
+	    \item Flujo de trabajo para evaluaciones
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[standout]
